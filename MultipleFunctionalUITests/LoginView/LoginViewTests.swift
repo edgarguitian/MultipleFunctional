@@ -17,7 +17,7 @@ final class LoginViewTests: XCTestCase {
     private let identifierFieldEmailLoginView = "fieldEmailLoginView"
     private let identifierFieldPassLoginView = "fieldPassLoginView"
     private let identifierBtnLoginMailLoginView = "btnLoginEmailLoginView"
-    private let identifierTextErrorMessageLoginView = "authenticationViewErrorMessage"
+    private let identifierTextErrorMessageLoginView = "loginViewErrorMessage"
     private let identifierTitleHomeView = "titleHomeView"
 
     override func setUp() {

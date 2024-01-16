@@ -14,6 +14,8 @@ final class LoginViewModel: ObservableObject {
     private let registerUseCase: RegisterUseCaseType
     private let errorMapper: MultipleFunctionalPresentableErrorMapper
     @Published var showErrorMessage: String?
+    @Published var showErrorMessageLogin: String?
+    @Published var showErrorMessageRegister: String?
     @Published var showLoadingSpinner: Bool = true
     @Published var user: User?
 
@@ -36,7 +38,7 @@ final class LoginViewModel: ObservableObject {
         } else {
             Task {
                 let result = await getUserUseCase.execute()
-                handleResult(result)
+                handleResultGetCurrentUser(result)
             }
         }
     }
@@ -46,7 +48,7 @@ final class LoginViewModel: ObservableObject {
         Task {
             let result = await loginUseCase.execute(email: email,
                                                     password: password)
-            handleResult(result)
+            handleResult(result, fromLogin: true)
         }
     }
 
@@ -54,7 +56,7 @@ final class LoginViewModel: ObservableObject {
         showLoadingSpinner = true
         Task {
             let result = await logoutUseCase.execute()
-            handleResult(result)
+            handleResultLogOut(result)
         }
     }
 
@@ -63,13 +65,13 @@ final class LoginViewModel: ObservableObject {
         Task {
             let result = await registerUseCase.execute(email: email,
                                                     password: password)
-            handleResult(result)
+            handleResult(result, fromLogin: false)
         }
     }
 
-    func handleResult(_ result: Result<User, MultipleFunctionalDomainError>) {
+    func handleResult(_ result: Result<User, MultipleFunctionalDomainError>, fromLogin: Bool) {
         guard case .success(let loginResult) = result else {
-            handleError(error: result.failureValue as? MultipleFunctionalDomainError)
+            handleError(error: result.failureValue as? MultipleFunctionalDomainError, fromLogin: fromLogin)
             return
         }
 
@@ -79,7 +81,7 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
-    func handleResult(_ result: User?) {
+    func handleResultGetCurrentUser(_ result: User?) {
 
         Task { @MainActor in
             showLoadingSpinner = false
@@ -87,7 +89,7 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
-    func handleResult(_ result: Result<Bool, MultipleFunctionalDomainError>) {
+    func handleResultLogOut(_ result: Result<Bool, MultipleFunctionalDomainError>) {
         switch result {
             case .success:
                 Task { @MainActor in
@@ -99,11 +101,22 @@ final class LoginViewModel: ObservableObject {
             }
 
     }
-
+    
     private func handleError(error: MultipleFunctionalDomainError?) {
         Task { @MainActor in
             showLoadingSpinner = false
             showErrorMessage = errorMapper.map(error: error)
+        }
+    }
+
+    private func handleError(error: MultipleFunctionalDomainError?, fromLogin: Bool) {
+        Task { @MainActor in
+            showLoadingSpinner = false
+            if fromLogin {
+                showErrorMessageLogin = errorMapper.map(error: error)
+            } else {
+                showErrorMessageRegister = errorMapper.map(error: error)
+            }
         }
     }
 }

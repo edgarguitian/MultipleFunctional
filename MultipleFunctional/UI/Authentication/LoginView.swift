@@ -53,12 +53,13 @@ struct LoginView: View {
                 .buttonStyle(.bordered)
                 .tint(.blue)
 
-                if let messageError = viewModel.showErrorMessage {
+                if let messageError = viewModel.showErrorMessageLogin {
                     Text(messageError)
                         .bold()
                         .font(.body)
                         .foregroundColor(.red)
                         .padding(.top, 20)
+                        .accessibilityIdentifier("loginViewErrorMessage")
                 }
             }
             .textFieldStyle(.roundedBorder)

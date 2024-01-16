@@ -17,7 +17,7 @@ final class RegisterViewTests: XCTestCase {
     private let identifierFieldEmailRegisterView = "fieldEmailRegisterView"
     private let identifierFieldPassRegisterView = "fieldPassRegisterView"
     private let identifierBtnRegisterMailRegisterView = "btnRegisterEmailRegisterView"
-    private let identifierTextErrorMessageLoginView = "authenticationViewErrorMessage"
+    private let identifierTextErrorMessageLoginView = "registerViewErrorMessage"
     private let identifierTitleHomeView = "titleHomeView"
 
     override func setUp() {

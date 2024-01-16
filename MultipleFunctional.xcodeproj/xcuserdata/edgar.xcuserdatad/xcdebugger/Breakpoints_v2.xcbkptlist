@@ -14,9 +14,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "handleResult(_:fromLogin:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -270,9 +270,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "handleResultGetCurrentUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -412,8 +412,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "createNewUser(email:password:)"
             landmarkType = "7">
             <Locations>
@@ -682,8 +682,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "getCurrentUser()"
             landmarkType = "7">
             <Locations>
@@ -739,34 +739,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "handleResult(_:fromLogin:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7 - 2431d5bbd2864ee2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MultipleFunctional.LoginViewModel.handleResult(Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;) -&gt; ()"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "492">
-               </Location>
-               <Location
-                  uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7 - fc8fc6d816c09590"
+                  uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7 - fc8fc6d816c09652"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -776,8 +761,23 @@
                   urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7 - fc8fc6d816c09652"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Swift.MainActor @Sendable () async -&gt; () in MultipleFunctional.LoginViewModel.handleResult(Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;) -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
                   offsetFromSymbolStart = "100">
                </Location>
             </Locations>
@@ -793,9 +793,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "handleResultGetCurrentUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -809,9 +809,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "handleError(error:)"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "handleError(error:fromLogin:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -887,9 +887,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -935,9 +935,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -999,9 +999,9 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "handleResult(_:)"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
                <Location

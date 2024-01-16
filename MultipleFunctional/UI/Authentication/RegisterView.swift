@@ -57,12 +57,13 @@ struct RegisterView: View {
                 .buttonStyle(.bordered)
                 .tint(.blue)
 
-                if let messageError = viewModel.showErrorMessage {
+                if let messageError = viewModel.showErrorMessageRegister {
                     Text(messageError)
                         .bold()
                         .font(.body)
                         .foregroundColor(.red)
                         .padding(.top, 20)
+                        .accessibilityIdentifier("registerViewErrorMessage")
                 }
             }
             .textFieldStyle(.roundedBorder)

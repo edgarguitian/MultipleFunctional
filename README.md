@@ -7,3 +7,6 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Logout de email con Firebase Auth
 - Registro de email con Firebase Auth
 - Get User del email con Firebase Auth
+
+## Funcionalidades extra
+- Test Unitarios con XCTest.

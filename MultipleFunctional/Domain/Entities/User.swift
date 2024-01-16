@@ -10,6 +10,10 @@ import Foundation
 struct User {
     let email: String
 
+    init(email: String) {
+        self.email = email
+    }
+
     init(response: UserDTO) {
         self.email = response.email
     }

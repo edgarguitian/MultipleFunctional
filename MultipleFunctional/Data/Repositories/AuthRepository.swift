@@ -47,11 +47,13 @@ final class AuthRepository: AuthRepositoryType {
 
     func logOut() async -> Result<Bool, MultipleFunctionalDomainError> {
         let result = await authenticationFirebaseDatasource.logOut()
-        guard case .success(_) = result else {
-            return .failure(errorMapper.map(error: result.failureValue as? HTTPClientError))
-        }
 
-        return .success(true)
+        switch result {
+            case .success:
+                return .success(true)
+            case .failure(let error):
+                return .failure(errorMapper.map(error: error))
+            }
 
     }
 

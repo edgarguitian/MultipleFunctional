@@ -6,30 +6,47 @@
 //
 
 import XCTest
-
+@testable import MultipleFunctional
 final class RegisterUseCaseTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_execute_sucessfully_returns_register_user() async throws {
+        // GIVEN
+        let mockEmail = "test@gmail.com"
+        let mockPassword = "test123"
+        let user = User(email: mockEmail)
+        let result: Result<User, MultipleFunctionalDomainError> = .success(user)
+        let stub = AuthRepositoryStub(result: result)
+        let sut = RegisterUseCase(repository: stub)
+
+        // WHEN
+        let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)
+
+        // THEN
+
+        let capturedLoginResult = try XCTUnwrap(capturedResult.get())
+        XCTAssertEqual(capturedLoginResult.email, mockEmail)
+
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func test_execute_returns_error_when_repository_returns_error() async throws {
+        // GIVEN
+        let mockEmail = "test@gmail.com"
+        let mockPassword = "abc"
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+        let result: Result<User, MultipleFunctionalDomainError> = .failure(.generic)
+        let stub = AuthRepositoryStub(result: result)
+        let sut = RegisterUseCase(repository: stub)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        // WHEN
+        let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)
+
+        // THEN
+        guard case .failure(let error) = capturedResult else {
+            XCTFail("Expected failure, got success")
+            return
         }
+
+        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
     }
 
 }

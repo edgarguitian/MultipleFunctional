@@ -39,12 +39,13 @@ struct RegisterView: View {
                     .padding(.bottom, 2)
 
                 TextField("Añade tu correo electrónico", text: $textFieldEmail)
+                    .autocapitalization(.none)
 
-                TextField("Añade tu contraseña", text: $textFieldPassword)
-
+                SecureField("Añade tu contraseña", text: $textFieldPassword)
+                    .autocapitalization(.none)
                 Button("Aceptar") {
                     viewModel.createNewUser(email: textFieldEmail,
-                                            password: textFieldPassword)
+                                            password: "\(textFieldPassword)")
                 }
                 .padding(.top, 18)
                 .buttonStyle(.bordered)

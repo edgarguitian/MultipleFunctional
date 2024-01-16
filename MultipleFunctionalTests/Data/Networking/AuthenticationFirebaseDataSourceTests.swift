@@ -6,30 +6,74 @@
 //
 
 import XCTest
+@testable import MultipleFunctional
+class AuthenticationFirebaseDataSourceTests: XCTestCase {
 
-final class AuthenticationFirebaseDataSourceTests: XCTestCase {
+    var dataSource: AuthenticationFirebaseDataSource!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        dataSource = AuthenticationFirebaseDataSource()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        dataSource = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func testLogIn() async {
+        let mockEmail = "edguitian@gmail.com"
+        let mockPassword = "test123"
+        let validCredentials = LoginCredentials(email: mockEmail, password: mockPassword)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let expectation = XCTestExpectation(description: "Log in")
+        let result = await dataSource.logIn(credentials: validCredentials)
+        switch result {
+        case .success(let userDTO):
+            XCTAssertNotNil(userDTO)
+        case .failure(let error):
+            XCTFail("LogIn failed with error: \(error)")
         }
+        expectation.fulfill()
+        await fulfillment(of: [expectation], timeout: 5.0)
+
     }
 
+    func testRegister() async {
+        let mockEmail = "test@gmail.com"
+        let mockPassword = "test123"
+        let validCredentials = LoginCredentials(email: mockEmail, password: mockPassword)
+
+        let expectation = XCTestExpectation(description: "Register")
+        let result = await dataSource.register(credentials: validCredentials)
+        switch result {
+        case .success(let userDTO):
+            XCTAssertNotNil(userDTO)
+        case .failure(let error):
+            XCTAssertEqual(error, HTTPClientError.generic)
+        }
+        expectation.fulfill()
+        await fulfillment(of: [expectation], timeout: 5.0)
+    }
+
+    func testGetCurrentUser() async {
+        let expectation = XCTestExpectation(description: "Get Current User")
+        let result = await dataSource.getCurrentUser()
+        XCTAssertNotNil(result)
+        expectation.fulfill()
+        await fulfillment(of: [expectation], timeout: 5.0)
+    }
+
+    func testLogOut() async {
+        let expectation = XCTestExpectation(description: "Log Out")
+        let result = await dataSource.logOut()
+        switch result {
+        case .success(let result):
+            XCTAssertEqual(result, true)
+        case .failure(let error):
+            XCTFail("LogOut failed with error: \(error)")
+        }
+        expectation.fulfill()
+        await fulfillment(of: [expectation], timeout: 5.0)
+    }
 }

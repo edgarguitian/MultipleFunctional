@@ -84,15 +84,16 @@ final class LoginViewModel: ObservableObject {
     }
 
     func handleResult(_ result: Result<Bool, MultipleFunctionalDomainError>) {
-        guard case .success(let loginResult) = result else {
-            handleError(error: result.failureValue as? MultipleFunctionalDomainError)
-            return
-        }
+        switch result {
+            case .success:
+                Task { @MainActor in
+                    showLoadingSpinner = false
+                    self.user = nil
+                }
+            case .failure:
+                handleError(error: result.failureValue as? MultipleFunctionalDomainError)
+            }
 
-        Task { @MainActor in
-            showLoadingSpinner = false
-            self.user = nil
-        }
     }
 
     private func handleError(error: MultipleFunctionalDomainError?) {

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+@testable import MultipleFunctional
+
+extension User: Equatable {
+    public static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.email == rhs.email
+    }
+
+}

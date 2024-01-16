@@ -49,12 +49,14 @@ struct AuthenticationView: View {
                                 .bold()
                                 .font(.title)
                                 .padding(.top, 100)
+                                .accessibilityIdentifier("textTitleAuthenticationView")
                             VStack {
                                 Button {
                                     authenticationSheetView = .login
                                 } label: {
                                     Label("Entra con Email", systemImage: "envelope.fill")
                                 }
+                                .accessibilityIdentifier("btnLoginMailAuthenticationView")
                                 .tint(.black)
                             }
                             .controlSize(.large)
@@ -70,6 +72,7 @@ struct AuthenticationView: View {
                                     Text("Regístrate")
                                         .underline()
                                 }
+                                .accessibilityIdentifier("btnRegisterAuthenticationView")
                                 .tint(.black)
                             }
                         }
@@ -87,8 +90,16 @@ struct AuthenticationView: View {
                         .accessibilityIdentifier("authenticationViewErrorMessage")
                 }
             }
-        }.onAppear {
-            viewModel.getCurrentUser()
+        }
+        .onAppear {
+            let uiTestInitialLoading = ProcessInfo.processInfo.arguments.contains("UITestInitialLoading")
+            if uiTestInitialLoading {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                            viewModel.getCurrentUser()
+                        }
+            } else {
+                viewModel.getCurrentUser()
+            }
         }
     }
 }

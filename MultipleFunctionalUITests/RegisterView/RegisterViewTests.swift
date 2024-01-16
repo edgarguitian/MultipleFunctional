@@ -9,33 +9,81 @@ import XCTest
 
 final class RegisterViewTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var app: XCUIApplication!
+    private let identifierBtnLogout = "btnLogout"
+    private let identifierBtnRegisterAuthenticationView = "btnRegisterAuthenticationView"
+    private let identifierGroupTitleRegisterView = "groupTitleRegisterView"
+    private let identifierDescriptionRegisterView = "textDescriptionRegisterView"
+    private let identifierFieldEmailRegisterView = "fieldEmailRegisterView"
+    private let identifierFieldPassRegisterView = "fieldPassRegisterView"
+    private let identifierBtnRegisterMailRegisterView = "btnRegisterEmailRegisterView"
+    private let identifierTextErrorMessageLoginView = "authenticationViewErrorMessage"
+    private let identifierTitleHomeView = "titleHomeView"
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    override func setUp() {
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Logout if is possible
+        let btnLogout = app.buttons[identifierBtnLogout]
+        if btnLogout.exists {
+            btnLogout.tap()
+        }
+        launch_register_view()
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    override func tearDown() {
+        app = nil
+    }
+
+    func launch_register_view() {
+        let btnRegisterMail = app.buttons[identifierBtnRegisterAuthenticationView]
+        XCTAssert(btnRegisterMail.exists)
+        btnRegisterMail.tap()
+        print(app.debugDescription)
+        XCTAssertTrue(app.staticTexts[identifierGroupTitleRegisterView].waitForExistence(timeout: 5))
+    }
+
+    func test_register_view_screen_show() throws {
+        XCTAssert(app.staticTexts[identifierDescriptionRegisterView].exists)
+        XCTAssert(app.textFields[identifierFieldEmailRegisterView].exists)
+        XCTAssert(app.secureTextFields[identifierFieldPassRegisterView].exists)
+        XCTAssert(app.buttons[identifierBtnRegisterMailRegisterView].exists)
+
+    }
+
+    func test_complete_register_error() throws {
+        let fieldEmail = app.textFields[identifierFieldEmailRegisterView]
+        XCTAssert(fieldEmail.exists)
+        fieldEmail.tap()
+        fieldEmail.typeText("testEmail")
+        let fieldPassword = app.secureTextFields[identifierFieldPassRegisterView]
+        XCTAssert(fieldPassword.exists)
+        fieldPassword.tap()
+        fieldPassword.typeText("testPassword")
+        let btnRegister = app.buttons[identifierBtnRegisterMailRegisterView]
+        XCTAssert(btnRegister.exists)
+        btnRegister.tap()
+        let textErrorMessage = app.staticTexts[identifierTextErrorMessageLoginView]
+        XCTAssertTrue(textErrorMessage.waitForExistence(timeout: 5))
+
+    }
+    
+    func test_complete_register_success() throws {
+        let fieldEmail = app.textFields[identifierFieldEmailRegisterView]
+        XCTAssert(fieldEmail.exists)
+        fieldEmail.tap()
+        fieldEmail.typeText("testEmail@gmail.com")
+        let fieldPassword = app.secureTextFields[identifierFieldPassRegisterView]
+        XCTAssert(fieldPassword.exists)
+        fieldPassword.tap()
+        fieldPassword.typeText("pass123")
+        let btnRegister = app.buttons[identifierBtnRegisterMailRegisterView]
+        XCTAssert(btnRegister.exists)
+        btnRegister.tap()
+        let titleHomeView = app.staticTexts[identifierTitleHomeView]
+        XCTAssertTrue(titleHomeView.waitForExistence(timeout: 5))
+
     }
 }

@@ -26,6 +26,7 @@ struct RegisterView: View {
                     .bold()
                     .underline()
             }
+            .accessibilityIdentifier("groupTitleRegisterView")
             .padding(.horizontal, 8)
             .multilineTextAlignment(.center)
             .font(.largeTitle)
@@ -37,16 +38,21 @@ struct RegisterView: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 2)
                     .padding(.bottom, 2)
+                    .accessibilityIdentifier("textDescriptionRegisterView")
 
                 TextField("Añade tu correo electrónico", text: $textFieldEmail)
                     .autocapitalization(.none)
+                    .accessibilityIdentifier("fieldEmailRegisterView")
 
                 SecureField("Añade tu contraseña", text: $textFieldPassword)
                     .autocapitalization(.none)
+                    .accessibilityIdentifier("fieldPassRegisterView")
+
                 Button("Aceptar") {
                     viewModel.createNewUser(email: textFieldEmail,
                                             password: "\(textFieldPassword)")
                 }
+                .accessibilityIdentifier("btnRegisterEmailRegisterView")
                 .padding(.top, 18)
                 .buttonStyle(.bordered)
                 .tint(.blue)

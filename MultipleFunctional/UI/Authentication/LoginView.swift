@@ -26,6 +26,7 @@ struct LoginView: View {
                     .bold()
                     .underline()
             }
+            .accessibilityIdentifier("groupTitleLoginView")
             .padding(.horizontal, 8)
             .multilineTextAlignment(.center)
             .font(.largeTitle)
@@ -36,13 +37,18 @@ struct LoginView: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 2)
                     .padding(.bottom, 2)
+                    .accessibilityIdentifier("textDescriptionLoginView")
 
                 TextField("Añade tu correo electrónico", text: $textFieldEmail)
+                    .accessibilityIdentifier("fieldEmailLoginView")
+
                 TextField("Añade tu contraseña", text: $textFieldPassword)
+                    .accessibilityIdentifier("fieldPassLoginView")
 
                 Button("Login") {
                     viewModel.logIn(email: textFieldEmail, password: textFieldPassword)
                 }
+                .accessibilityIdentifier("btnLoginEmailLoginView")
                 .padding(.top, 18)
                 .buttonStyle(.bordered)
                 .tint(.blue)
@@ -59,6 +65,7 @@ struct LoginView: View {
             .padding(.horizontal, 64)
             Spacer()
         }
+
     }
 }
 

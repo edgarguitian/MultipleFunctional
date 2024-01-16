@@ -16,6 +16,7 @@ struct DismissView: View {
             Button("Cerrar") {
                 dismiss()
             }
+            .accessibilityIdentifier("btnDismiss")
             .tint(.black)
             .padding(.trailing, 12)
         }

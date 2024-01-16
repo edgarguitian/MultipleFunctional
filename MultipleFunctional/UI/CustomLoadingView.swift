@@ -13,6 +13,7 @@ struct CustomLoadingView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .white))
                 .frame(width: 20, height: 20)
+                .accessibilityIdentifier("LoadingIndicator")
             Text("Loading")
                 .foregroundColor(.white)
         }

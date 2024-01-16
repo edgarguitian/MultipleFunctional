@@ -62,10 +62,23 @@
 		6DE880932B56A08D004E5334 /* AuthRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880922B56A08D004E5334 /* AuthRepositoryTests.swift */; };
 		6DE880952B56A253004E5334 /* AuthenticationFirebaseDataSourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880942B56A253004E5334 /* AuthenticationFirebaseDataSourceStub.swift */; };
 		6DE880982B56A603004E5334 /* AuthenticationFirebaseDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880972B56A603004E5334 /* AuthenticationFirebaseDataSourceTests.swift */; };
+		6DE880A02B56AA40004E5334 /* AuthenticationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8809F2B56AA40004E5334 /* AuthenticationViewTests.swift */; };
+		6DE880A22B56AA40004E5334 /* MultipleFunctionalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880A12B56AA40004E5334 /* MultipleFunctionalUITestsLaunchTests.swift */; };
+		6DE880AC2B56AF53004E5334 /* AuthenticationViewErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880AB2B56AF53004E5334 /* AuthenticationViewErrorTests.swift */; };
+		6DE880AE2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880AD2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift */; };
+		6DE880B22B56E69B004E5334 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880B12B56E69B004E5334 /* LoginViewTests.swift */; };
+		6DE880B52B56EC45004E5334 /* RegisterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880B42B56EC45004E5334 /* RegisterViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6DE880792B568EAB004E5334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3D9CC92B5165E30050D779 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3D9CD02B5165E30050D779;
+			remoteInfo = MultipleFunctional;
+		};
+		6DE880A32B56AA40004E5334 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D3D9CC92B5165E30050D779 /* Project object */;
 			proxyType = 1;
@@ -131,6 +144,13 @@
 		6DE880922B56A08D004E5334 /* AuthRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryTests.swift; sourceTree = "<group>"; };
 		6DE880942B56A253004E5334 /* AuthenticationFirebaseDataSourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDataSourceStub.swift; sourceTree = "<group>"; };
 		6DE880972B56A603004E5334 /* AuthenticationFirebaseDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDataSourceTests.swift; sourceTree = "<group>"; };
+		6DE8809D2B56AA40004E5334 /* MultipleFunctionalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleFunctionalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE8809F2B56AA40004E5334 /* AuthenticationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewTests.swift; sourceTree = "<group>"; };
+		6DE880A12B56AA40004E5334 /* MultipleFunctionalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DE880AB2B56AF53004E5334 /* AuthenticationViewErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewErrorTests.swift; sourceTree = "<group>"; };
+		6DE880AD2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewInitialLoadingTests.swift; sourceTree = "<group>"; };
+		6DE880B12B56E69B004E5334 /* LoginViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		6DE880B42B56EC45004E5334 /* RegisterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +169,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DE8809A2B56AA40004E5334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -157,6 +184,7 @@
 			children = (
 				6D3D9CD32B5165E30050D779 /* MultipleFunctional */,
 				6DE880762B568EAB004E5334 /* MultipleFunctionalTests */,
+				6DE8809E2B56AA40004E5334 /* MultipleFunctionalUITests */,
 				6D3D9CD22B5165E30050D779 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,6 +194,7 @@
 			children = (
 				6D3D9CD12B5165E30050D779 /* MultipleFunctional.app */,
 				6DE880752B568EAB004E5334 /* MultipleFunctionalTests.xctest */,
+				6DE8809D2B56AA40004E5334 /* MultipleFunctionalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -478,6 +507,43 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		6DE8809E2B56AA40004E5334 /* MultipleFunctionalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DE880A12B56AA40004E5334 /* MultipleFunctionalUITestsLaunchTests.swift */,
+				6DE880AF2B56E667004E5334 /* AuthenticationView */,
+				6DE880B02B56E67C004E5334 /* LoginView */,
+				6DE880B32B56EC29004E5334 /* RegisterView */,
+			);
+			path = MultipleFunctionalUITests;
+			sourceTree = "<group>";
+		};
+		6DE880AF2B56E667004E5334 /* AuthenticationView */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8809F2B56AA40004E5334 /* AuthenticationViewTests.swift */,
+				6DE880AD2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift */,
+				6DE880AB2B56AF53004E5334 /* AuthenticationViewErrorTests.swift */,
+			);
+			path = AuthenticationView;
+			sourceTree = "<group>";
+		};
+		6DE880B02B56E67C004E5334 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				6DE880B12B56E69B004E5334 /* LoginViewTests.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		6DE880B32B56EC29004E5334 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				6DE880B42B56EC45004E5334 /* RegisterViewTests.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,6 +589,26 @@
 			productReference = 6DE880752B568EAB004E5334 /* MultipleFunctionalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6DE8809C2B56AA40004E5334 /* MultipleFunctionalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE880A52B56AA40004E5334 /* Build configuration list for PBXNativeTarget "MultipleFunctionalUITests" */;
+			buildPhases = (
+				6DE880992B56AA40004E5334 /* Sources */,
+				6DE8809A2B56AA40004E5334 /* Frameworks */,
+				6DE8809B2B56AA40004E5334 /* Resources */,
+				6DE880A82B56AA5A004E5334 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE880AA2B56AA60004E5334 /* PBXTargetDependency */,
+				6DE880A42B56AA40004E5334 /* PBXTargetDependency */,
+			);
+			name = MultipleFunctionalUITests;
+			productName = MultipleFunctionalUITests;
+			productReference = 6DE8809D2B56AA40004E5334 /* MultipleFunctionalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -537,6 +623,10 @@
 						CreatedOnToolsVersion = 15.1;
 					};
 					6DE880742B568EAB004E5334 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 6D3D9CD02B5165E30050D779;
+					};
+					6DE8809C2B56AA40004E5334 = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 6D3D9CD02B5165E30050D779;
 					};
@@ -561,6 +651,7 @@
 			targets = (
 				6D3D9CD02B5165E30050D779 /* MultipleFunctional */,
 				6DE880742B568EAB004E5334 /* MultipleFunctionalTests */,
+				6DE8809C2B56AA40004E5334 /* MultipleFunctionalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -577,6 +668,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6DE880732B568EAB004E5334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE8809B2B56AA40004E5334 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -604,6 +702,23 @@
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed\"\nfi\n";
 		};
 		6DE8807E2B569047004E5334 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+		6DE880A82B56AA5A004E5334 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -688,6 +803,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DE880992B56AA40004E5334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE880AE2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift in Sources */,
+				6DE880B52B56EC45004E5334 /* RegisterViewTests.swift in Sources */,
+				6DE880B22B56E69B004E5334 /* LoginViewTests.swift in Sources */,
+				6DE880A02B56AA40004E5334 /* AuthenticationViewTests.swift in Sources */,
+				6DE880AC2B56AF53004E5334 /* AuthenticationViewErrorTests.swift in Sources */,
+				6DE880A22B56AA40004E5334 /* MultipleFunctionalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -703,6 +831,15 @@
 		6DE880802B56904F004E5334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 6DE8807F2B56904F004E5334 /* SwiftLintPlugin */;
+		};
+		6DE880A42B56AA40004E5334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3D9CD02B5165E30050D779 /* MultipleFunctional */;
+			targetProxy = 6DE880A32B56AA40004E5334 /* PBXContainerItemProxy */;
+		};
+		6DE880AA2B56AA60004E5334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6DE880A92B56AA60004E5334 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -920,6 +1057,40 @@
 			};
 			name = Release;
 		};
+		6DE880A62B56AA40004E5334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDJY23GUM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edguitian.MultipleFunctionalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultipleFunctional;
+			};
+			name = Debug;
+		};
+		6DE880A72B56AA40004E5334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDJY23GUM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edguitian.MultipleFunctionalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultipleFunctional;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -946,6 +1117,15 @@
 			buildConfigurations = (
 				6DE8807C2B568EAB004E5334 /* Debug */,
 				6DE8807D2B568EAB004E5334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE880A52B56AA40004E5334 /* Build configuration list for PBXNativeTarget "MultipleFunctionalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE880A62B56AA40004E5334 /* Debug */,
+				6DE880A72B56AA40004E5334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -991,6 +1171,11 @@
 			productName = "plugin:SwiftLintPlugin";
 		};
 		6DE8807F2B56904F004E5334 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+		6DE880A92B56AA60004E5334 /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */;
 			productName = "plugin:SwiftLintPlugin";

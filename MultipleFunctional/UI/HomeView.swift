@@ -20,6 +20,7 @@ struct HomeView: View {
                 VStack {
                     Text("Bienvenido \(viewModel.user?.email ?? "No user")")
                         .padding(.top, 32)
+                        .accessibilityIdentifier("titleHomeView")
                     Spacer()
 
                 }
@@ -34,6 +35,7 @@ struct HomeView: View {
                 Button("Logout") {
                     viewModel.logOut()
                 }
+                .accessibilityIdentifier("btnLogout")
             }
         }
     }

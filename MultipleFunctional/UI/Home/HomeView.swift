@@ -44,6 +44,7 @@ struct HomeView: View {
                                 showScriptionView.toggle()
                             } label: {
                                 Text("View Options")
+                                    .foregroundStyle(Color.blue)
                             }
                             .accessibilityIdentifier("btnShopHomeView")
                         }
@@ -122,7 +123,9 @@ extension HomeView {
             if passStatusModel.passStatus != .notSubscribed {
                 Button("Handle Subscription \(Image(systemName: "chevron.forward"))") {
                     self.presentingSubscriptionSheet = true
-                }.accessibilityIdentifier("btnSubscriptionActiveHomeView")
+                }
+                .foregroundStyle(Color.blue)
+                .accessibilityIdentifier("btnSubscriptionActiveHomeView")
             }
         }
     }

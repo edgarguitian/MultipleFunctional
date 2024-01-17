@@ -16,17 +16,18 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            TabView {
-                VStack {
-                    Text("Bienvenido \(viewModel.user?.email ?? "No user")")
-                        .padding(.top, 32)
-                        .accessibilityIdentifier("titleHomeView")
-                    Spacer()
+            VStack {
+                Text("Bienvenido \(viewModel.user?.email ?? "No user")")
+                    .padding(.top, 32)
+                    .accessibilityIdentifier("titleHomeView")
+                Spacer()
 
+                Button("🛒 Compras") {
+                    // viewModel.logIn(email: textFieldEmail, password: textFieldPassword)
                 }
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
-                }
+
+                Spacer()
+
             }
 
             .navigationBarTitleDisplayMode(.inline)

@@ -62,14 +62,10 @@ extension ProductSubscriptionUseCase {
         let transaction: Transaction
         switch verificationResult {
         case .verified(let transaccion):
-            result.append("""
-            Transaction ID \(transaccion.id) for \(transaccion.productID) is verified
-            """)
+            result.append("Transaction ID \(transaccion.id) for \(transaccion.productID) is verified")
             transaction = transaccion
         case .unverified(let transaccion, let error):
-            result.append("""
-            Transaction ID \(transaccion.id) for \(transaccion.productID) is unverified: \(error)
-            """)
+            result.append("Transaction ID \(transaccion.id) for \(transaccion.productID) is unverified: \(error)")
             return result
         }
         await transaction.finish()

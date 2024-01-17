@@ -1,9 +1,8 @@
-//
-//  LoginViewModel.swift
-//  MultipleFunctional
-//
-//  Created by Edgar Guitian Rey on 15/1/24.
-//
+/**
+ Handles the login functionality and user authentication.
+ 
+ - Author: Edgar Guitian Rey
+ */
 
 import Foundation
 
@@ -13,6 +12,7 @@ final class LoginViewModel: ObservableObject {
     private let logoutUseCase: LogoutUseCaseType
     private let registerUseCase: RegisterUseCaseType
     private let errorMapper: MultipleFunctionalPresentableErrorMapper
+
     @Published var showErrorMessage: String?
     @Published var showErrorMessageLogin: String?
     @Published var showErrorMessageRegister: String?
@@ -31,6 +31,9 @@ final class LoginViewModel: ObservableObject {
         self.errorMapper = errorMapper
     }
 
+    /**
+     Retrieves the current user's information.
+     */
     func getCurrentUser() {
         let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandling")
         if uiTestErrorHandling {
@@ -43,6 +46,9 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
+    /**
+     Logs in a user with the provided email and password.
+     */
     func logIn(email: String, password: String) {
         showLoadingSpinner = true
         Task {
@@ -52,6 +58,9 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
+    /**
+     Logs out the current user.
+     */
     func logOut() {
         showLoadingSpinner = true
         Task {
@@ -60,6 +69,9 @@ final class LoginViewModel: ObservableObject {
         }
     }
 
+    /**
+     Creates a new user with the provided email and password.
+     */
     func createNewUser(email: String, password: String) {
         showLoadingSpinner = true
         Task {

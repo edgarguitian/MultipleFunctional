@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 enum AuthenticationSheetView: String, Identifiable {
     case register
@@ -50,20 +51,43 @@ struct AuthenticationView: View {
                                 .font(.title)
                                 .padding(.top, 100)
                                 .accessibilityIdentifier("textTitleAuthenticationView")
+
                             VStack {
                                 Button {
                                     authenticationSheetView = .login
                                 } label: {
                                     Label("Entra con Email", systemImage: "envelope.fill")
                                 }
+                                .frame(width: 250, height: 60)
+                                .cornerRadius(45)
                                 .accessibilityIdentifier("btnLoginMailAuthenticationView")
-                                .tint(.black)
+                                .tint(.auth)
+
+                                SignInWithAppleButton(.signIn,
+                                                      onRequest: { (request) in
+                                    request.requestedScopes = [.email]
+
+                                },
+                                                      onCompletion: { (result) in
+                                    switch result {
+                                    case .success(let authorization):
+                                        print("")
+                                    case .failure(let error):
+                                        print("")
+                                    }
+                                })
+                                .signInWithAppleButtonStyle(.white)
+                                .frame(width: 180, height: 50)
+                                .cornerRadius(45)
+                                .padding(.top, 20)
                             }
-                            .controlSize(.large)
+                            .controlSize(.extraLarge)
                             .buttonStyle(.bordered)
                             .buttonBorderShape(.capsule)
                             .padding(.top, 60)
+
                             Spacer()
+
                             HStack {
                                 Button {
                                     authenticationSheetView = .register
@@ -73,7 +97,7 @@ struct AuthenticationView: View {
                                         .underline()
                                 }
                                 .accessibilityIdentifier("btnRegisterAuthenticationView")
-                                .tint(.black)
+                                .tint(.auth)
                             }
                         }
                         .sheet(item: $authenticationSheetView) { sheet in

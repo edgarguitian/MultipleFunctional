@@ -10,14 +10,8 @@ import OSLog
 import StoreKit
 
 final class ProductSubscriptionUseCase: ProductSubscriptionUseCaseType {
-    private let logger = Logger(
-        subsystem: "Meet SubscriptionView",
-        category: "Product Subscription"
-    )
 
-    private init() {}
-
-    private(set) static var shared = ProductSubscriptionUseCase()
+    static var shared = ProductSubscriptionUseCase()
 
     func status(for statuses: [Product.SubscriptionInfo.Status], ids: PassIdentifiers) -> PassStatus {
         let effectiveStatus = statuses.max { lhs, rhs in
@@ -61,29 +55,26 @@ final class ProductSubscriptionUseCase: ProductSubscriptionUseCaseType {
 }
 
 extension ProductSubscriptionUseCase {
-    func process(transaction verificationResult: VerificationResult<Transaction>) async {
-        do {
-            let unsafeTransaction = verificationResult.unsafePayloadValue
-            logger.log("""
-            Processing transaction ID \(unsafeTransaction.id) for \
-            \(unsafeTransaction.productID)
-            """)
-        }
+
+    func process(transaction verificationResult: VerificationResult<Transaction>) async -> [String] {
+        var result: [String] = []
 
         let transaction: Transaction
         switch verificationResult {
         case .verified(let transaccion):
-            logger.debug("""
+            result.append("""
             Transaction ID \(transaccion.id) for \(transaccion.productID) is verified
             """)
             transaction = transaccion
         case .unverified(let transaccion, let error):
-            logger.error("""
+            result.append("""
             Transaction ID \(transaccion.id) for \(transaccion.productID) is unverified: \(error)
             """)
-            return
+            return result
         }
         await transaction.finish()
+        return result
+
     }
 
     func checkForUnfinishedTransactions() async {
@@ -96,7 +87,7 @@ extension ProductSubscriptionUseCase {
 
     func observeTransactionUpdates() async {
         for await update in Transaction.updates {
-            await self.process(transaction: update)
+            _ = await self.process(transaction: update)
         }
     }
 }

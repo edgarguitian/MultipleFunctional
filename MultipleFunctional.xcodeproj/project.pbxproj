@@ -10,6 +10,7 @@
 		6D3D9CD52B5165E30050D779 /* MultipleFunctionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */; };
 		6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD82B5165E40050D779 /* Assets.xcassets */; };
 		6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */; };
+		6D65A6A12B57FF4A008116E8 /* LoggerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */; };
 		6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */; };
 		6DB552F02B5296B1004F0B6B /* URLSessionErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */; };
 		6DB552F22B5296BF004F0B6B /* URLSessionRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */; };
@@ -79,6 +80,7 @@
 		6DE880DA2B57E3EC004E5334 /* ProductSubscriptionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880D92B57E3EC004E5334 /* ProductSubscriptionUseCase.swift */; };
 		6DE880DC2B57E51C004E5334 /* ProductSubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880DB2B57E51C004E5334 /* ProductSubscriptionViewModel.swift */; };
 		6DE880DF2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880DE2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift */; };
+		6DE880E22B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880E12B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,7 @@
 		6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalApp.swift; sourceTree = "<group>"; };
 		6D3D9CD82B5165E40050D779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerAdapter.swift; sourceTree = "<group>"; };
 		6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLient.swift; sourceTree = "<group>"; };
 		6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionErrorResolver.swift; sourceTree = "<group>"; };
 		6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMaker.swift; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 		6DE880D92B57E3EC004E5334 /* ProductSubscriptionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionUseCase.swift; sourceTree = "<group>"; };
 		6DE880DB2B57E51C004E5334 /* ProductSubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionViewModel.swift; sourceTree = "<group>"; };
 		6DE880DE2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionUseCaseType.swift; sourceTree = "<group>"; };
+		6DE880E12B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				6DE880322B5537CE004E5334 /* Foundation+Extensions.swift */,
+				6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				6DE880822B569191004E5334 /* Auth */,
+				6DE880E02B57F184004E5334 /* Shop */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -631,6 +637,14 @@
 			isa = PBXGroup;
 			children = (
 				6DE880DE2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		6DE880E02B57F184004E5334 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				6DE880E12B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -872,6 +886,7 @@
 				6DE880632B5592C7004E5334 /* LogoutUseCaseType.swift in Sources */,
 				6DE880552B5584EB004E5334 /* GetUserUseCase.swift in Sources */,
 				6DE8802E2B553619004E5334 /* AuthRepository.swift in Sources */,
+				6D65A6A12B57FF4A008116E8 /* LoggerAdapter.swift in Sources */,
 				6DE880262B553362004E5334 /* AuthRepositoryType.swift in Sources */,
 				6DE880312B5536C0004E5334 /* AuthenticationFirebaseDataSourceType.swift in Sources */,
 				6DB552F02B5296B1004F0B6B /* URLSessionErrorResolver.swift in Sources */,
@@ -898,6 +913,7 @@
 				6DE880782B568EAB004E5334 /* MultipleFunctionalTests.swift in Sources */,
 				6DE8808F2B569DAE004E5334 /* LogoutUseCaseTests.swift in Sources */,
 				6DE880842B5691B5004E5334 /* LoginUseCaseTests.swift in Sources */,
+				6DE880E22B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift in Sources */,
 				6DE880862B5698F1004E5334 /* RegisterUseCaseTests.swift in Sources */,
 				6DE8808B2B569C04004E5334 /* GetUserUseCaseTests.swift in Sources */,
 				6DE880892B569A03004E5334 /* AuthRepositoryStub.swift in Sources */,

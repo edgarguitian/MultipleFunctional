@@ -28,7 +28,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>SWXMLHashPlayground (Playground) 1.xcscheme</key>
 		<dict>
@@ -71,6 +71,24 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6D3D9CD02B5165E30050D779</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DE880742B568EAB004E5334</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DE8809C2B56AA40004E5334</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ShopView: View {
+    @Environment(\.passIDs.group) private var passGroupID
+
     var body: some View {
-        Text("Tienda")
+        SubscriptionStoreView(groupID: passGroupID) {
+            SubscriptionShopContent()
+        }
+        .backgroundStyle(.clear)
+        .subscriptionStoreButtonLabel(.multiline)
+        .subscriptionStorePickerItemBackground(.thinMaterial)
+        .storeButton(.visible, for: .restorePurchases)
     }
 }
 
 #Preview {
-    ShopView()
+    ShopFactory().create()
 }

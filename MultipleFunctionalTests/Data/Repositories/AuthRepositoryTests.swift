@@ -132,7 +132,6 @@ final class AuthRepositoryTests: XCTestCase {
     func test_getCurrentUser_returns_success_user() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
-        let mockPassword = "test123"
         let user = UserDTO(email: mockEmail)
         let result: Result<UserDTO, HTTPClientError> = .success(user)
         let authenticationFirebaseDataSource = AuthenticationFirebaseDataSourceStub(result: result)
@@ -163,7 +162,6 @@ final class AuthRepositoryTests: XCTestCase {
     func test_logOut_returns_success_logout() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
-        let mockPassword = "test123"
         let user = UserDTO(email: mockEmail)
         let result: Result<UserDTO, HTTPClientError> = .success(user)
         let authenticationFirebaseDataSource = AuthenticationFirebaseDataSourceStub(result: result)
@@ -180,10 +178,6 @@ final class AuthRepositoryTests: XCTestCase {
 
     func test_logOut_returns_failure_when_authDataSource_fails_stub() async throws {
         // GIVEN
-        let mockEmail = "test@gmail.com"
-        let mockPassword = "test123"
-        let loginCredentialsMock = LoginCredentials(email: mockEmail, password: mockPassword)
-        let user = UserDTO(email: mockEmail)
         let result: Result<UserDTO, HTTPClientError> = .failure(.generic)
         let authenticationFirebaseDataSource = AuthenticationFirebaseDataSourceStub(result: result)
         let sut = AuthRepository(authenticationFirebaseDatasource: authenticationFirebaseDataSource,

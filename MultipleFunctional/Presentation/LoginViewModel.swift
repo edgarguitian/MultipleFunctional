@@ -101,7 +101,7 @@ final class LoginViewModel: ObservableObject {
             }
 
     }
-    
+
     private func handleError(error: MultipleFunctionalDomainError?) {
         Task { @MainActor in
             showLoadingSpinner = false

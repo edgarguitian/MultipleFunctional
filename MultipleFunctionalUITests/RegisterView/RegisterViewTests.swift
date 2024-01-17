@@ -69,7 +69,7 @@ final class RegisterViewTests: XCTestCase {
         XCTAssertTrue(textErrorMessage.waitForExistence(timeout: 5))
 
     }
-    
+
     func test_complete_register_success() throws {
         let fieldEmail = app.textFields[identifierFieldEmailRegisterView]
         XCTAssert(fieldEmail.exists)

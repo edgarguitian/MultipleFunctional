@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import Observation
+
+@Observable class PassStatusModel {
+    var passStatus: PassStatus = .notSubscribed
+}

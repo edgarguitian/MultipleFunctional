@@ -40,9 +40,11 @@ struct LoginView: View {
                     .accessibilityIdentifier("textDescriptionLoginView")
 
                 TextField("Añade tu correo electrónico", text: $textFieldEmail)
+                    .autocapitalization(.none)
                     .accessibilityIdentifier("fieldEmailLoginView")
 
                 TextField("Añade tu contraseña", text: $textFieldPassword)
+                    .autocapitalization(.none)
                     .accessibilityIdentifier("fieldPassLoginView")
 
                 Button("Login") {

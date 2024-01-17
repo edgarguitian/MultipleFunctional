@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class ShopFactory: CreateShopView {
+    func create() -> ShopView {
+        return ShopView()
+    }
+}

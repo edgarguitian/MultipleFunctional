@@ -9,10 +9,44 @@ import SwiftUI
 
 struct SubscriptionShopContent: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            image
+            VStack(spacing: 3) {
+                title
+                desctiption
+            }
+        }
+        .padding(.vertical)
+        .padding(.top, 40)
     }
 }
 
 #Preview {
     SubscriptionShopContent()
+}
+
+extension SubscriptionShopContent {
+    @ViewBuilder
+    var image: some View {
+        Image(systemName: "hare.fill")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 100)
+    }
+
+    @ViewBuilder
+    var title: some View {
+        Text("Unique Subscription")
+            .font(.largeTitle.bold())
+    }
+
+    @ViewBuilder
+    var desctiption: some View {
+        Text("Subscription to unlock all the content.")
+            .fixedSize(horizontal: false, vertical: true)
+            .font(.title3.weight(.medium))
+            .padding([.bottom, .horizontal])
+            .foregroundStyle(.gray)
+            .multilineTextAlignment(.center)
+    }
 }

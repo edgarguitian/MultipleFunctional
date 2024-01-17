@@ -739,7 +739,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
@@ -771,6 +771,21 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(1) suspend resume partial function for closure #1 @Swift.MainActor @Sendable () async -&gt; () in MultipleFunctional.LoginViewModel.handleResult(Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;) -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "0EC41FE6-1AEE-47B1-85F3-D202923FF6C7 - 80550388e142f830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Swift.MainActor @Sendable () async -&gt; () in MultipleFunctional.LoginViewModel.handleResult(_: Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;, fromLogin: Swift.Bool) -&gt; ()"
                   moduleName = "MultipleFunctional"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
@@ -1048,6 +1063,54 @@
                   startingLineNumber = "93"
                   endingLineNumber = "93"
                   offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D65D512-07DB-48B5-91DD-507CA9E2636F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/UI/Home/ShopView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7D65D512-07DB-48B5-91DD-507CA9E2636F - ff8ae59310385698"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctional.ShopView.body.getter : some"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/ShopView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "664">
+               </Location>
+               <Location
+                  uuid = "7D65D512-07DB-48B5-91DD-507CA9E2636F - 54895ae1fdb647b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; MultipleFunctional.SubscriptionShopContent in MultipleFunctional.ShopView.body.getter : some"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/ShopView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>

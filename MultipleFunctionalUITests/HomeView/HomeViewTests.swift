@@ -9,33 +9,64 @@ import XCTest
 
 final class HomeViewTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var app: XCUIApplication!
+    private let identifierBtnLogout = "btnLogout"
+    private let identifierBtnLoginMailAuthenticationView = "btnLoginMailAuthenticationView"
+    private let identifierGroupTitleLoginView = "groupTitleLoginView"
+    private let identifierDescriptionLoginView = "textDescriptionLoginView"
+    private let identifierFieldEmailLoginView = "fieldEmailLoginView"
+    private let identifierFieldPassLoginView = "fieldPassLoginView"
+    private let identifierBtnLoginMailLoginView = "btnLoginEmailLoginView"
+    private let identifierTitleHomeView = "titleHomeView"
+    private let identifierBtnShopHomeView = "btnShopHomeView"
+    private let identifierBtnActiveSubscriptionHomeView = "btnSubscriptionActiveHomeView"
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    override func setUp() {
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
+        // Logout if is possible
+        let btnLogout = app.buttons[identifierBtnLogout]
+        if !btnLogout.exists {
+            launch_login_view()
+        }
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    override func tearDown() {
+        app = nil
+    }
+
+    func launch_login_view() {
+        let btnLoginMail = app.buttons[identifierBtnLoginMailAuthenticationView]
+        XCTAssert(btnLoginMail.exists)
+        btnLoginMail.tap()
+        print(app.debugDescription)
+        XCTAssertTrue(app.staticTexts[identifierGroupTitleLoginView].waitForExistence(timeout: 5))
+        complete_login_view()
+    }
+
+    func complete_login_view() {
+        let fieldEmail = app.textFields[identifierFieldEmailLoginView]
+        XCTAssert(fieldEmail.exists)
+        fieldEmail.tap()
+        fieldEmail.typeText("test@gmail.com")
+        let fieldPassword = app.textFields[identifierFieldPassLoginView]
+        XCTAssert(fieldPassword.exists)
+        fieldPassword.tap()
+        fieldPassword.typeText("test123")
+        let btnLogin = app.buttons[identifierBtnLoginMailLoginView]
+        XCTAssert(btnLogin.exists)
+        btnLogin.tap()
+        let titleHomeView = app.staticTexts[identifierTitleHomeView]
+        XCTAssertTrue(titleHomeView.waitForExistence(timeout: 5))
+    }
+
+    func test_home_view_screen_show() throws {
+        XCTAssert(app.staticTexts[identifierTitleHomeView].exists)
+        XCTAssert(app.buttons[identifierBtnShopHomeView].exists)
+        XCTAssert(app.buttons[identifierBtnLogout].exists)
+
     }
 }

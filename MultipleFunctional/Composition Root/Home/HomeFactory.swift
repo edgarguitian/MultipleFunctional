@@ -10,6 +10,16 @@ import Foundation
 class HomeFactory: CreateHomeView {
 
     func create() -> HomeView {
-        return HomeView(viewModel: AuthenticationFactory.sharedLoginViewModel)
+        return HomeView(viewModelLogin: AuthenticationFactory.sharedLoginViewModel,
+                        viewModelProducts: createViewModelProducts(),
+                        createShopView: ShopFactory())
+    }
+
+    private func createViewModelProducts() -> ProductSubscriptionViewModel {
+        return ProductSubscriptionViewModel(productSubscriptionUseCase: createProductSubscriptionUseCase())
+    }
+
+    private func createProductSubscriptionUseCase() -> ProductSubscriptionUseCaseType {
+        return ProductSubscriptionUseCase.shared
     }
 }

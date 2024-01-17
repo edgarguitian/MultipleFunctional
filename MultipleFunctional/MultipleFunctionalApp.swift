@@ -25,6 +25,7 @@ struct MultipleFunctionalApp: App {
     var body: some Scene {
         WindowGroup {
             AuthenticationFactory.create()
+                .environment(PassStatusModel())
         }
     }
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AuthenticationServices
+import LocalAuthentication
 
 enum AuthenticationSheetView: String, Identifiable {
     case register
@@ -25,6 +26,9 @@ struct AuthenticationView: View {
     private let createRegisterView: CreateRegisterView
     private let createHomeView: CreateHomeView
 
+    @State private var canShowBiometric: Bool = false
+    let context = LAContext()
+
     init(viewModel: LoginViewModel,
          authenticationSheetView: AuthenticationSheetView? = nil,
          createLoginView: CreateLoginView,
@@ -41,7 +45,7 @@ struct AuthenticationView: View {
             if viewModel.showLoadingSpinner {
                 CustomLoadingView()
             } else {
-                if viewModel.showErrorMessage == nil {
+                VStack {
                     if viewModel.user != nil {
                         createHomeView.create()
                     } else {
@@ -80,6 +84,27 @@ struct AuthenticationView: View {
                                 .frame(width: 180, height: 50)
                                 .cornerRadius(45)
                                 .padding(.top, 20)
+
+                                Button {
+                                    authenticateBiometric()
+                                } label: {
+                                    Label("Entra con Face ID", systemImage: "faceid")
+                                }
+                                .frame(width: 250, height: 60)
+                                .cornerRadius(45)
+                                .accessibilityIdentifier("btnFaceIdAuthenticationView")
+                                .tint(.auth)
+                                .padding(.top, 20)
+
+                                if viewModel.showErrorMessage != nil {
+                                    Text(viewModel.showErrorMessage!)
+                                        .bold()
+                                        .font(.body)
+                                        .foregroundColor(.red)
+                                        .padding(.top, 20)
+                                        .accessibilityIdentifier("authenticationViewErrorMessage")
+                                }
+
                             }
                             .controlSize(.extraLarge)
                             .buttonStyle(.bordered)
@@ -109,9 +134,7 @@ struct AuthenticationView: View {
                             }
                         }
                     }
-                } else {
-                    Text(viewModel.showErrorMessage!)
-                        .accessibilityIdentifier("authenticationViewErrorMessage")
+
                 }
             }
         }
@@ -124,6 +147,19 @@ struct AuthenticationView: View {
             } else {
                 viewModel.getCurrentUser()
             }
+        }
+    }
+
+    func authenticateBiometric() {
+        var error: NSError?
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   localizedReason: "Por favor autentícate para poder continuar") { success, error in
+
+                viewModel.readBiometric(success: success, error: error)
+            }
+        } else {
+            viewModel.readBiometric(success: false, error: nil)
         }
     }
 }

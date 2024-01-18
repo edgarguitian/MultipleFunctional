@@ -131,4 +131,16 @@ final class LoginViewModel: ObservableObject {
             }
         }
     }
+
+    func readBiometric(success: Bool, error: Error?) {
+        if success {
+            user = User(email: "")
+        } else {
+            if let error = error {
+                showErrorMessage = error.localizedDescription
+            } else {
+                showErrorMessage = "No biometrics supported"
+            }
+        }
+    }
 }

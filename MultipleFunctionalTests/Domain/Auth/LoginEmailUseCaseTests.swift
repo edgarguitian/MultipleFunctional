@@ -11,7 +11,7 @@ final class LoginEmailUseCaseTests: XCTestCase {
 
     func test_execute_sucessfully_returns_login_user() async throws {
         // GIVEN
-        let mockEmail = "edguitian@gmail.com"
+        let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
 
         let stub = AuthRepository(authenticationFirebaseDatasource: AuthenticationFirebaseDataSource(),
@@ -30,7 +30,7 @@ final class LoginEmailUseCaseTests: XCTestCase {
 
     func test_execute_returns_error_when_repository_returns_error() async throws {
         // GIVEN
-        let mockEmail = "edguitian@gmail.com"
+        let mockEmail = "test@gmail.com"
         let mockPassword = "abc"
 
         let stub = AuthRepository(authenticationFirebaseDatasource: AuthenticationFirebaseDataSource(),
@@ -51,7 +51,7 @@ final class LoginEmailUseCaseTests: XCTestCase {
 
     func test_execute_sucesfully_returns_login_user_stub() async throws {
         // GIVEN
-        let mockEmail = "edguitian@gmail.com"
+        let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
 
         let user = User(email: mockEmail)
@@ -70,7 +70,7 @@ final class LoginEmailUseCaseTests: XCTestCase {
 
     func test_execute_returns_error_when_repository_stub_returns_error() async throws {
         // GIVEN
-        let mockEmail = "edguitian@gmail.com"
+        let mockEmail = "test@gmail.com"
         let mockPassword = "abc"
 
         let result: Result<User, MultipleFunctionalDomainError> = .failure(.generic)

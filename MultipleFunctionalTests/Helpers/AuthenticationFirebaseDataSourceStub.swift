@@ -7,15 +7,21 @@
 
 import Foundation
 @testable import MultipleFunctional
+import FirebaseAuth
 
 final class AuthenticationFirebaseDataSourceStub: AuthenticationFirebaseDataSourceType {
+
     private let result: Result<UserDTO, HTTPClientError>
 
     init(result: Result<UserDTO, HTTPClientError>) {
         self.result = result
     }
 
-    func logIn(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
+    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
+        return result
+    }
+
+    func logInApple(credentials: AuthCredential) async -> Result<UserDTO, HTTPClientError> {
         return result
     }
 

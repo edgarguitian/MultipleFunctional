@@ -21,13 +21,13 @@ class AuthenticationFirebaseDataSourceTests: XCTestCase {
         super.tearDown()
     }
 
-    func testLogIn() async {
-        let mockEmail = "edguitian@gmail.com"
+    func testLogInEmail() async {
+        let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
         let validCredentials = LoginCredentials(email: mockEmail, password: mockPassword)
 
         let expectation = XCTestExpectation(description: "Log in")
-        let result = await dataSource.logIn(credentials: validCredentials)
+        let result = await dataSource.logInEmail(credentials: validCredentials)
         switch result {
         case .success(let userDTO):
             XCTAssertNotNil(userDTO)

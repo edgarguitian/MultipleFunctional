@@ -7,22 +7,31 @@
 
 import Foundation
 @testable import MultipleFunctional
+import FirebaseAuth
 class AuthRepositoryStub: AuthRepositoryType {
-    private let result: Result<User, MultipleFunctionalDomainError>
 
-    init(result: Result<User, MultipleFunctionalDomainError>) {
+    private let result: Result<MultipleFunctional.User, MultipleFunctionalDomainError>
+
+    init(result: Result<MultipleFunctional.User, MultipleFunctionalDomainError>) {
         self.result = result
     }
 
-    func logIn(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
+    func logInEmail(credentials: LoginCredentials) async -> Result<MultipleFunctional.User,
+                                                                   MultipleFunctionalDomainError> {
         return result
     }
 
-    func register(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
+    func logInApple(credentials: AuthCredential) async -> Result<MultipleFunctional.User,
+                                                                 MultipleFunctionalDomainError> {
         return result
     }
 
-    func getCurrentUser() async -> User? {
+    func register(credentials: LoginCredentials) async -> Result<MultipleFunctional.User,
+                                                                 MultipleFunctionalDomainError> {
+        return result
+    }
+
+    func getCurrentUser() async -> MultipleFunctional.User? {
         switch result {
         case .success(let user):
             return user

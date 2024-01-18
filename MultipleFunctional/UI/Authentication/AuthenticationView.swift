@@ -69,7 +69,7 @@ struct AuthenticationView: View {
 
                                 },
                                                       onCompletion: { result in
-                                    viewModel.handleSignInResult(result)
+                                    viewModel.handleSignInAppleResult(result)
                                 })
                                 .signInWithAppleButtonStyle(.white)
                                 .frame(width: 180, height: 50)
@@ -141,7 +141,6 @@ struct AuthenticationView: View {
         }
     }
 
-    
 }
 
 #Preview {

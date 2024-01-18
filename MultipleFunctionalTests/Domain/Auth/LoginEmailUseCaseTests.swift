@@ -1,5 +1,5 @@
 //
-//  LoginUseCaseTests.swift
+//  LoginEmailUseCaseTests.swift
 //  MultipleFunctionalTests
 //
 //  Created by Edgar Guitian Rey on 16/1/24.
@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import MultipleFunctional
-final class LoginUseCaseTests: XCTestCase {
+final class LoginEmailUseCaseTests: XCTestCase {
 
     func test_execute_sucessfully_returns_login_user() async throws {
         // GIVEN
@@ -16,7 +16,7 @@ final class LoginUseCaseTests: XCTestCase {
 
         let stub = AuthRepository(authenticationFirebaseDatasource: AuthenticationFirebaseDataSource(),
                                   errorMapper: MultipleFunctionalDomainErrorMapper())
-        let sut = LoginUseCase(repository: stub)
+        let sut = LoginEmailUseCase(repository: stub)
 
         // WHEN
         let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)
@@ -35,7 +35,7 @@ final class LoginUseCaseTests: XCTestCase {
 
         let stub = AuthRepository(authenticationFirebaseDatasource: AuthenticationFirebaseDataSource(),
                                   errorMapper: MultipleFunctionalDomainErrorMapper())
-        let sut = LoginUseCase(repository: stub)
+        let sut = LoginEmailUseCase(repository: stub)
 
         // WHEN
         let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)
@@ -57,7 +57,7 @@ final class LoginUseCaseTests: XCTestCase {
         let user = User(email: mockEmail)
         let result: Result<User, MultipleFunctionalDomainError> = .success(user)
         let stub = AuthRepositoryStub(result: result)
-        let sut = LoginUseCase(repository: stub)
+        let sut = LoginEmailUseCase(repository: stub)
 
         // WHEN
         let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)
@@ -75,7 +75,7 @@ final class LoginUseCaseTests: XCTestCase {
 
         let result: Result<User, MultipleFunctionalDomainError> = .failure(.generic)
         let stub = AuthRepositoryStub(result: result)
-        let sut = LoginUseCase(repository: stub)
+        let sut = LoginEmailUseCase(repository: stub)
 
         // WHEN
         let capturedResult = await sut.execute(email: mockEmail, password: mockPassword)

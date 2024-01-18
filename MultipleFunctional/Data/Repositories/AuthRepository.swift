@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 final class AuthRepository: AuthRepositoryType {
 
@@ -18,8 +19,17 @@ final class AuthRepository: AuthRepositoryType {
         self.errorMapper = errorMapper
     }
 
-    func logIn(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
-        let result = await authenticationFirebaseDatasource.logIn(credentials: credentials)
+    func logInEmail(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
+        let result = await authenticationFirebaseDatasource.logInEmail(credentials: credentials)
+        guard case .success(let loginResult) = result else {
+            return .failure(errorMapper.map(error: result.failureValue as? HTTPClientError))
+        }
+
+        return .success(User(response: loginResult))
+    }
+
+    func logInApple(credentials: AuthCredential) async -> Result<User, MultipleFunctionalDomainError> {
+        let result = await authenticationFirebaseDatasource.logInApple(credentials: credentials)
         guard case .success(let loginResult) = result else {
             return .failure(errorMapper.map(error: result.failureValue as? HTTPClientError))
         }

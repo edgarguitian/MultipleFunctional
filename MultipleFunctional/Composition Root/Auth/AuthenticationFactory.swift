@@ -20,7 +20,8 @@ class AuthenticationFactory {
 
     private static func createViewModel() -> LoginViewModel {
         return LoginViewModel(getUserUseCase: createGetUserUseCase(),
-                              loginUseCase: createLoginUseCase(),
+                              loginUseCase: createLoginEmailUseCase(),
+                              loginAppleUseCase: createLoginAppleUseCase(),
                               logoutUseCase: createLogoutUseCase(),
                               registerUseCase: createRegisterUseCase(),
                               errorMapper: MultipleFunctionalPresentableErrorMapper())
@@ -30,8 +31,12 @@ class AuthenticationFactory {
         return GetUserUseCase(repository: sharedAuthRepository)
     }
 
-    private static func createLoginUseCase() -> LoginUseCaseType {
-        return LoginUseCase(repository: sharedAuthRepository)
+    private static func createLoginEmailUseCase() -> LoginEmailUseCaseType {
+        return LoginEmailUseCase(repository: sharedAuthRepository)
+    }
+
+    private static func createLoginAppleUseCase() -> LoginAppleUseCaseType {
+        return LoginAppleUseCase(repository: sharedAuthRepository)
     }
 
     private static func createLogoutUseCase() -> LogoutUseCaseType {

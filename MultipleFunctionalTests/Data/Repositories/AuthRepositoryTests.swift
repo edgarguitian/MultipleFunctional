@@ -9,7 +9,7 @@ import XCTest
 @testable import MultipleFunctional
 final class AuthRepositoryTests: XCTestCase {
 
-    func test_logIn_returns_success_login_user() async throws {
+    func test_logInEmail_returns_success_login_user() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
@@ -19,14 +19,14 @@ final class AuthRepositoryTests: XCTestCase {
                                  errorMapper: MultipleFunctionalDomainErrorMapper())
 
         // WHEN
-        let capturedResult = await sut.logIn(credentials: loginCredentialsMock)
+        let capturedResult = await sut.logInEmail(credentials: loginCredentialsMock)
 
         // THEN
         let capturedLoginResult = try XCTUnwrap(capturedResult.get())
         XCTAssertEqual(capturedLoginResult.email, mockEmail)
     }
 
-    func test_logIn_returns_success_login_user_stub() async throws {
+    func test_logInEmail_returns_success_login_user_stub() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
@@ -38,14 +38,14 @@ final class AuthRepositoryTests: XCTestCase {
                                  errorMapper: MultipleFunctionalDomainErrorMapper())
 
         // WHEN
-        let capturedResult = await sut.logIn(credentials: loginCredentialsMock)
+        let capturedResult = await sut.logInEmail(credentials: loginCredentialsMock)
 
         // THEN
         let capturedLoginResult = try XCTUnwrap(capturedResult.get())
         XCTAssertEqual(capturedLoginResult.email, mockEmail)
     }
 
-    func test_logIn_returns_failure_when_authDataSource_fails() async throws {
+    func test_logInEmail_returns_failure_when_authDataSource_fails() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
         let mockPassword = "abc"
@@ -55,7 +55,7 @@ final class AuthRepositoryTests: XCTestCase {
                                  errorMapper: MultipleFunctionalDomainErrorMapper())
 
         // WHEN
-        let capturedResult = await sut.logIn(credentials: loginCredentialsMock)
+        let capturedResult = await sut.logInEmail(credentials: loginCredentialsMock)
 
         // THEN
         guard case .failure(let error) = capturedResult else {
@@ -66,7 +66,7 @@ final class AuthRepositoryTests: XCTestCase {
         XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
     }
 
-    func test_logIn_returns_failure_when_authDataSource_fails_stub() async throws {
+    func test_logInEmail_returns_failure_when_authDataSource_fails_stub() async throws {
         // GIVEN
         let mockEmail = "test@gmail.com"
         let mockPassword = "test123"
@@ -77,7 +77,7 @@ final class AuthRepositoryTests: XCTestCase {
                                  errorMapper: MultipleFunctionalDomainErrorMapper())
 
         // WHEN
-        let capturedResult = await sut.logIn(credentials: loginCredentialsMock)
+        let capturedResult = await sut.logInEmail(credentials: loginCredentialsMock)
 
         // THEN
         guard case .failure(let error) = capturedResult else {

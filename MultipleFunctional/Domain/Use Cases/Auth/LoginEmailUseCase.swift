@@ -1,5 +1,5 @@
 //
-//  LoginUseCase.swift
+//  LoginEmailUseCase.swift
 //  MultipleFunctional
 //
 //  Created by Edgar Guitian Rey on 15/1/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class LoginUseCase: LoginUseCaseType {
+final class LoginEmailUseCase: LoginEmailUseCaseType {
     private let repository: AuthRepositoryType
 
     init(repository: AuthRepositoryType) {
@@ -16,7 +16,7 @@ final class LoginUseCase: LoginUseCaseType {
 
     func execute(email: String, password: String) async -> Result<User, MultipleFunctionalDomainError> {
         let credential = LoginCredentials(email: email, password: password)
-        let result = await repository.logIn(credentials: credential)
+        let result = await repository.logInEmail(credentials: credential)
 
         guard let loginResult = try? result.get() else {
             guard case .failure(let error) = result else {

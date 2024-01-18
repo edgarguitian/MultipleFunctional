@@ -7,10 +7,12 @@
 import Foundation
 import AuthenticationServices
 import LocalAuthentication
+import FirebaseAuth
 
 final class LoginViewModel: ObservableObject {
     private let getUserUseCase: GetUserUseCaseType
-    private let loginUseCase: LoginUseCaseType
+    private let loginEmailUseCase: LoginEmailUseCaseType
+    private let loginAppleUseCase: LoginAppleUseCaseType
     private let logoutUseCase: LogoutUseCaseType
     private let registerUseCase: RegisterUseCaseType
     private let errorMapper: MultipleFunctionalPresentableErrorMapper
@@ -22,12 +24,14 @@ final class LoginViewModel: ObservableObject {
     @Published var user: User?
 
     init(getUserUseCase: GetUserUseCaseType,
-         loginUseCase: LoginUseCaseType,
+         loginUseCase: LoginEmailUseCaseType,
+         loginAppleUseCase: LoginAppleUseCaseType,
          logoutUseCase: LogoutUseCaseType,
          registerUseCase: RegisterUseCaseType,
          errorMapper: MultipleFunctionalPresentableErrorMapper) {
         self.getUserUseCase = getUserUseCase
-        self.loginUseCase = loginUseCase
+        self.loginEmailUseCase = loginUseCase
+        self.loginAppleUseCase = loginAppleUseCase
         self.logoutUseCase = logoutUseCase
         self.registerUseCase = registerUseCase
         self.errorMapper = errorMapper
@@ -51,11 +55,28 @@ final class LoginViewModel: ObservableObject {
     /**
      Logs in a user with the provided email and password.
      */
-    func logIn(email: String, password: String) {
+    func logInEmail(email: String, password: String) {
         showLoadingSpinner = true
         Task {
-            let result = await loginUseCase.execute(email: email,
+            let result = await loginEmailUseCase.execute(email: email,
                                                     password: password)
+            handleResult(result, fromLogin: true)
+        }
+    }
+
+    /**
+     Logs in a user with the provided apple
+     */
+    func logInApple(credential: ASAuthorizationAppleIDCredential) {
+        showLoadingSpinner = true
+        Task {
+            let token = credential.identityToken ?? Data()
+
+            let appleCredential = OAuthProvider.credential(withProviderID: "apple.com",
+                                                           idToken: String(data: token, encoding: .utf8)!,
+                                                           rawNonce: nil)
+
+            let result = await loginAppleUseCase.execute(credential: appleCredential)
             handleResult(result, fromLogin: true)
         }
     }
@@ -78,15 +99,14 @@ final class LoginViewModel: ObservableObject {
     }
 
     /**
-     Logs in a user with the provided Apple Account
+     Handle the result of Sign In with Apple
      */
-    func handleSignInResult(_ result: Result<ASAuthorization, Error>) {
+    func handleSignInAppleResult(_ result: Result<ASAuthorization, Error>) {
         switch result {
         case .success(let auth):
             switch auth.credential {
             case let credential as ASAuthorizationAppleIDCredential:
-                let userId = credential.user
-                user = User(email: userId)
+                logInApple(credential: credential)
             default:
                 showErrorMessage = "No se pudo continuar con la cuenta de Apple"
             }

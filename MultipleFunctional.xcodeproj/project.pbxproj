@@ -22,11 +22,11 @@
 		6DB552FE2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552FD2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift */; };
 		6DE8801F2B552FEB004E5334 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE8801E2B552FEB004E5334 /* FirebaseAuth */; };
 		6DE880212B5531AF004E5334 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DE880202B5531AF004E5334 /* GoogleService-Info.plist */; };
-		6DE880242B5532DC004E5334 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880232B5532DC004E5334 /* LoginUseCase.swift */; };
+		6DE880242B5532DC004E5334 /* LoginEmailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880232B5532DC004E5334 /* LoginEmailUseCase.swift */; };
 		6DE880262B553362004E5334 /* AuthRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880252B553362004E5334 /* AuthRepositoryType.swift */; };
 		6DE880282B5534C6004E5334 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880272B5534C6004E5334 /* LoginCredentials.swift */; };
 		6DE8802A2B5534E1004E5334 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880292B5534E1004E5334 /* User.swift */; };
-		6DE8802C2B553566004E5334 /* LoginUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8802B2B553566004E5334 /* LoginUseCaseType.swift */; };
+		6DE8802C2B553566004E5334 /* LoginEmailUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8802B2B553566004E5334 /* LoginEmailUseCaseType.swift */; };
 		6DE8802E2B553619004E5334 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8802D2B553619004E5334 /* AuthRepository.swift */; };
 		6DE880312B5536C0004E5334 /* AuthenticationFirebaseDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880302B5536BF004E5334 /* AuthenticationFirebaseDataSourceType.swift */; };
 		6DE880332B5537CE004E5334 /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880322B5537CE004E5334 /* Foundation+Extensions.swift */; };
@@ -54,7 +54,7 @@
 		6DE880612B55929B004E5334 /* LogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880602B55929B004E5334 /* LogoutUseCase.swift */; };
 		6DE880632B5592C7004E5334 /* LogoutUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880622B5592C7004E5334 /* LogoutUseCaseType.swift */; };
 		6DE880782B568EAB004E5334 /* MultipleFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880772B568EAB004E5334 /* MultipleFunctionalTests.swift */; };
-		6DE880842B5691B5004E5334 /* LoginUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880832B5691B5004E5334 /* LoginUseCaseTests.swift */; };
+		6DE880842B5691B5004E5334 /* LoginEmailUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880832B5691B5004E5334 /* LoginEmailUseCaseTests.swift */; };
 		6DE880862B5698F1004E5334 /* RegisterUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880852B5698F1004E5334 /* RegisterUseCaseTests.swift */; };
 		6DE880892B569A03004E5334 /* AuthRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880882B569A03004E5334 /* AuthRepositoryStub.swift */; };
 		6DE8808B2B569C04004E5334 /* GetUserUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8808A2B569C04004E5334 /* GetUserUseCaseTests.swift */; };
@@ -81,6 +81,9 @@
 		6DE880DC2B57E51C004E5334 /* ProductSubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880DB2B57E51C004E5334 /* ProductSubscriptionViewModel.swift */; };
 		6DE880DF2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880DE2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift */; };
 		6DE880E22B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE880E12B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift */; };
+		6DE962AE2B5993FC001425FC /* LoginModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962AD2B5993FC001425FC /* LoginModifier.swift */; };
+		6DE962B02B599778001425FC /* LoginAppleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962AF2B599778001425FC /* LoginAppleUseCase.swift */; };
+		6DE962B22B599793001425FC /* LoginAppleUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962B12B599793001425FC /* LoginAppleUseCaseType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,11 +120,11 @@
 		6DB552FD2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalDomainErrorMapper.swift; sourceTree = "<group>"; };
 		6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultipleFunctional.entitlements; sourceTree = "<group>"; };
 		6DE880202B5531AF004E5334 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6DE880232B5532DC004E5334 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		6DE880232B5532DC004E5334 /* LoginEmailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailUseCase.swift; sourceTree = "<group>"; };
 		6DE880252B553362004E5334 /* AuthRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryType.swift; sourceTree = "<group>"; };
 		6DE880272B5534C6004E5334 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		6DE880292B5534E1004E5334 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		6DE8802B2B553566004E5334 /* LoginUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseType.swift; sourceTree = "<group>"; };
+		6DE8802B2B553566004E5334 /* LoginEmailUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailUseCaseType.swift; sourceTree = "<group>"; };
 		6DE8802D2B553619004E5334 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		6DE880302B5536BF004E5334 /* AuthenticationFirebaseDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDataSourceType.swift; sourceTree = "<group>"; };
 		6DE880322B5537CE004E5334 /* Foundation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
@@ -150,7 +153,7 @@
 		6DE880622B5592C7004E5334 /* LogoutUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCaseType.swift; sourceTree = "<group>"; };
 		6DE880752B568EAB004E5334 /* MultipleFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE880772B568EAB004E5334 /* MultipleFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalTests.swift; sourceTree = "<group>"; };
-		6DE880832B5691B5004E5334 /* LoginUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseTests.swift; sourceTree = "<group>"; };
+		6DE880832B5691B5004E5334 /* LoginEmailUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailUseCaseTests.swift; sourceTree = "<group>"; };
 		6DE880852B5698F1004E5334 /* RegisterUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseTests.swift; sourceTree = "<group>"; };
 		6DE880882B569A03004E5334 /* AuthRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryStub.swift; sourceTree = "<group>"; };
 		6DE8808A2B569C04004E5334 /* GetUserUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCaseTests.swift; sourceTree = "<group>"; };
@@ -179,6 +182,9 @@
 		6DE880DB2B57E51C004E5334 /* ProductSubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionViewModel.swift; sourceTree = "<group>"; };
 		6DE880DE2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionUseCaseType.swift; sourceTree = "<group>"; };
 		6DE880E12B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSubscriptionUseCaseTests.swift; sourceTree = "<group>"; };
+		6DE962AD2B5993FC001425FC /* LoginModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModifier.swift; sourceTree = "<group>"; };
+		6DE962AF2B599778001425FC /* LoginAppleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCase.swift; sourceTree = "<group>"; };
+		6DE962B12B599793001425FC /* LoginAppleUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCaseType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,8 +398,8 @@
 		6DB552E82B5295F2004F0B6B /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				6DE880DD2B57E548004E5334 /* Shop */,
 				6DE880502B5562F6004E5334 /* Auth */,
+				6DE880DD2B57E548004E5334 /* Shop */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 				6DE880442B555E0B004E5334 /* CreateLoginView.swift */,
 				6DE880462B555E12004E5334 /* CreateRegisterView.swift */,
 				6DE8805E2B558A99004E5334 /* CreateHomeView.swift */,
+				6DE962AD2B5993FC001425FC /* LoginModifier.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -458,7 +465,8 @@
 			isa = PBXGroup;
 			children = (
 				6DE880252B553362004E5334 /* AuthRepositoryType.swift */,
-				6DE8802B2B553566004E5334 /* LoginUseCaseType.swift */,
+				6DE8802B2B553566004E5334 /* LoginEmailUseCaseType.swift */,
+				6DE962B12B599793001425FC /* LoginAppleUseCaseType.swift */,
 				6DE8804E2B556199004E5334 /* RegisterUseCaseType.swift */,
 				6DE880562B55850F004E5334 /* GetUserUseCaseType.swift */,
 				6DE880622B5592C7004E5334 /* LogoutUseCaseType.swift */,
@@ -469,7 +477,8 @@
 		6DE880512B55630C004E5334 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6DE880232B5532DC004E5334 /* LoginUseCase.swift */,
+				6DE880232B5532DC004E5334 /* LoginEmailUseCase.swift */,
+				6DE962AF2B599778001425FC /* LoginAppleUseCase.swift */,
 				6DE8804C2B55611E004E5334 /* RegisterUseCase.swift */,
 				6DE880542B5584EB004E5334 /* GetUserUseCase.swift */,
 				6DE880602B55929B004E5334 /* LogoutUseCase.swift */,
@@ -500,7 +509,7 @@
 		6DE880822B569191004E5334 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6DE880832B5691B5004E5334 /* LoginUseCaseTests.swift */,
+				6DE880832B5691B5004E5334 /* LoginEmailUseCaseTests.swift */,
 				6DE880852B5698F1004E5334 /* RegisterUseCaseTests.swift */,
 				6DE8808A2B569C04004E5334 /* GetUserUseCaseTests.swift */,
 				6DE8808E2B569DAE004E5334 /* LogoutUseCaseTests.swift */,
@@ -857,11 +866,12 @@
 				6DE880DC2B57E51C004E5334 /* ProductSubscriptionViewModel.swift in Sources */,
 				6DE880412B555CEC004E5334 /* AuthenticationView.swift in Sources */,
 				6DE880D72B57E17F004E5334 /* PassStatus.swift in Sources */,
+				6DE962B22B599793001425FC /* LoginAppleUseCaseType.swift in Sources */,
 				6DB552FE2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift in Sources */,
 				6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */,
 				6DE8803D2B55498C004E5334 /* LoginView.swift in Sources */,
 				6DE8804F2B556199004E5334 /* RegisterUseCaseType.swift in Sources */,
-				6DE8802C2B553566004E5334 /* LoginUseCaseType.swift in Sources */,
+				6DE8802C2B553566004E5334 /* LoginEmailUseCaseType.swift in Sources */,
 				6DE880432B555D70004E5334 /* RegisterView.swift in Sources */,
 				6DB552F82B52970A004F0B6B /* HTTPMethod.swift in Sources */,
 				6DE8803B2B554887004E5334 /* MultipleFunctionalPresentableErrorMapper.swift in Sources */,
@@ -887,6 +897,7 @@
 				6DE880D02B5711AC004E5334 /* SubscriptionShopContent.swift in Sources */,
 				6DE880632B5592C7004E5334 /* LogoutUseCaseType.swift in Sources */,
 				6DE880552B5584EB004E5334 /* GetUserUseCase.swift in Sources */,
+				6DE962B02B599778001425FC /* LoginAppleUseCase.swift in Sources */,
 				6DE8802E2B553619004E5334 /* AuthRepository.swift in Sources */,
 				6D65A6A12B57FF4A008116E8 /* LoggerAdapter.swift in Sources */,
 				6DE880262B553362004E5334 /* AuthRepositoryType.swift in Sources */,
@@ -894,9 +905,10 @@
 				6DB552F02B5296B1004F0B6B /* URLSessionErrorResolver.swift in Sources */,
 				6DE880D52B57E132004E5334 /* PassStatusModel.swift in Sources */,
 				6DE880D32B571242004E5334 /* EnvironmentValues+PassIDs.swift in Sources */,
-				6DE880242B5532DC004E5334 /* LoginUseCase.swift in Sources */,
+				6DE880242B5532DC004E5334 /* LoginEmailUseCase.swift in Sources */,
 				6DE880352B553828004E5334 /* UserDTO.swift in Sources */,
 				6DE8804D2B55611E004E5334 /* RegisterUseCase.swift in Sources */,
+				6DE962AE2B5993FC001425FC /* LoginModifier.swift in Sources */,
 				6DE880592B558995004E5334 /* CustomLoadingView.swift in Sources */,
 				6DE880DF2B57E550004E5334 /* ProductSubscriptionUseCaseType.swift in Sources */,
 				6DE880B92B56F4B7004E5334 /* CreateShopView.swift in Sources */,
@@ -914,7 +926,7 @@
 				6DE880982B56A603004E5334 /* AuthenticationFirebaseDataSourceTests.swift in Sources */,
 				6DE880782B568EAB004E5334 /* MultipleFunctionalTests.swift in Sources */,
 				6DE8808F2B569DAE004E5334 /* LogoutUseCaseTests.swift in Sources */,
-				6DE880842B5691B5004E5334 /* LoginUseCaseTests.swift in Sources */,
+				6DE880842B5691B5004E5334 /* LoginEmailUseCaseTests.swift in Sources */,
 				6DE880E22B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift in Sources */,
 				6DE880862B5698F1004E5334 /* RegisterUseCaseTests.swift in Sources */,
 				6DE8808B2B569C04004E5334 /* GetUserUseCaseTests.swift in Sources */,

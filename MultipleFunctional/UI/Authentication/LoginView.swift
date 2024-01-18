@@ -11,6 +11,9 @@ struct LoginView: View {
     @ObservedObject private var viewModel: LoginViewModel
     @State var textFieldEmail: String = ""
     @State var textFieldPassword: String = ""
+    @State var showPassword: Bool = false
+    @FocusState var focus1: Bool
+    @FocusState var focus2: Bool
 
     init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
@@ -43,12 +46,35 @@ struct LoginView: View {
                     .autocapitalization(.none)
                     .accessibilityIdentifier("fieldEmailLoginView")
 
-                TextField("Añade tu contraseña", text: $textFieldPassword)
-                    .autocapitalization(.none)
-                    .accessibilityIdentifier("fieldPassLoginView")
+                HStack {
+                        ZStack(alignment: .trailing) {
+                            TextField("Añade tu contraseña", text: $textFieldPassword)
+                                .modifier(LoginModifier())
+                                .textContentType(.password)
+                                .focused($focus1)
+                                .opacity(showPassword ? 1 : 0)
+                                .accessibilityIdentifier("fieldPassLoginView")
+
+                            SecureField("Añade tu contraseña", text: $textFieldPassword)
+                                .modifier(LoginModifier())
+                                .textContentType(.password)
+                                .focused($focus2)
+                                .opacity(showPassword ? 0 : 1)
+                                .accessibilityIdentifier("fieldPassLoginView")
+
+                            Button(action: {
+                                showPassword.toggle()
+                                if showPassword { focus1 = true } else { focus2 = true }
+                            }, label: {
+                                Image(systemName: self.showPassword ? "eye.slash.fill" : "eye.fill")
+                                    .font(.system(size: 16, weight: .regular))
+                                    .padding()
+                            })
+                        }
+                    }
 
                 Button("Login") {
-                    viewModel.logIn(email: textFieldEmail, password: textFieldPassword)
+                    viewModel.logInEmail(email: textFieldEmail, password: textFieldPassword)
                 }
                 .accessibilityIdentifier("btnLoginEmailLoginView")
                 .padding(.top, 18)

@@ -115,6 +115,7 @@
 		6DB552F92B529718004F0B6B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		6DB552FB2B529741004F0B6B /* MultipleFunctionalDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalDomainError.swift; sourceTree = "<group>"; };
 		6DB552FD2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalDomainErrorMapper.swift; sourceTree = "<group>"; };
+		6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultipleFunctional.entitlements; sourceTree = "<group>"; };
 		6DE880202B5531AF004E5334 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DE880232B5532DC004E5334 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		6DE880252B553362004E5334 /* AuthRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryType.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		6D3D9CD32B5165E30050D779 /* MultipleFunctional */ = {
 			isa = PBXGroup;
 			children = (
+				6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */,
 				6DE880202B5531AF004E5334 /* GoogleService-Info.plist */,
 				6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */,
 				6DB552E02B52959E004F0B6B /* Utils */,
@@ -1086,10 +1088,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MultipleFunctional/MultipleFunctional.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultipleFunctional/Preview Content\"";
-				DEVELOPMENT_TEAM = BDJY23GUM8;
+				DEVELOPMENT_TEAM = QD533DTNJL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
@@ -1103,7 +1106,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.edguitian.MultipleFunctional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.multiplefunctional;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1116,10 +1119,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MultipleFunctional/MultipleFunctional.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultipleFunctional/Preview Content\"";
-				DEVELOPMENT_TEAM = BDJY23GUM8;
+				DEVELOPMENT_TEAM = QD533DTNJL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
@@ -1133,7 +1137,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.edguitian.MultipleFunctional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.multiplefunctional;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

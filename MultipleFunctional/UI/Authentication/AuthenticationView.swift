@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AuthenticationServices
-import LocalAuthentication
 
 enum AuthenticationSheetView: String, Identifiable {
     case register
@@ -25,9 +24,6 @@ struct AuthenticationView: View {
     private let createLoginView: CreateLoginView
     private let createRegisterView: CreateRegisterView
     private let createHomeView: CreateHomeView
-
-    @State private var canShowBiometric: Bool = false
-    let context = LAContext()
 
     init(viewModel: LoginViewModel,
          authenticationSheetView: AuthenticationSheetView? = nil,
@@ -67,18 +63,13 @@ struct AuthenticationView: View {
                                 .accessibilityIdentifier("btnLoginMailAuthenticationView")
                                 .tint(.auth)
 
-                                SignInWithAppleButton(.signIn,
+                                SignInWithAppleButton(.continue,
                                                       onRequest: { (request) in
-                                    request.requestedScopes = [.email]
+                                    request.requestedScopes = [.email, .fullName]
 
                                 },
-                                                      onCompletion: { (result) in
-                                    switch result {
-                                    case .success(let authorization):
-                                        print("")
-                                    case .failure(let error):
-                                        print("")
-                                    }
+                                                      onCompletion: { result in
+                                    viewModel.handleSignInResult(result)
                                 })
                                 .signInWithAppleButtonStyle(.white)
                                 .frame(width: 180, height: 50)
@@ -86,7 +77,7 @@ struct AuthenticationView: View {
                                 .padding(.top, 20)
 
                                 Button {
-                                    authenticateBiometric()
+                                    viewModel.authenticateBiometric()
                                 } label: {
                                     Label("Entra con Face ID", systemImage: "faceid")
                                 }
@@ -150,18 +141,7 @@ struct AuthenticationView: View {
         }
     }
 
-    func authenticateBiometric() {
-        var error: NSError?
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: "Por favor autentícate para poder continuar") { success, error in
-
-                viewModel.readBiometric(success: success, error: error)
-            }
-        } else {
-            viewModel.readBiometric(success: false, error: nil)
-        }
-    }
+    
 }
 
 #Preview {

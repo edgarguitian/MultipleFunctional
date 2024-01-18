@@ -5,6 +5,8 @@
  */
 
 import Foundation
+import AuthenticationServices
+import LocalAuthentication
 
 final class LoginViewModel: ObservableObject {
     private let getUserUseCase: GetUserUseCaseType
@@ -55,6 +57,41 @@ final class LoginViewModel: ObservableObject {
             let result = await loginUseCase.execute(email: email,
                                                     password: password)
             handleResult(result, fromLogin: true)
+        }
+    }
+
+    /**
+     Logs in a user with the provided Biometric
+     */
+    func authenticateBiometric() {
+        let context = LAContext()
+        var error: NSError?
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   localizedReason: "Por favor autentícate para poder continuar") { success, error in
+
+                self.readBiometric(success: success, error: error)
+            }
+        } else {
+            readBiometric(success: false, error: nil)
+        }
+    }
+
+    /**
+     Logs in a user with the provided Apple Account
+     */
+    func handleSignInResult(_ result: Result<ASAuthorization, Error>) {
+        switch result {
+        case .success(let auth):
+            switch auth.credential {
+            case let credential as ASAuthorizationAppleIDCredential:
+                let userId = credential.user
+                user = User(email: userId)
+            default:
+                showErrorMessage = "No se pudo continuar con la cuenta de Apple"
+            }
+        case .failure(let error):
+            showErrorMessage = error.localizedDescription
         }
     }
 

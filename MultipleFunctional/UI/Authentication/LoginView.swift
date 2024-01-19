@@ -24,7 +24,7 @@ struct LoginView: View {
             DismissView()
                 .padding(.top, 8)
             Group {
-                Text("👋 Bienvenido de nuevo a")
+                Text("welcomeagainto")
                 Text("MultipleFunctional")
                     .bold()
                     .underline()
@@ -35,27 +35,27 @@ struct LoginView: View {
             .font(.largeTitle)
             .tint(.primary)
             Group {
-                Text("Loguéate de nuevo para poder acceder a MultipleFunctional.")
+                Text("emailLoginTitle")
                     .tint(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.top, 2)
                     .padding(.bottom, 2)
                     .accessibilityIdentifier("textDescriptionLoginView")
 
-                TextField("Añade tu correo electrónico", text: $textFieldEmail)
+                TextField("emailPlaceholder", text: $textFieldEmail)
                     .autocapitalization(.none)
                     .accessibilityIdentifier("fieldEmailLoginView")
 
                 HStack {
                         ZStack(alignment: .trailing) {
-                            TextField("Añade tu contraseña", text: $textFieldPassword)
+                            TextField("passwordPlaceholder", text: $textFieldPassword)
                                 .modifier(LoginModifier())
                                 .textContentType(.password)
                                 .focused($focus1)
                                 .opacity(showPassword ? 1 : 0)
                                 .accessibilityIdentifier("fieldPassLoginView")
 
-                            SecureField("Añade tu contraseña", text: $textFieldPassword)
+                            SecureField("passwordPlaceholder", text: $textFieldPassword)
                                 .modifier(LoginModifier())
                                 .textContentType(.password)
                                 .focused($focus2)
@@ -73,7 +73,7 @@ struct LoginView: View {
                         }
                     }
 
-                Button("Login") {
+                Button("login") {
                     viewModel.logInEmail(email: textFieldEmail, password: textFieldPassword)
                 }
                 .accessibilityIdentifier("btnLoginEmailLoginView")

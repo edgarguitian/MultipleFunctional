@@ -11,11 +11,11 @@ class HomeFactory: CreateHomeView {
 
     func create() -> HomeView {
         return HomeView(viewModelLogin: AuthenticationFactory.sharedLoginViewModel,
-                        viewModelProducts: createViewModelProducts(),
+                        viewModelSubscriptions: createViewModelSubscriptions(),
                         createShopView: ShopFactory())
     }
 
-    private func createViewModelProducts() -> ProductSubscriptionViewModel {
+    private func createViewModelSubscriptions() -> ProductSubscriptionViewModel {
         return ProductSubscriptionViewModel(productSubscriptionUseCase: createProductSubscriptionUseCase())
     }
 

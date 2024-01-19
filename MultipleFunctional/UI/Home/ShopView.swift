@@ -10,7 +10,8 @@ import StoreKit
 
 struct ShopView: View {
     @Environment(\.passIDs.group) private var passGroupID
-
+    let privacyUrl = URL(string: "https://github.com/edgarguitian")!
+    let termsUrl = URL(string: "https://github.com/edgarguitian")!
     var body: some View {
         SubscriptionStoreView(groupID: passGroupID) {
             SubscriptionShopContent()
@@ -19,6 +20,9 @@ struct ShopView: View {
         .subscriptionStoreButtonLabel(.multiline)
         .subscriptionStorePickerItemBackground(.thinMaterial)
         .storeButton(.visible, for: .restorePurchases)
+        .storeButton(.visible, for: .redeemCode)
+        .subscriptionStorePolicyDestination(url: privacyUrl, for: .privacyPolicy)
+        .subscriptionStorePolicyDestination(url: termsUrl, for: .termsOfService)
     }
 }
 

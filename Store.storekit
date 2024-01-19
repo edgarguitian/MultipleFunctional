@@ -7,17 +7,22 @@
     {
       "displayPrice" : "0.99",
       "familyShareable" : false,
-      "internalID" : "BA19FC06",
+      "internalID" : "83D111A0",
       "localizations" : [
         {
           "description" : "Unique Product to unlock all the content",
           "displayName" : "Unique Product",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Producto único para desbloquear el contenido.",
+          "displayName" : "Producto Único",
+          "locale" : "es_ES"
         }
       ],
-      "productID" : "com.edgar.product",
-      "referenceName" : "StoreProduct",
-      "type" : "NonConsumable"
+      "productID" : "com.edgar.productconsumable",
+      "referenceName" : "StoreProductConsumable",
+      "type" : "Consumable"
     }
   ],
   "settings" : {
@@ -106,6 +111,11 @@
               "description" : "Unlock all the content",
               "displayName" : "Yearly",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Desbloquea todo el contenido.",
+              "displayName" : "Anual",
+              "locale" : "es_ES"
             }
           ],
           "productID" : "com.edgar.yearly",
@@ -136,6 +146,11 @@
               "description" : "Unlock all the content",
               "displayName" : "Monthly",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Desbloquea todo el contenido.",
+              "displayName" : "Mensual",
+              "locale" : "es_ES"
             }
           ],
           "productID" : "com.edgar.monthly",

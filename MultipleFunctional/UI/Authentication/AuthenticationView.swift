@@ -56,7 +56,7 @@ struct AuthenticationView: View {
                                 Button {
                                     authenticationSheetView = .login
                                 } label: {
-                                    Label("Entra con Email", systemImage: "envelope.fill")
+                                    Label("emailLogin", systemImage: "envelope.fill")
                                 }
                                 .frame(width: 250, height: 60)
                                 .cornerRadius(45)
@@ -79,7 +79,7 @@ struct AuthenticationView: View {
                                 Button {
                                     viewModel.authenticateBiometric()
                                 } label: {
-                                    Label("Entra con Face ID", systemImage: "faceid")
+                                    Label("faceIdLogin", systemImage: "faceid")
                                 }
                                 .frame(width: 250, height: 60)
                                 .cornerRadius(45)
@@ -108,8 +108,8 @@ struct AuthenticationView: View {
                                 Button {
                                     authenticationSheetView = .register
                                 } label: {
-                                    Text("¿No tienes cuenta?")
-                                    Text("Regístrate")
+                                    Text("notaccount")
+                                    Text("register")
                                         .underline()
                                 }
                                 .accessibilityIdentifier("btnRegisterAuthenticationView")

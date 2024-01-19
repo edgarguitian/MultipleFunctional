@@ -85,6 +85,8 @@
 		6DE962B02B599778001425FC /* LoginAppleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962AF2B599778001425FC /* LoginAppleUseCase.swift */; };
 		6DE962B22B599793001425FC /* LoginAppleUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962B12B599793001425FC /* LoginAppleUseCaseType.swift */; };
 		6DE962B42B59A3A8001425FC /* LoginAppleUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962B32B59A3A8001425FC /* LoginAppleUseCaseTests.swift */; };
+		6DE962BD2B5A7B93001425FC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962BC2B5A7B93001425FC /* StoreManager.swift */; };
+		6DE962BF2B5A8BE0001425FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,8 @@
 		6DE962AF2B599778001425FC /* LoginAppleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCase.swift; sourceTree = "<group>"; };
 		6DE962B12B599793001425FC /* LoginAppleUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCaseType.swift; sourceTree = "<group>"; };
 		6DE962B32B59A3A8001425FC /* LoginAppleUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCaseTests.swift; sourceTree = "<group>"; };
+		6DE962BC2B5A7B93001425FC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +245,10 @@
 			children = (
 				6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */,
 				6DE880202B5531AF004E5334 /* GoogleService-Info.plist */,
+				6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */,
 				6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */,
 				6DB552E02B52959E004F0B6B /* Utils */,
+				6DE962B72B5A6A7A001425FC /* External Frameworks */,
 				6DB552DA2B52956F004F0B6B /* Composition Root */,
 				6DB552DF2B529598004F0B6B /* UI */,
 				6DB552DE2B529590004F0B6B /* Presentation */,
@@ -663,6 +669,14 @@
 			path = Shop;
 			sourceTree = "<group>";
 		};
+		6DE962B72B5A6A7A001425FC /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE962BC2B5A7B93001425FC /* StoreManager.swift */,
+			);
+			path = "External Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -758,6 +772,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 6D3D9CC82B5165E30050D779;
 			packageReferences = (
@@ -782,6 +797,7 @@
 			files = (
 				6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */,
 				6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */,
+				6DE962BF2B5A8BE0001425FC /* Localizable.xcstrings in Resources */,
 				6DE880212B5531AF004E5334 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -890,6 +906,7 @@
 				6DE8803F2B554AA9004E5334 /* LoginFactory.swift in Sources */,
 				6DB552FC2B529741004F0B6B /* MultipleFunctionalDomainError.swift in Sources */,
 				6D3D9CD52B5165E30050D779 /* MultipleFunctionalApp.swift in Sources */,
+				6DE962BD2B5A7B93001425FC /* StoreManager.swift in Sources */,
 				6DE8805F2B558A99004E5334 /* CreateHomeView.swift in Sources */,
 				6DE8805B2B5589E4004E5334 /* HomeView.swift in Sources */,
 				6DE8804B2B555EF7004E5334 /* RegisterFactory.swift in Sources */,

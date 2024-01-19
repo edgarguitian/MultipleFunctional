@@ -21,7 +21,7 @@ struct RegisterView: View {
             DismissView()
                 .padding(.top, 8)
             Group {
-                Text("👋 Bienvenido a")
+                Text("welcometo")
                 Text("MultipleFunctional")
                     .bold()
                     .underline()
@@ -33,22 +33,22 @@ struct RegisterView: View {
             .tint(.primary)
 
             Group {
-                Text("Regístrate para poder acceder a MultipleFunctional.")
+                Text("registerTitle")
                     .tint(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.top, 2)
                     .padding(.bottom, 2)
                     .accessibilityIdentifier("textDescriptionRegisterView")
 
-                TextField("Añade tu correo electrónico", text: $textFieldEmail)
+                TextField("emailPlaceholder", text: $textFieldEmail)
                     .autocapitalization(.none)
                     .accessibilityIdentifier("fieldEmailRegisterView")
 
-                SecureField("Añade tu contraseña", text: $textFieldPassword)
+                SecureField("passwordPlaceholder", text: $textFieldPassword)
                     .autocapitalization(.none)
                     .accessibilityIdentifier("fieldPassRegisterView")
 
-                Button("Aceptar") {
+                Button("accept") {
                     viewModel.createNewUser(email: textFieldEmail,
                                             password: "\(textFieldPassword)")
                 }

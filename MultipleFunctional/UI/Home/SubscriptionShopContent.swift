@@ -36,13 +36,13 @@ extension SubscriptionShopContent {
 
     @ViewBuilder
     var title: some View {
-        Text("Unique Subscription")
+        Text("subTitle")
             .font(.largeTitle.bold())
     }
 
     @ViewBuilder
     var desctiption: some View {
-        Text("Subscription to unlock all the content.")
+        Text("subsDescription")
             .fixedSize(horizontal: false, vertical: true)
             .font(.title3.weight(.medium))
             .padding([.bottom, .horizontal])

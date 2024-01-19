@@ -10,27 +10,28 @@ import StoreKit
 
 struct HomeView: View {
     @ObservedObject private var viewModelLogin: LoginViewModel
-    @ObservedObject private var viewModelProducts: ProductSubscriptionViewModel
+    @ObservedObject private var viewModelSubscriptions: ProductSubscriptionViewModel
 
     private let createShopView: CreateShopView
     @State private var showScriptionView: Bool = false
     @State private var presentingSubscriptionSheet = false
+    @State private var isPro = false
     @State private var status: EntitlementTaskState<PassStatus> = .loading
     @Environment(\.passIDs) private var passIDs
     @Environment(PassStatusModel.self) var passStatusModel: PassStatusModel
 
     init(viewModelLogin: LoginViewModel,
-         viewModelProducts: ProductSubscriptionViewModel,
+         viewModelSubscriptions: ProductSubscriptionViewModel,
          createShopView: CreateShopView) {
         self.viewModelLogin = viewModelLogin
-        self.viewModelProducts = viewModelProducts
+        self.viewModelSubscriptions = viewModelSubscriptions
         self.createShopView = createShopView
     }
 
     var body: some View {
         NavigationView {
             VStack {
-                Text("Bienvenido \(viewModelLogin.user?.email ?? "No user")")
+                Text("welcome \(viewModelLogin.user?.email ?? "No user")")
                     .padding(.top, 32)
                     .accessibilityIdentifier("titleHomeView")
                 Spacer()
@@ -43,7 +44,7 @@ struct HomeView: View {
                             Button {
                                 showScriptionView.toggle()
                             } label: {
-                                Text("View Options")
+                                Text("viewSubsOptions")
                                     .foregroundStyle(Color.blue)
                             }
                             .accessibilityIdentifier("btnShopHomeView")
@@ -57,6 +58,27 @@ struct HomeView: View {
 
                         }
                     }
+
+                    Section {
+                        ProductView(id: "com.edgar.productconsumable") {
+                            Image(systemName: isPro ? "crown.fill" : "crown")
+                        }
+                        .onInAppPurchaseStart { product in
+                            print("User has started buying \(product.id)")
+                        }
+                        .onInAppPurchaseCompletion { product, result in
+                            if case .success(.success(let transaction)) = result {
+                                print("Purchased successfully: \(transaction.signedDate)")
+                            } else {
+                                print("Something else happened")
+                            }
+                        }
+                        .storeButton(.visible, for: .restorePurchases)
+                        .productViewStyle(.compact)
+                        .padding()
+                    } header: {
+                        Text("PRODUCT")
+                    }
                 }
                 .sheet(isPresented: $showScriptionView, content: {
                     createShopView.create()
@@ -67,7 +89,7 @@ struct HomeView: View {
             }
 
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Home")
+            .navigationTitle("homeTitle")
             .toolbar {
                 Button("Logout") {
                     viewModelLogin.logOut()
@@ -79,9 +101,20 @@ struct HomeView: View {
             isPresented: $presentingSubscriptionSheet,
             subscriptionGroupID: passIDs.group
         )
+        .storeProductTask(for: "com.edgar.productconsumable") { taskState in
+                        print(taskState.product?.displayName)
+                    }
+        .currentEntitlementTask(for: "com.edgar.productconsumable") { taskState in
+                        if let verification = taskState.transaction,
+                           let transaction = try? verification.unsafePayloadValue {
+                            isPro = transaction.revocationDate == nil
+                        } else {
+                            isPro = false
+                        }
+                    }
         .subscriptionStatusTask(for: passIDs.group) { taskStatus in
             self.status = taskStatus.map { statuses in
-                viewModelProducts.status(
+                viewModelSubscriptions.status(
                     for: statuses,
                     ids: passIDs
                 )
@@ -97,10 +130,11 @@ struct HomeView: View {
             }
         }
         .task {
-            viewModelProducts.observeTransactionUpdates()
-            viewModelProducts.checkForUnfinishedTransactions()
+            viewModelSubscriptions.observeTransactionUpdates()
+            viewModelSubscriptions.checkForUnfinishedTransactions()
         }
     }
+
 }
 
 #Preview {
@@ -111,15 +145,20 @@ extension HomeView {
     @ViewBuilder
     var planView: some View {
         VStack(alignment: .leading, spacing: 3) {
-            Text(passStatusModel.passStatus == .notSubscribed ?
-                 "Unique Subscription":
-                    "Unique Subscription Plan: \(passStatusModel.passStatus.description)")
-                .font(.system(size: 17))
-            Text(passStatusModel.passStatus == .notSubscribed ?
-                 "Subscription to unlock all the content.":
-                    "Enjoy all the content")
-                .font(.system(size: 15))
-                .foregroundStyle(.gray)
+            HStack {
+                Image(systemName: "crown")
+                VStack(alignment: .leading) {
+                    Text(passStatusModel.passStatus == .notSubscribed ?
+                         "subTitle":
+                            "Unique Subscription Plan: \(passStatusModel.passStatus.description)")
+                        .font(.system(size: 17))
+                    Text(passStatusModel.passStatus == .notSubscribed ?
+                         "subsDescription":
+                            "subDescriptionBought")
+                        .font(.system(size: 15))
+                        .foregroundStyle(.gray)
+                }
+            }
             if passStatusModel.passStatus != .notSubscribed {
                 Button("Handle Subscription \(Image(systemName: "chevron.forward"))") {
                     self.presentingSubscriptionSheet = true

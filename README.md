@@ -14,3 +14,4 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Test Unitarios con XCTest.
 - Autenticación con Face ID.
 - Ocultado/mostrado de contraseña en el login de email.
+- Traducciones 

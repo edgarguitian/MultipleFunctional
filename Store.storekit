@@ -7,22 +7,22 @@
     {
       "displayPrice" : "0.99",
       "familyShareable" : false,
-      "internalID" : "83D111A0",
+      "internalID" : "13C0DF8D",
       "localizations" : [
         {
-          "description" : "Unique Product to unlock all the content",
+          "description" : "Unique Product to unlock all the content.",
           "displayName" : "Unique Product",
           "locale" : "en_US"
         },
         {
-          "description" : "Producto único para desbloquear el contenido.",
-          "displayName" : "Producto Único",
+          "description" : "Desbloquea todo el contenido.",
+          "displayName" : "Producto Unico",
           "locale" : "es_ES"
         }
       ],
-      "productID" : "com.edgar.productconsumable",
-      "referenceName" : "StoreProductConsumable",
-      "type" : "Consumable"
+      "productID" : "com.edgar.productnonconsumable",
+      "referenceName" : "Product Not Consumable",
+      "type" : "NonConsumable"
     }
   ],
   "settings" : {
@@ -79,7 +79,7 @@
         "name" : "Offer Code Redeem Sheet"
       }
     ],
-    "_timeRate" : 1004
+    "_timeRate" : 13
   },
   "subscriptionGroups" : [
     {

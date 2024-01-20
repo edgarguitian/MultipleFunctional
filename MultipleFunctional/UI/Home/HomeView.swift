@@ -15,10 +15,10 @@ struct HomeView: View {
     private let createShopView: CreateShopView
     @State private var showScriptionView: Bool = false
     @State private var presentingSubscriptionSheet = false
-    @State private var isPro = false
     @State private var status: EntitlementTaskState<PassStatus> = .loading
     @Environment(\.passIDs) private var passIDs
     @Environment(PassStatusModel.self) var passStatusModel: PassStatusModel
+    @EnvironmentObject var store: StoreManager
 
     init(viewModelLogin: LoginViewModel,
          viewModelSubscriptions: ProductSubscriptionViewModel,
@@ -47,7 +47,7 @@ struct HomeView: View {
                                 Text("viewSubsOptions")
                                     .foregroundStyle(Color.blue)
                             }
-                            .accessibilityIdentifier("btnShopHomeView")
+                            .accessibilityIdentifier("btnShopSubHomeView")
                         }
                     } header: {
                         Text("SUBSCRIPTION")
@@ -60,22 +60,22 @@ struct HomeView: View {
                     }
 
                     Section {
-                        ProductView(id: "com.edgar.productconsumable") {
-                            Image(systemName: isPro ? "crown.fill" : "crown")
+                        ProductView(id: Constants.idProduct) {
+                            Image(systemName: store.hasPurchasedProduct ? "crown.fill" : "crown")
+                                .accessibilityIdentifier("imageBtnProd")
                         }
                         .onInAppPurchaseStart { product in
                             print("User has started buying \(product.id)")
                         }
-                        .onInAppPurchaseCompletion { product, result in
-                            if case .success(.success(let transaction)) = result {
-                                print("Purchased successfully: \(transaction.signedDate)")
-                            } else {
-                                print("Something else happened")
+                        .onInAppPurchaseCompletion { (product, result) in
+                            if case .success(.success(_)) = result {
+                                _ = await store.purchase(product)
                             }
                         }
                         .storeButton(.visible, for: .restorePurchases)
                         .productViewStyle(.compact)
                         .padding()
+                        .accessibilityIdentifier("btnShopProdHomeView")
                     } header: {
                         Text("PRODUCT")
                     }
@@ -101,17 +101,6 @@ struct HomeView: View {
             isPresented: $presentingSubscriptionSheet,
             subscriptionGroupID: passIDs.group
         )
-        .storeProductTask(for: "com.edgar.productconsumable") { taskState in
-                        print(taskState.product?.displayName)
-                    }
-        .currentEntitlementTask(for: "com.edgar.productconsumable") { taskState in
-                        if let verification = taskState.transaction,
-                           let transaction = try? verification.unsafePayloadValue {
-                            isPro = transaction.revocationDate == nil
-                        } else {
-                            isPro = false
-                        }
-                    }
         .subscriptionStatusTask(for: passIDs.group) { taskStatus in
             self.status = taskStatus.map { statuses in
                 viewModelSubscriptions.status(

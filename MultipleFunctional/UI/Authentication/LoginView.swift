@@ -60,7 +60,7 @@ struct LoginView: View {
                                 .textContentType(.password)
                                 .focused($focus2)
                                 .opacity(showPassword ? 0 : 1)
-                                .accessibilityIdentifier("fieldPassLoginView")
+                                .accessibilityIdentifier("secureFieldPassLoginView")
 
                             Button(action: {
                                 showPassword.toggle()
@@ -70,6 +70,7 @@ struct LoginView: View {
                                     .font(.system(size: 16, weight: .regular))
                                     .padding()
                             })
+                            .accessibilityIdentifier("btnShowPassLogin")
                         }
                     }
 

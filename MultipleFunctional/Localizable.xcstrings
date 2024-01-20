@@ -11,7 +11,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Aceptar"
           }
         }
@@ -43,7 +43,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Entra con Email"
           }
         }
@@ -59,7 +59,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Loguéate de nuevo para poder acceder a MultipleFunctional."
           }
         }
@@ -75,7 +75,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Añade tu correo electrónico"
           }
         }
@@ -91,7 +91,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Entra con Face ID"
           }
         }
@@ -203,7 +203,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "¿No tienes cuenta?"
           }
         }
@@ -219,7 +219,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Añade tu contraseña"
           }
         }
@@ -251,7 +251,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Regístrate"
           }
         }
@@ -267,8 +267,24 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Regístrate para poder acceder a MultipleFunctional."
+          }
+        }
+      }
+    },
+    "shopUrlError" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error on TyC URL"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error en la url de TyC"
           }
         }
       }
@@ -379,7 +395,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Bienvenido %@"
           }
         }
@@ -395,7 +411,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "👋 Bienvenido de nuevo a"
           }
         }
@@ -411,7 +427,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "👋 Bienvenido a"
           }
         }

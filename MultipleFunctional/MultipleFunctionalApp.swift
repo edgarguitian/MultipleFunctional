@@ -26,6 +26,7 @@ struct MultipleFunctionalApp: App {
         WindowGroup {
             AuthenticationFactory.create()
                 .environment(PassStatusModel())
+                .environment(StoreManager())
         }
     }
 }

@@ -19,6 +19,7 @@ enum AuthenticationSheetView: String, Identifiable {
 
 struct AuthenticationView: View {
     @ObservedObject private var viewModel: LoginViewModel
+    @Environment(\.colorScheme) var colorScheme
 
     @State private var authenticationSheetView: AuthenticationSheetView?
     private let createLoginView: CreateLoginView
@@ -71,10 +72,11 @@ struct AuthenticationView: View {
                                                       onCompletion: { result in
                                     viewModel.handleSignInAppleResult(result)
                                 })
-                                .signInWithAppleButtonStyle(.white)
+                                .signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
                                 .frame(width: 180, height: 50)
                                 .cornerRadius(45)
                                 .padding(.top, 20)
+                                .accessibilityIdentifier("btnLoginAppleAuthenticationView")
 
                                 Button {
                                     viewModel.authenticateBiometric()

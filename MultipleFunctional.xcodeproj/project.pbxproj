@@ -11,6 +11,8 @@
 		6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD82B5165E40050D779 /* Assets.xcassets */; };
 		6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */; };
 		6D65A6A12B57FF4A008116E8 /* LoggerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */; };
+		6D960CD22B5BFE9900B70318 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CD12B5BFE9900B70318 /* Constants.swift */; };
+		6D960CD72B5C3A6800B70318 /* Biometrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CD62B5C3A6800B70318 /* Biometrics.m */; };
 		6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */; };
 		6DB552F02B5296B1004F0B6B /* URLSessionErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */; };
 		6DB552F22B5296BF004F0B6B /* URLSessionRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */; };
@@ -87,6 +89,7 @@
 		6DE962B42B59A3A8001425FC /* LoginAppleUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962B32B59A3A8001425FC /* LoginAppleUseCaseTests.swift */; };
 		6DE962BD2B5A7B93001425FC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE962BC2B5A7B93001425FC /* StoreManager.swift */; };
 		6DE962BF2B5A8BE0001425FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */; };
+		6DE962C12B5A9CF0001425FC /* Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DE962C02B5A9CF0001425FC /* Products.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,10 @@
 		6D3D9CD82B5165E40050D779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerAdapter.swift; sourceTree = "<group>"; };
+		6D960CD12B5BFE9900B70318 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D960CD42B5C3A6700B70318 /* MultipleFunctionalUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultipleFunctionalUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D960CD52B5C3A6800B70318 /* Biometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biometrics.h; sourceTree = "<group>"; };
+		6D960CD62B5C3A6800B70318 /* Biometrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biometrics.m; sourceTree = "<group>"; };
 		6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLient.swift; sourceTree = "<group>"; };
 		6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionErrorResolver.swift; sourceTree = "<group>"; };
 		6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMaker.swift; sourceTree = "<group>"; };
@@ -191,6 +198,7 @@
 		6DE962B32B59A3A8001425FC /* LoginAppleUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleUseCaseTests.swift; sourceTree = "<group>"; };
 		6DE962BC2B5A7B93001425FC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6DE962C02B5A9CF0001425FC /* Products.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Products.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +230,7 @@
 		6D3D9CC82B5165E30050D779 = {
 			isa = PBXGroup;
 			children = (
+				6DE962C02B5A9CF0001425FC /* Products.plist */,
 				6DE880CE2B570EA7004E5334 /* Store.storekit */,
 				6D3D9CD32B5165E30050D779 /* MultipleFunctional */,
 				6DE880762B568EAB004E5334 /* MultipleFunctionalTests */,
@@ -338,6 +347,7 @@
 			children = (
 				6DE880322B5537CE004E5334 /* Foundation+Extensions.swift */,
 				6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */,
+				6D960CD12B5BFE9900B70318 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -576,9 +586,12 @@
 		6DE880AF2B56E667004E5334 /* AuthenticationView */ = {
 			isa = PBXGroup;
 			children = (
+				6D960CD52B5C3A6800B70318 /* Biometrics.h */,
+				6D960CD62B5C3A6800B70318 /* Biometrics.m */,
 				6DE8809F2B56AA40004E5334 /* AuthenticationViewTests.swift */,
 				6DE880AD2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift */,
 				6DE880AB2B56AF53004E5334 /* AuthenticationViewErrorTests.swift */,
+				6D960CD42B5C3A6700B70318 /* MultipleFunctionalUITests-Bridging-Header.h */,
 			);
 			path = AuthenticationView;
 			sourceTree = "<group>";
@@ -761,6 +774,7 @@
 					};
 					6DE8809C2B56AA40004E5334 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 						TestTargetID = 6D3D9CD02B5165E30050D779;
 					};
 				};
@@ -797,6 +811,7 @@
 			files = (
 				6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */,
 				6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */,
+				6DE962C12B5A9CF0001425FC /* Products.plist in Resources */,
 				6DE962BF2B5A8BE0001425FC /* Localizable.xcstrings in Resources */,
 				6DE880212B5531AF004E5334 /* GoogleService-Info.plist in Resources */,
 			);
@@ -897,6 +912,7 @@
 				6DB552FA2B529718004F0B6B /* HTTPClient.swift in Sources */,
 				6DE880DA2B57E3EC004E5334 /* ProductSubscriptionUseCase.swift in Sources */,
 				6DE880492B555E58004E5334 /* AuthenticationFactory.swift in Sources */,
+				6D960CD22B5BFE9900B70318 /* Constants.swift in Sources */,
 				6DB552F42B5296F1004F0B6B /* HTTPClientError.swift in Sources */,
 				6DE880612B55929B004E5334 /* LogoutUseCase.swift in Sources */,
 				6DE8805D2B558A82004E5334 /* HomeFactory.swift in Sources */,
@@ -959,6 +975,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D960CD72B5C3A6800B70318 /* Biometrics.m in Sources */,
 				6DE880AE2B56E1A1004E5334 /* AuthenticationViewInitialLoadingTests.swift in Sources */,
 				6DE880B52B56EC45004E5334 /* RegisterViewTests.swift in Sources */,
 				6DE880B22B56E69B004E5334 /* LoginViewTests.swift in Sources */,
@@ -1217,6 +1234,7 @@
 		6DE880A62B56AA40004E5334 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD533DTNJL;
@@ -1225,6 +1243,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.multiplefunctionalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MultipleFunctionalUITests/AuthenticationView/MultipleFunctionalUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MultipleFunctional;
@@ -1234,6 +1254,7 @@
 		6DE880A72B56AA40004E5334 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD533DTNJL;
@@ -1242,6 +1263,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.multiplefunctionalUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MultipleFunctionalUITests/AuthenticationView/MultipleFunctionalUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MultipleFunctional;

@@ -1077,8 +1077,8 @@
             filePath = "MultipleFunctional/UI/Home/ShopView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1125,8 +1125,8 @@
             filePath = "MultipleFunctional/UI/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1173,8 +1173,8 @@
             filePath = "MultipleFunctional/UI/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1372,7 +1372,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8E670DBF-B555-4DF1-8A5B-744B7C3832D0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
@@ -1466,7 +1466,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "151E0327-085F-4BBC-8668-97020EB91447"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
@@ -1514,152 +1514,30 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3BB10B89-85DB-4256-A30B-0C22D0568012"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2ED9DB50-F01E-41F0-9D23-C701053CA412"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FC3798B3-EA3E-4297-A5A0-1954BCF6311D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C56D0D78-3D75-49BA-B7A5-B45720B10B8B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C56D0D78-3D75-49BA-B7A5-B45720B10B8B - 738faf339f208789"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "800">
-               </Location>
-               <Location
-                  uuid = "C56D0D78-3D75-49BA-B7A5-B45720B10B8B - 738faf339f208789"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "476">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D5CA4997-F57E-4E89-AB14-00F4861F0B62"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "D5CA4997-F57E-4E89-AB14-00F4861F0B62 - 738faf339f2087cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "988">
-               </Location>
-               <Location
-                  uuid = "D5CA4997-F57E-4E89-AB14-00F4861F0B62 - 738faf339f2087cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "884">
-               </Location>
-            </Locations>
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "StoreManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6B2E94A2-3BB9-4B21-A7C4-4C9C726C7357"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultipleFunctional/UI/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1699,47 +1577,127 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A0FB4EE4-924F-4DCB-A15D-E4EE7BF5E0AB"
+            uuid = "8488A272-32AF-4938-99DA-87B01F22A272"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "requestProducts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8488A272-32AF-4938-99DA-87B01F22A272 - 2bae0917a324c5c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.requestProducts() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "8488A272-32AF-4938-99DA-87B01F22A272 - 2bae0917a324c4bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.requestProducts() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "660">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "427DDB70-2FC5-42F3-8092-B6B9003E01B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "updateCustomerProductStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E39BEB88-A749-4EEF-B5C0-71270A77E94F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "purchase(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDCD12B1-14C2-48CF-9798-C994D54A91F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
             endingLineNumber = "105"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "purchase(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A0FB4EE4-924F-4DCB-A15D-E4EE7BF5E0AB - 578f07783afe793b"
+                  uuid = "FDCD12B1-14C2-48CF-9798-C994D54A91F9 - fae3f94142a4c140"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 (StoreKit.Product.TaskState) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
                   moduleName = "MultipleFunctional"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "540">
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "1004">
                </Location>
                <Location
-                  uuid = "A0FB4EE4-924F-4DCB-A15D-E4EE7BF5E0AB - 578f07783afe793b"
+                  uuid = "FDCD12B1-14C2-48CF-9798-C994D54A91F9 - adca0dd51157594c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 (StoreKit.Product.TaskState) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
+                  symbolName = "(7) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
                   moduleName = "MultipleFunctional"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "188">
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "104">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1747,111 +1705,332 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AF360DB4-817E-4033-9701-8FDEA8C0E3E1"
+            uuid = "A369FF2B-80FE-45A5-9079-231B8D9E0431"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "AF360DB4-817E-4033-9701-8FDEA8C0E3E1 - 7d7b4e5fe16b0d0b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "1128">
-               </Location>
-               <Location
-                  uuid = "AF360DB4-817E-4033-9701-8FDEA8C0E3E1 - 7d7b4e5fe16b0d0b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "1072">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "368644AC-1354-4CCB-BBD6-47023DEF129D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "368644AC-1354-4CCB-BBD6-47023DEF129D - 7d7b4e5fe16b0d4d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "724">
-               </Location>
-               <Location
-                  uuid = "368644AC-1354-4CCB-BBD6-47023DEF129D - 7d7b4e5fe16b0d4d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "668">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "11689BE4-E608-4998-9EFE-6148FDAE808C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
             endingLineNumber = "108"
+            landmarkName = "purchase(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A369FF2B-80FE-45A5-9079-231B8D9E0431 - fae3f94142a4c12d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  uuid = "A369FF2B-80FE-45A5-9079-231B8D9E0431 - 30076f0246bff2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "A369FF2B-80FE-45A5-9079-231B8D9E0431 - adca0dd511575921"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC17F2BA-C1A8-4D79-BCFD-B81E1CEB42FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BC17F2BA-C1A8-4D79-BCFD-B81E1CEB42FC - 738faf339f2087cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "BC17F2BA-C1A8-4D79-BCFD-B81E1CEB42FC - d74602c7bd42a53b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "BC17F2BA-C1A8-4D79-BCFD-B81E1CEB42FC - e08d1996391fc3c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #3 (StoreKit.Product, Swift.Result&lt;StoreKit.Product.PurchaseResult, Swift.Error&gt;) async -&gt; () in closure #4 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Section&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of MultipleFunctional.HomeView.planView : some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.ModifiedContent&lt;SwiftUI.Button&lt;SwiftUI.Text&gt;, SwiftUI.AccessibilityAttachmentModifier&gt;&gt;)&gt;, Swift.Optional&lt;SwiftUI.Text&gt;&gt;, SwiftUI.Section&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.EmptyView&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ModifiedContent&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.AccessibilityAttachmentModifier&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MultipleFunctional.HomeView.body.getter : some"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D160E8B9-3522-41A6-9E4D-C96CEAAC7C29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "purchase(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D160E8B9-3522-41A6-9E4D-C96CEAAC7C29 - fae3f94142a4c0df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "D160E8B9-3522-41A6-9E4D-C96CEAAC7C29 - d526852a9cc673d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for MultipleFunctional.StoreManager.purchase(StoreKit.Product) async -&gt; Swift.Optional&lt;StoreKit.Transaction&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5CD68E2-63AB-4097-851D-613816EA6021"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "updateCustomerProductStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E5CD68E2-63AB-4097-851D-613816EA6021 - d02d55e0564e7c94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.updateCustomerProductStatus() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  uuid = "E5CD68E2-63AB-4097-851D-613816EA6021 - d02d55e0564e7c94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.updateCustomerProductStatus() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "E5CD68E2-63AB-4097-851D-613816EA6021 - 18b3b80e3a6da8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (StoreKit.Product) -&gt; Swift.Bool in MultipleFunctional.StoreManager.updateCustomerProductStatus() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "974BEF6D-5D6A-4CE2-82FB-3863553BBF78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "updateCustomerProductStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33889E78-9F0E-498B-B7E1-43FADFCABBED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "updateCustomerProductStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33889E78-9F0E-498B-B7E1-43FADFCABBED - d02d55e0564e7fff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.StoreManager.updateCustomerProductStatus() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "33889E78-9F0E-498B-B7E1-43FADFCABBED - 31bd056f2474bbdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MultipleFunctional.StoreManager.updateCustomerProductStatus() async -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/External%20Frameworks/StoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0D9DF94-533A-433C-8FF9-9E2AF861476E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/External Frameworks/StoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "updateCustomerProductStatus()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09616FBA-D5B9-421E-B80D-A067D67D8949"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -1859,77 +2038,491 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D3673829-8AA2-4E67-BA57-0FCF64ACA131"
+            uuid = "2EC3BA91-E487-4563-ABF6-27616BEC2E0A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/UI/Home/HomeView.swift"
+            filePath = "MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "test_press_on_login_faceid_success()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D3673829-8AA2-4E67-BA57-0FCF64ACA131 - 7d7b4e5fe16b0d6c"
+                  uuid = "2EC3BA91-E487-4563-ABF6-27616BEC2E0A - 14db5c791bca0066"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_faceid() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "400">
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "1252">
                </Location>
                <Location
-                  uuid = "D3673829-8AA2-4E67-BA57-0FCF64ACA131 - 7d7b4e5fe16b0d6c"
+                  uuid = "2EC3BA91-E487-4563-ABF6-27616BEC2E0A - 14db5c791bca0066"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_faceid() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "712">
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB0FA783-9DA6-4C09-9EFB-0DE0B39043A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "test_buy_suscription_yearly_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CB0FA783-9DA6-4C09-9EFB-0DE0B39043A8 - bfbc6c7bfe9b7d77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "2580">
                </Location>
                <Location
-                  uuid = "D3673829-8AA2-4E67-BA57-0FCF64ACA131 - 7d7b4e5fe16b0d6c"
+                  uuid = "CB0FA783-9DA6-4C09-9EFB-0DE0B39043A8 - bfbc6c7bfe9b7d77"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "416">
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "2612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F09E929D-D01E-44FE-9429-27D2333D9B9A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "test_buy_suscription_yearly_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F09E929D-D01E-44FE-9429-27D2333D9B9A - bfbc6c7bfe9b7db1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1992">
                </Location>
                <Location
-                  uuid = "D3673829-8AA2-4E67-BA57-0FCF64ACA131 - 7d7b4e5fe16b0d6c"
+                  uuid = "F09E929D-D01E-44FE-9429-27D2333D9B9A - bfbc6c7bfe9b7db1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #3 (_StoreKit_SwiftUI.EntitlementTaskState&lt;Swift.Optional&lt;StoreKit.VerificationResult&lt;StoreKit.Transaction&gt;&gt;&gt;) async -&gt; () in MultipleFunctional.HomeView.body.getter : some"
-                  moduleName = "MultipleFunctional"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/UI/Home/HomeView.swift"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "656">
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2024">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57AA72A5-3A1B-47ED-B8FF-B16C1719E6B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "test_buy_product_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FC85846-D2FF-4B61-919A-9DE18ED52B6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "test_buy_suscription_yearly_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92A3E91F-E376-484E-904B-2E2E53C57D77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "test_buy_suscription_yearly_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DB9A216-5781-44B3-A6C5-FB2CCB4A3FC4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "test_buy_suscription_monthly_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6DB9A216-5781-44B3-A6C5-FB2CCB4A3FC4 - 2268dea83229bd05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_monthly_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "2312">
+               </Location>
+               <Location
+                  uuid = "6DB9A216-5781-44B3-A6C5-FB2CCB4A3FC4 - 2268dea83229bd05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_monthly_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "2328">
+               </Location>
+               <Location
+                  uuid = "6DB9A216-5781-44B3-A6C5-FB2CCB4A3FC4 - 2268dea83229bd26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_monthly_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "2324">
+               </Location>
+               <Location
+                  uuid = "6DB9A216-5781-44B3-A6C5-FB2CCB4A3FC4 - 2268dea83229bdc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.HomeViewTests.test_buy_suscription_monthly_success() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "2308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD9C3085-2950-452B-92DD-1F3C685BAC10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "test_buy_suscription_monthly_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40B29791-B376-4B91-AC85-14F1F8DE1F81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "test_buy_suscription_monthly_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3909E64-CDE0-46CB-A923-7FAC62BE8258"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/HomeView/HomeViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "test_buy_suscription_monthly_success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D134D84-B52D-4FD2-95CE-CE98060E1182"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "test_press_on_login_apple_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D134D84-B52D-4FD2-95CE-CE98060E1182 - c2681afbfa3900c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1656">
+               </Location>
+               <Location
+                  uuid = "9D134D84-B52D-4FD2-95CE-CE98060E1182 - c2681afbfa3900c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB37531B-B828-40B6-936A-6C03F4A70A32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "test_press_on_login_apple_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB37531B-B828-40B6-936A-6C03F4A70A32 - c2681afbfa390006"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1912">
+               </Location>
+               <Location
+                  uuid = "DB37531B-B828-40B6-936A-6C03F4A70A32 - c2681afbfa390048"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "2148">
+               </Location>
+               <Location
+                  uuid = "DB37531B-B828-40B6-936A-6C03F4A70A32 - c2681afbfa3907ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "2912">
+               </Location>
+               <Location
+                  uuid = "DB37531B-B828-40B6-936A-6C03F4A70A32 - c2681afbfa3907ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "2928">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2C56132-1585-49CE-B659-B32DC716DF7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "test_press_on_login_apple_success()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B2C56132-1585-49CE-B659-B32DC716DF7B - c2681afbfa3907cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2696">
+               </Location>
+               <Location
+                  uuid = "B2C56132-1585-49CE-B659-B32DC716DF7B - c2681afbfa3907cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctionalUITests.AuthenticationViewTests.test_press_on_login_apple() throws -&gt; ()"
+                  moduleName = "MultipleFunctionalUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalUITests/AuthenticationView/AuthenticationViewTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2712">
                </Location>
             </Locations>
          </BreakpointContent>

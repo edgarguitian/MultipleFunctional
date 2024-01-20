@@ -25,6 +25,12 @@ class ProductSubscriptionViewModel: ObservableObject {
         }
     }
 
+    func process(transaction verificationResult: VerificationResult<Transaction>) {
+        Task {
+            await productSubscriptionUseCase.process(transaction: verificationResult)
+        }
+    }
+
     func checkForUnfinishedTransactions() {
         Task {
             productSubscriptionUseCase.checkForUnfinishedTransactions

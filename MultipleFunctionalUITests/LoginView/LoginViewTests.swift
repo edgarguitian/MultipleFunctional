@@ -16,7 +16,9 @@ final class LoginViewTests: XCTestCase {
     private let identifierDescriptionLoginView = "textDescriptionLoginView"
     private let identifierFieldEmailLoginView = "fieldEmailLoginView"
     private let identifierFieldPassLoginView = "fieldPassLoginView"
+    private let identifierSecureFieldPassLogin = "secureFieldPassLoginView"
     private let identifierBtnLoginMailLoginView = "btnLoginEmailLoginView"
+    private let identifierBtnShowPassLogin = "btnShowPassLogin"
     private let identifierTextErrorMessageLoginView = "loginViewErrorMessage"
     private let identifierTitleHomeView = "titleHomeView"
 
@@ -49,6 +51,8 @@ final class LoginViewTests: XCTestCase {
         XCTAssert(app.staticTexts[identifierDescriptionLoginView].exists)
         XCTAssert(app.textFields[identifierFieldEmailLoginView].exists)
         XCTAssert(app.textFields[identifierFieldPassLoginView].exists)
+        XCTAssert(app.secureTextFields[identifierSecureFieldPassLogin].exists)
+        XCTAssert(app.buttons[identifierBtnShowPassLogin].exists)
         XCTAssert(app.buttons[identifierBtnLoginMailLoginView].exists)
 
     }
@@ -58,7 +62,7 @@ final class LoginViewTests: XCTestCase {
         XCTAssert(fieldEmail.exists)
         fieldEmail.tap()
         fieldEmail.typeText("testEmail")
-        let fieldPassword = app.textFields[identifierFieldPassLoginView]
+        let fieldPassword = app.secureTextFields[identifierSecureFieldPassLogin]
         XCTAssert(fieldPassword.exists)
         fieldPassword.tap()
         fieldPassword.typeText("testPassword")
@@ -75,7 +79,7 @@ final class LoginViewTests: XCTestCase {
         XCTAssert(fieldEmail.exists)
         fieldEmail.tap()
         fieldEmail.typeText("test@gmail.com")
-        let fieldPassword = app.textFields[identifierFieldPassLoginView]
+        let fieldPassword = app.secureTextFields[identifierSecureFieldPassLogin]
         XCTAssert(fieldPassword.exists)
         fieldPassword.tap()
         fieldPassword.typeText("test123")
@@ -84,6 +88,29 @@ final class LoginViewTests: XCTestCase {
         btnLogin.tap()
         let titleHomeView = app.staticTexts[identifierTitleHomeView]
         XCTAssertTrue(titleHomeView.waitForExistence(timeout: 5))
+
+    }
+
+    func test_show_password() throws {
+        let mockPass = "test123"
+        let secureFieldPass = app.secureTextFields[identifierSecureFieldPassLogin]
+        XCTAssert(secureFieldPass.exists)
+        secureFieldPass.tap()
+        secureFieldPass.typeText(mockPass)
+        guard let textoAntes = secureFieldPass.value as? String else {
+            XCTFail("Texto de la password oculta incorrecta")
+            return
+        }
+
+        let btnShowPass = app.buttons[identifierBtnShowPassLogin]
+        XCTAssert(btnShowPass.exists)
+        btnShowPass.tap()
+        let fieldPass = app.textFields[identifierFieldPassLoginView]
+        guard let textoDespues = fieldPass.value as? String else {
+            XCTFail("Texto de la password mostrada incorrecta")
+            return
+        }
+        XCTAssertNotEqual(textoAntes, textoDespues)
 
     }
 

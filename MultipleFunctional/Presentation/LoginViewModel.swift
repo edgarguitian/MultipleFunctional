@@ -191,7 +191,11 @@ final class LoginViewModel: ObservableObject {
 
     func readBiometric(success: Bool, error: Error?) {
         if success {
-            user = User(email: "")
+            Task {
+                let result = await registerUseCase.execute(email: "biometricUser@gmail.com",
+                                                        password: "passBiometric")
+                handleResult(result, fromLogin: false)
+            }
         } else {
             if let error = error {
                 showErrorMessage = error.localizedDescription

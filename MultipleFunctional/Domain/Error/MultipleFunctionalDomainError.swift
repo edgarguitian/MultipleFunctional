@@ -12,4 +12,6 @@ enum MultipleFunctionalDomainError: Error {
     case tooManyRequests
     case emptyAuthLoginMail
     case noUser
+    case wrongPassword
+    case userNotFound
 }

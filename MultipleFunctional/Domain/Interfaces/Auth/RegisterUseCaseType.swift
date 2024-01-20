@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RegisterUseCaseType {
-    func execute(email: String, password: String) async -> Result<User, MultipleFunctionalDomainError>
+    func execute(email: String, password: String) async -> Result<User, Error>
 }

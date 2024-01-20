@@ -14,8 +14,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "handleResult(_:fromLogin:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "getCurrentUser()"
             landmarkType = "7">
             <Locations>
@@ -78,8 +78,8 @@
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "getCurrentUser()"
             landmarkType = "7">
             <Locations>
@@ -270,8 +270,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "handleResultGetCurrentUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -475,24 +475,8 @@
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "register(credentials:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B4D30A38-BABF-48E8-B866-8DB6F42DF31C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "register(credentials:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -507,8 +491,8 @@
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "register(credentials:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -745,8 +729,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "handleResult(_:fromLogin:)"
             landmarkType = "7">
             <Locations>
@@ -808,8 +792,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "handleResultGetCurrentUser(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -824,8 +808,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "handleError(error:fromLogin:)"
             landmarkType = "7">
             <Locations>
@@ -902,8 +886,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
@@ -950,8 +934,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
@@ -1014,8 +998,8 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "handleResultLogOut(_:)"
             landmarkType = "7">
             <Locations>
@@ -1378,8 +1362,8 @@
             filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "logInApple(credentials:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2537,8 +2521,247 @@
             filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "handleResult(_:fromLogin:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A3ED15A-933D-45A1-A7F0-84914A148C6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Data/Repositories/AuthRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "logInEmail(credentials:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A3ED15A-933D-45A1-A7F0-84914A148C6B - 76ac7b4f8f442bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.AuthRepository.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "6A3ED15A-933D-45A1-A7F0-84914A148C6B - 76ac7b4f8f442bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.AuthRepository.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.User, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "6A3ED15A-933D-45A1-A7F0-84914A148C6B - 750d85b2109d059a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.AuthRepository.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.User, Swift.Error&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/AuthRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA951AEE-819A-4948-827E-CEC8A645126F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "logInEmail(credentials:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA951AEE-819A-4948-827E-CEC8A645126F - 5408d3bfcda3dd7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.AuthenticationFirebaseDataSource.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.UserDTO, MultipleFunctional.HTTPClientError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "AA951AEE-819A-4948-827E-CEC8A645126F - e4c586c4d7604b24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctional.AuthenticationFirebaseDataSource.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.UserDTO, Swift.Error&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D032E78-95B6-4775-8FD1-8A92E75DB663"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "logInEmail(credentials:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D032E78-95B6-4775-8FD1-8A92E75DB663 - 6073f914404fbe37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.AuthenticationFirebaseDataSource.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.UserDTO, MultipleFunctional.HTTPClientError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "1D032E78-95B6-4775-8FD1-8A92E75DB663 - 87fe8e87050ff461"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.AuthenticationFirebaseDataSource.logInEmail(credentials: MultipleFunctional.LoginCredentials) async -&gt; Swift.Result&lt;MultipleFunctional.UserDTO, Swift.Error&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Networking/Auth/AuthenticationFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD3FB285-651A-4C8F-8EE8-E68C18F15324"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "handleResult(_:fromLogin:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD3FB285-651A-4C8F-8EE8-E68C18F15324 - b9d821fbbf4feb87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctional.LoginViewModel.handleResult(_: Swift.Result&lt;MultipleFunctional.User, Swift.Error&gt;, fromLogin: Swift.Bool) -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "FD3FB285-651A-4C8F-8EE8-E68C18F15324 - b9d821fbbf4feb87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MultipleFunctional.LoginViewModel.handleResult(_: Swift.Result&lt;MultipleFunctional.User, Swift.Error&gt;, fromLogin: Swift.Bool) -&gt; ()"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Presentation/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D821A9F3-5678-4867-83EA-5E6A77D380EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
+            landmarkName = "handleResult(_:fromLogin:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2717B1AB-60CD-418F-8D56-26EC29E7A3C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/Presentation/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "handleResult(_:fromLogin:)"
             landmarkType = "7">
          </BreakpointContent>

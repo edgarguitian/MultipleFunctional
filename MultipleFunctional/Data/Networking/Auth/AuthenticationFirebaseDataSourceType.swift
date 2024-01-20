@@ -9,9 +9,9 @@ import Foundation
 import FirebaseAuth
 
 protocol AuthenticationFirebaseDataSourceType {
-    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError>
+    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, Error>
     func logInApple(credentials: AuthCredential) async -> Result<UserDTO, HTTPClientError>
-    func register(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError>
+    func register(credentials: LoginCredentials) async -> Result<UserDTO, Error>
     func getCurrentUser() async -> UserDTO?
     func logOut() async -> Result<Bool, HTTPClientError>
 }

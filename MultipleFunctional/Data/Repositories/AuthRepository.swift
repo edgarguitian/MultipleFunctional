@@ -19,10 +19,10 @@ final class AuthRepository: AuthRepositoryType {
         self.errorMapper = errorMapper
     }
 
-    func logInEmail(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
+    func logInEmail(credentials: LoginCredentials) async -> Result<User, Error> {
         let result = await authenticationFirebaseDatasource.logInEmail(credentials: credentials)
         guard case .success(let loginResult) = result else {
-            return .failure(errorMapper.map(error: result.failureValue as? HTTPClientError))
+            return .failure(result.failureValue!)
         }
 
         return .success(User(response: loginResult))
@@ -37,10 +37,10 @@ final class AuthRepository: AuthRepositoryType {
         return .success(User(response: loginResult))
     }
 
-    func register(credentials: LoginCredentials) async -> Result<User, MultipleFunctionalDomainError> {
+    func register(credentials: LoginCredentials) async -> Result<User, Error> {
         let result = await authenticationFirebaseDatasource.register(credentials: credentials)
         guard case .success(let loginResult) = result else {
-            return .failure(errorMapper.map(error: result.failureValue as? HTTPClientError))
+            return .failure(result.failureValue!)
         }
 
         return .success(User(response: loginResult))

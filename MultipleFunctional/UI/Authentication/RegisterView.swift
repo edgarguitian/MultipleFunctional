@@ -70,6 +70,9 @@ struct RegisterView: View {
             .padding(.horizontal, 64)
             Spacer()
         }
+        .onAppear {
+            viewModel.showErrorMessageRegister = nil
+        }
     }
 }
 

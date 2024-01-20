@@ -95,6 +95,9 @@ struct LoginView: View {
             .padding(.horizontal, 64)
             Spacer()
         }
+        .onAppear {
+            viewModel.showErrorMessageLogin = nil
+        }
 
     }
 }

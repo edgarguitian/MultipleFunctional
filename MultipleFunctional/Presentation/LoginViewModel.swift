@@ -56,7 +56,7 @@ final class LoginViewModel: ObservableObject {
      Logs in a user with the provided email and password.
      */
     func logInEmail(email: String, password: String) {
-        showLoadingSpinner = true
+        // showLoadingSpinner = true
         Task {
             let result = await loginEmailUseCase.execute(email: email,
                                                     password: password)
@@ -130,11 +130,30 @@ final class LoginViewModel: ObservableObject {
      Creates a new user with the provided email and password.
      */
     func createNewUser(email: String, password: String) {
-        showLoadingSpinner = true
+        // showLoadingSpinner = true
         Task {
             let result = await registerUseCase.execute(email: email,
                                                     password: password)
             handleResult(result, fromLogin: false)
+        }
+    }
+
+    func handleResult(_ result: Result<User, Error>, fromLogin: Bool) {
+        guard case .success(let loginResult) = result else {
+            Task { @MainActor in
+                // showLoadingSpinner = false
+                if fromLogin {
+                    showErrorMessageLogin = result.failureValue!.localizedDescription
+                } else {
+                    showErrorMessageRegister = result.failureValue!.localizedDescription
+                }
+            }
+            return
+        }
+
+        Task { @MainActor in
+            showLoadingSpinner = false
+            self.user = loginResult
         }
     }
 
@@ -180,7 +199,7 @@ final class LoginViewModel: ObservableObject {
 
     private func handleError(error: MultipleFunctionalDomainError?, fromLogin: Bool) {
         Task { @MainActor in
-            showLoadingSpinner = false
+            // showLoadingSpinner = false
             if fromLogin {
                 showErrorMessageLogin = errorMapper.map(error: error)
             } else {

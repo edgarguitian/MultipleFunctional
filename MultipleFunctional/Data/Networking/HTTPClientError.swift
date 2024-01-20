@@ -17,4 +17,6 @@ enum HTTPClientError: Error {
     case tooManyRequests
     case emptyAuthLoginMail
     case noUser
+    case wrongPassword
+    case userNotFound
 }

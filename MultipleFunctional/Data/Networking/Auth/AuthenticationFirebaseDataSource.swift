@@ -10,21 +10,19 @@ import FirebaseAuth
 
 final class AuthenticationFirebaseDataSource: AuthenticationFirebaseDataSourceType {
 
-    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
+    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, Error> {
         do {
             let authDataResult = try await Auth.auth().signIn(withEmail: credentials.email,
                                                               password: credentials.password)
 
             guard let emailAuthResult = authDataResult.user.email else {
-                return .failure(.emptyAuthLoginMail)
+                return .failure(NSError(domain: "YourDomain", code: -1, userInfo: nil))
             }
             let userDTO = UserDTO(email: emailAuthResult)
 
             return .success(userDTO)
-        } catch let error as HTTPClientError {
-            return .failure(error)
         } catch {
-            return .failure(.generic)
+            return .failure(error)
         }
     }
 
@@ -45,21 +43,19 @@ final class AuthenticationFirebaseDataSource: AuthenticationFirebaseDataSourceTy
         }
     }
 
-    func register(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
+    func register(credentials: LoginCredentials) async -> Result<UserDTO, Error> {
         do {
             let authDataResult = try await Auth.auth().createUser(withEmail: credentials.email,
                                                                   password: credentials.password)
 
             guard let emailAuthResult = authDataResult.user.email else {
-                return .failure(.emptyAuthLoginMail)
+                return .failure(NSError(domain: "YourDomain", code: -1, userInfo: nil))
             }
             let userDTO = UserDTO(email: emailAuthResult)
 
             return .success(userDTO)
-        } catch let error as HTTPClientError {
-            return .failure(error)
         } catch {
-            return .failure(.generic)
+            return .failure(error)
         }
     }
 

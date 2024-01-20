@@ -14,13 +14,13 @@ final class LoginEmailUseCase: LoginEmailUseCaseType {
         self.repository = repository
     }
 
-    func execute(email: String, password: String) async -> Result<User, MultipleFunctionalDomainError> {
+    func execute(email: String, password: String) async -> Result<User, Error> {
         let credential = LoginCredentials(email: email, password: password)
         let result = await repository.logInEmail(credentials: credential)
 
         guard let loginResult = try? result.get() else {
             guard case .failure(let error) = result else {
-                return .failure(.generic)
+                return .failure(result.failureValue!)
             }
 
             return .failure(error)

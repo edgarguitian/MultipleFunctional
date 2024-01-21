@@ -8,7 +8,7 @@
 import Foundation
 
 class NoteFactory: CreateNoteView {
-    lazy var sharedNotesRepository: NotesRepositoryType = createNotesRepository()
+    lazy var sharedNotesRepository: NotesRepository = createNotesRepository()
 
     func create() -> NoteView {
         return NoteView(viewModel: createNoteViewModel())
@@ -33,7 +33,7 @@ class NoteFactory: CreateNoteView {
         return DeleteNoteUseCase(repository: sharedNotesRepository)
     }
 
-    private func createNotesRepository() -> NotesRepositoryType {
+    private func createNotesRepository() -> NotesRepository {
         return NotesRepository(errorMapper: MultipleFunctionalDomainErrorMapper())
     }
 }

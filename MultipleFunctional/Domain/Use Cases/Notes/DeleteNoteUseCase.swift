@@ -9,9 +9,9 @@ import Foundation
 
 final class DeleteNoteUseCase: DeleteNoteUseCaseType {
 
-    private let repository: NotesRepositoryType
+    private let repository: DeleteNoteRepositoryType
 
-    init(repository: NotesRepositoryType) {
+    init(repository: DeleteNoteRepositoryType) {
         self.repository = repository
     }
 

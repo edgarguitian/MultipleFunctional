@@ -1,0 +1,43 @@
+{
+  "configurations" : [
+    {
+      "id" : "62A98C32-FCC0-403B-9B0E-32044C350F10",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "unit_tests",
+        "value" : "true"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MultipleFunctional.xcodeproj",
+      "identifier" : "6D3D9CD02B5165E30050D779",
+      "name" : "MultipleFunctional"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MultipleFunctional.xcodeproj",
+        "identifier" : "6DE880742B568EAB004E5334",
+        "name" : "MultipleFunctionalTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MultipleFunctional.xcodeproj",
+        "identifier" : "6DE8809C2B56AA40004E5334",
+        "name" : "MultipleFunctionalUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

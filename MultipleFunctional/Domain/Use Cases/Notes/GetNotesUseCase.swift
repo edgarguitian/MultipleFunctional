@@ -8,9 +8,9 @@
 import Foundation
 
 final class GetNotesUseCase: GetNotesUseCaseType {
-    private let repository: NotesRepositoryType
+    private let repository: GetNotesRepositoryType
 
-    init(repository: NotesRepositoryType) {
+    init(repository: GetNotesRepositoryType) {
         self.repository = repository
     }
 

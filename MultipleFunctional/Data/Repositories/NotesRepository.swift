@@ -9,16 +9,19 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-final class NotesRepository: NotesRepositoryType {
+final class NotesRepository {
 
     private let errorMapper: MultipleFunctionalDomainErrorMapper
-    private let database = Firestore.firestore()
-    private let collection = "notas"
+    let database: Firestore
+    private let collection = Constants.databaseFirestoreName
 
-    init(errorMapper: MultipleFunctionalDomainErrorMapper) {
+    init(errorMapper: MultipleFunctionalDomainErrorMapper, database: Firestore = Firestore.firestore()) {
         self.errorMapper = errorMapper
+        self.database = database
     }
+}
 
+extension NotesRepository: GetNotesRepositoryType {
     func getAllNotes() async -> Result<[Note], MultipleFunctionalDomainError> {
         var notes = [Note]()
 
@@ -33,7 +36,7 @@ final class NotesRepository: NotesRepositoryType {
                     return .failure(.errorGetNotes)
                 }
 
-                let note = Note(id: id, descripcion: description, titulo: title)
+                let note = Note(id: id, titulo: title, descripcion: description)
                 notes.append(note)
             }
 
@@ -44,10 +47,12 @@ final class NotesRepository: NotesRepositoryType {
             return .failure(.generic)
         }
     }
+}
 
+extension NotesRepository: CreateNoteRepositoryType {
     func createNewNote(title: String, description: String) async -> Result<Note, MultipleFunctionalDomainError> {
         do {
-            let note = Note(descripcion: description, titulo: title)
+            let note = Note(titulo: title, descripcion: description)
             _ = try database.collection(collection).addDocument(from: note)
             return .success(note)
         } catch let error as HTTPClientError {
@@ -56,7 +61,9 @@ final class NotesRepository: NotesRepositoryType {
             return .failure(.generic)
         }
     }
+}
 
+extension NotesRepository: DeleteNoteRepositoryType {
     func deleteNote(note: Note) async -> Result<Bool, MultipleFunctionalDomainError> {
         guard let documentId = note.id else {
             return .failure(.errorDeleteNote)
@@ -68,5 +75,4 @@ final class NotesRepository: NotesRepositoryType {
             return .success(false)
         }
     }
-
 }

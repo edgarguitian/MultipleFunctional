@@ -11,6 +11,6 @@ import FirebaseFirestoreSwift
 
 struct Note: Decodable, Identifiable, Encodable {
     @DocumentID var id: String?
-    let descripcion: String
     let titulo: String
+    let descripcion: String
 }

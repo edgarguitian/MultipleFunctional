@@ -18,7 +18,7 @@
 		6D960CDF2B5D3C8A00B70318 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D960CDE2B5D3C8A00B70318 /* FirebaseFirestoreSwift */; };
 		6D960CE12B5D3C9500B70318 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE02B5D3C9500B70318 /* Note.swift */; };
 		6D960CE42B5D3DDB00B70318 /* GetNotesUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE32B5D3DDB00B70318 /* GetNotesUseCaseType.swift */; };
-		6D960CE62B5D3E2000B70318 /* NotesRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE52B5D3E2000B70318 /* NotesRepositoryType.swift */; };
+		6D960CE62B5D3E2000B70318 /* GetNotesRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE52B5D3E2000B70318 /* GetNotesRepositoryType.swift */; };
 		6D960CE82B5D3F2D00B70318 /* CreateNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE72B5D3F2D00B70318 /* CreateNoteUseCase.swift */; };
 		6D960CEA2B5D3F5500B70318 /* CreateNoteUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CE92B5D3F5500B70318 /* CreateNoteUseCaseType.swift */; };
 		6D960CEC2B5D3FE700B70318 /* DeleteNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CEB2B5D3FE700B70318 /* DeleteNoteUseCase.swift */; };
@@ -34,6 +34,11 @@
 		6D960D022B5D54B900B70318 /* CreateNoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D012B5D54B900B70318 /* CreateNoteUseCaseTests.swift */; };
 		6D960D042B5D54C200B70318 /* DeleteNoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D032B5D54C200B70318 /* DeleteNoteUseCaseTests.swift */; };
 		6D960D062B5D54DE00B70318 /* NotesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D052B5D54DE00B70318 /* NotesRepositoryTests.swift */; };
+		6D960D082B5D90A900B70318 /* GetNotesRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D072B5D90A900B70318 /* GetNotesRepositoryStub.swift */; };
+		6D960D0A2B5D98C600B70318 /* CreateNoteRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D092B5D98C600B70318 /* CreateNoteRepositoryType.swift */; };
+		6D960D0C2B5D98DA00B70318 /* DeleteNoteRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D0B2B5D98DA00B70318 /* DeleteNoteRepositoryType.swift */; };
+		6D960D0F2B5D9ABE00B70318 /* CreateNoteRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D0E2B5D9ABE00B70318 /* CreateNoteRepositoryStub.swift */; };
+		6D960D112B5D9B0D00B70318 /* DeleteNoteRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960D102B5D9B0D00B70318 /* DeleteNoteRepositoryStub.swift */; };
 		6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */; };
 		6DB552F02B5296B1004F0B6B /* URLSessionErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */; };
 		6DB552F22B5296BF004F0B6B /* URLSessionRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */; };
@@ -143,7 +148,7 @@
 		6D960CD92B5D3B3A00B70318 /* GetNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotesUseCase.swift; sourceTree = "<group>"; };
 		6D960CE02B5D3C9500B70318 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		6D960CE32B5D3DDB00B70318 /* GetNotesUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotesUseCaseType.swift; sourceTree = "<group>"; };
-		6D960CE52B5D3E2000B70318 /* NotesRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRepositoryType.swift; sourceTree = "<group>"; };
+		6D960CE52B5D3E2000B70318 /* GetNotesRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotesRepositoryType.swift; sourceTree = "<group>"; };
 		6D960CE72B5D3F2D00B70318 /* CreateNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCase.swift; sourceTree = "<group>"; };
 		6D960CE92B5D3F5500B70318 /* CreateNoteUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCaseType.swift; sourceTree = "<group>"; };
 		6D960CEB2B5D3FE700B70318 /* DeleteNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteUseCase.swift; sourceTree = "<group>"; };
@@ -159,6 +164,12 @@
 		6D960D012B5D54B900B70318 /* CreateNoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCaseTests.swift; sourceTree = "<group>"; };
 		6D960D032B5D54C200B70318 /* DeleteNoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteUseCaseTests.swift; sourceTree = "<group>"; };
 		6D960D052B5D54DE00B70318 /* NotesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRepositoryTests.swift; sourceTree = "<group>"; };
+		6D960D072B5D90A900B70318 /* GetNotesRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNotesRepositoryStub.swift; sourceTree = "<group>"; };
+		6D960D092B5D98C600B70318 /* CreateNoteRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteRepositoryType.swift; sourceTree = "<group>"; };
+		6D960D0B2B5D98DA00B70318 /* DeleteNoteRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteRepositoryType.swift; sourceTree = "<group>"; };
+		6D960D0E2B5D9ABE00B70318 /* CreateNoteRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteRepositoryStub.swift; sourceTree = "<group>"; };
+		6D960D102B5D9B0D00B70318 /* DeleteNoteRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNoteRepositoryStub.swift; sourceTree = "<group>"; };
+		6D960D122B5DA70B00B70318 /* MultipleFunctional.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MultipleFunctional.xctestplan; sourceTree = "<group>"; };
 		6DB552ED2B52969F004F0B6B /* URLSessionHTTPCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLient.swift; sourceTree = "<group>"; };
 		6DB552EF2B5296B1004F0B6B /* URLSessionErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionErrorResolver.swift; sourceTree = "<group>"; };
 		6DB552F12B5296BF004F0B6B /* URLSessionRequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMaker.swift; sourceTree = "<group>"; };
@@ -272,6 +283,7 @@
 		6D3D9CC82B5165E30050D779 = {
 			isa = PBXGroup;
 			children = (
+				6D960D122B5DA70B00B70318 /* MultipleFunctional.xctestplan */,
 				6DE962C02B5A9CF0001425FC /* Products.plist */,
 				6DE880CE2B570EA7004E5334 /* Store.storekit */,
 				6D3D9CD32B5165E30050D779 /* MultipleFunctional */,
@@ -341,7 +353,9 @@
 		6D960CE22B5D3DD200B70318 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				6D960CE52B5D3E2000B70318 /* NotesRepositoryType.swift */,
+				6D960CE52B5D3E2000B70318 /* GetNotesRepositoryType.swift */,
+				6D960D092B5D98C600B70318 /* CreateNoteRepositoryType.swift */,
+				6D960D0B2B5D98DA00B70318 /* DeleteNoteRepositoryType.swift */,
 				6D960CE32B5D3DDB00B70318 /* GetNotesUseCaseType.swift */,
 				6D960CE92B5D3F5500B70318 /* CreateNoteUseCaseType.swift */,
 				6D960CED2B5D402700B70318 /* DeleteNoteUseCaseType.swift */,
@@ -363,6 +377,16 @@
 				6D960CFF2B5D54AE00B70318 /* GetNotesUseCaseTests.swift */,
 				6D960D012B5D54B900B70318 /* CreateNoteUseCaseTests.swift */,
 				6D960D032B5D54C200B70318 /* DeleteNoteUseCaseTests.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		6D960D0D2B5D9AAA00B70318 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6D960D072B5D90A900B70318 /* GetNotesRepositoryStub.swift */,
+				6D960D0E2B5D9ABE00B70318 /* CreateNoteRepositoryStub.swift */,
+				6D960D102B5D9B0D00B70318 /* DeleteNoteRepositoryStub.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -638,6 +662,7 @@
 				6DE880882B569A03004E5334 /* AuthRepositoryStub.swift */,
 				6DE880942B56A253004E5334 /* AuthenticationFirebaseDataSourceStub.swift */,
 				6DE8808C2B569D2F004E5334 /* Equatable.swift */,
+				6D960D0D2B5D9AAA00B70318 /* Notes */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1000,11 +1025,13 @@
 				6DE880472B555E12004E5334 /* CreateRegisterView.swift in Sources */,
 				6DE880532B5563D6004E5334 /* DismissView.swift in Sources */,
 				6DE880392B5546EF004E5334 /* LoginViewModel.swift in Sources */,
+				6D960D0A2B5D98C600B70318 /* CreateNoteRepositoryType.swift in Sources */,
 				6D960CEC2B5D3FE700B70318 /* DeleteNoteUseCase.swift in Sources */,
 				6DB552F22B5296BF004F0B6B /* URLSessionRequestMaker.swift in Sources */,
 				6DE880DC2B57E51C004E5334 /* ProductSubscriptionViewModel.swift in Sources */,
 				6DE880412B555CEC004E5334 /* AuthenticationView.swift in Sources */,
 				6DE880D72B57E17F004E5334 /* PassStatus.swift in Sources */,
+				6D960D0C2B5D98DA00B70318 /* DeleteNoteRepositoryType.swift in Sources */,
 				6DE962B22B599793001425FC /* LoginAppleUseCaseType.swift in Sources */,
 				6DB552FE2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift in Sources */,
 				6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */,
@@ -1037,7 +1064,7 @@
 				6DE8804B2B555EF7004E5334 /* RegisterFactory.swift in Sources */,
 				6D960CF22B5D44D300B70318 /* NotesViewModel.swift in Sources */,
 				6DE880572B55850F004E5334 /* GetUserUseCaseType.swift in Sources */,
-				6D960CE62B5D3E2000B70318 /* NotesRepositoryType.swift in Sources */,
+				6D960CE62B5D3E2000B70318 /* GetNotesRepositoryType.swift in Sources */,
 				6DE880282B5534C6004E5334 /* LoginCredentials.swift in Sources */,
 				6DE880C12B56F6C5004E5334 /* ShopFactory.swift in Sources */,
 				6DE880B72B56F49A004E5334 /* ShopView.swift in Sources */,
@@ -1074,13 +1101,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE8808D2B569D2F004E5334 /* Equatable.swift in Sources */,
+				6D960D082B5D90A900B70318 /* GetNotesRepositoryStub.swift in Sources */,
 				6D960D062B5D54DE00B70318 /* NotesRepositoryTests.swift in Sources */,
 				6DE880952B56A253004E5334 /* AuthenticationFirebaseDataSourceStub.swift in Sources */,
 				6DE880932B56A08D004E5334 /* AuthRepositoryTests.swift in Sources */,
 				6DE880982B56A603004E5334 /* AuthenticationFirebaseDataSourceTests.swift in Sources */,
 				6DE880782B568EAB004E5334 /* MultipleFunctionalTests.swift in Sources */,
 				6DE8808F2B569DAE004E5334 /* LogoutUseCaseTests.swift in Sources */,
+				6D960D112B5D9B0D00B70318 /* DeleteNoteRepositoryStub.swift in Sources */,
 				6DE962B42B59A3A8001425FC /* LoginAppleUseCaseTests.swift in Sources */,
+				6D960D0F2B5D9ABE00B70318 /* CreateNoteRepositoryStub.swift in Sources */,
 				6D960D042B5D54C200B70318 /* DeleteNoteUseCaseTests.swift in Sources */,
 				6DE880842B5691B5004E5334 /* LoginEmailUseCaseTests.swift in Sources */,
 				6DE880E22B57F1A2004E5334 /* ProductSubscriptionUseCaseTests.swift in Sources */,

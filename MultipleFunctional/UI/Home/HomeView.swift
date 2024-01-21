@@ -98,6 +98,7 @@ struct HomeView: View {
                 createNoteView.create()
                 .tabItem {
                     Label("notes", systemImage: "link")
+                        .accessibilityIdentifier("tabNotes")
                 }
 
             }

@@ -30,6 +30,7 @@ struct NoteView: View {
                 Text("titleNewNote")
                     .padding(.horizontal, 12)
                     .padding(.top, 8)
+                    .accessibilityIdentifier("newNoteTitleInfo")
                 TextEditor(text: $newNoteTitle)
                     .focused($focusedField, equals: .noteTitle)
                     .frame(height: 50)
@@ -39,12 +40,14 @@ struct NoteView: View {
                     )
                     .padding(.horizontal, 12)
                     .cornerRadius(3)
+                    .accessibilityIdentifier("newNoteTitleField")
             }
 
             VStack {
                 Text("descriptionNewNote")
                     .padding(.horizontal, 12)
                     .padding(.top, 8)
+                    .accessibilityIdentifier("newNoteDescInfo")
                 TextEditor(text: $newNoteDescription)
                     .focused($focusedField, equals: .noteDescription)
                     .frame(height: 50)
@@ -54,6 +57,7 @@ struct NoteView: View {
                     )
                     .padding(.horizontal, 12)
                     .cornerRadius(3)
+                    .accessibilityIdentifier("newNoteDescField")
             }
 
             // MARK: Create new Note Button
@@ -70,6 +74,7 @@ struct NoteView: View {
             .buttonStyle(.bordered)
             .buttonBorderShape(.capsule)
             .padding(.top, 10)
+            .accessibilityIdentifier("btnNewNote")
 
             // MARK: Show Error
             if viewModel.showErrorMessageNote != nil {
@@ -84,6 +89,7 @@ struct NoteView: View {
             // MARK: List Notes
             if viewModel.showLoadingSpinner {
                 CustomLoadingView()
+                    .accessibilityIdentifier("loadingListNotes")
             } else {
                 List {
                     ForEach(viewModel.notes, id: \.id) { note in
@@ -96,6 +102,7 @@ struct NoteView: View {
                                 .foregroundColor(.gray)
                                 .font(.caption)
                         }
+                        .accessibilityIdentifier("stackNote")
                         .swipeActions(edge: .trailing) {
                             Button(action: {
                                 viewModel.deleteNote(note: note)
@@ -103,9 +110,11 @@ struct NoteView: View {
                                 Label("borrar", systemImage: "trash.fill")
                             })
                             .tint(.red)
+                            .accessibilityIdentifier("btnDeleteNote")
                         }
                     }
                 }
+                .accessibilityIdentifier("listNotes")
             }
         }
         .task {

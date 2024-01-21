@@ -10,27 +10,58 @@ import XCTest
 
 final class DeleteNoteUseCaseTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_execute_sucessfully_delete_note() async throws {
+        // GIVEN
+        let mockNote = [
+            Note(titulo: "testTitleNote1", descripcion: "testDescriptionNote1")
+        ]
+        let result: Result<Bool, MultipleFunctionalDomainError> = .success(true)
+        let stub = DeleteNoteRepositoryStub(result: result)
+        let sut = DeleteNoteUseCase(repository: stub)
+
+        // WHEN
+        let capturedResult = await sut.execute(note: mockNote[0])
+
+        // THEN
+        let capturedNoteResult = try XCTUnwrap(capturedResult.get())
+        XCTAssertEqual(capturedNoteResult, true)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_execute_returns_false_when_repository_returns_false() async throws {
+        // GIVEN
+        let mockNote = [
+            Note(titulo: "testTitleNote1", descripcion: "testDescriptionNote1")
+        ]
+        let result: Result<Bool, MultipleFunctionalDomainError> = .success(false)
+        let stub = DeleteNoteRepositoryStub(result: result)
+        let sut = DeleteNoteUseCase(repository: stub)
+
+        // WHEN
+        let capturedResult = await sut.execute(note: mockNote[0])
+
+        // THEN
+        let capturedNoteResult = try XCTUnwrap(capturedResult.get())
+        XCTAssertEqual(capturedNoteResult, false)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func test_execute_returns_error_when_repository_returns_error() async throws {
+        // GIVEN
+        let mockNote = [
+            Note(titulo: "testTitleNote1", descripcion: "testDescriptionNote1")
+        ]
+        let result: Result<Bool, MultipleFunctionalDomainError> = .failure(.generic)
+        let stub = DeleteNoteRepositoryStub(result: result)
+        let sut = DeleteNoteUseCase(repository: stub)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        // WHEN
+        let capturedResult = await sut.execute(note: mockNote[0])
+        // THEN
+        guard case .failure(let error) = capturedResult else {
+            XCTFail("Expected failure, got success")
+            return
         }
+
+        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
     }
 
 }

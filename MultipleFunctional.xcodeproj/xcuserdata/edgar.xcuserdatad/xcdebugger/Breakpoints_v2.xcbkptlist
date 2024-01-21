@@ -1109,8 +1109,8 @@
             filePath = "MultipleFunctional/UI/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1157,8 +1157,8 @@
             filePath = "MultipleFunctional/UI/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -2681,10 +2681,57 @@
             filePath = "MultipleFunctional/Data/Repositories/NotesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "getAllNotes()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FCE50C6-C460-40A2-AE55-2A56556A9357 - 5f48d3dc2a6e1707"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "8FCE50C6-C460-40A2-AE55-2A56556A9357 - 5f48d3dc2a6e1759"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "8FCE50C6-C460-40A2-AE55-2A56556A9357 - 5f48d3dc2a6e17ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2697,10 +2744,57 @@
             filePath = "MultipleFunctional/Data/Repositories/NotesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "getAllNotes()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2A9BEB8-03F5-4385-A15F-92F0C9A223A4 - 5f48d3dc2a6e1759"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "F2A9BEB8-03F5-4385-A15F-92F0C9A223A4 - 5f48d3dc2a6e179b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "F2A9BEB8-03F5-4385-A15F-92F0C9A223A4 - 5f48d3dc2a6e17fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MultipleFunctional.NotesRepository.getAllNotes() async -&gt; Swift.Result&lt;Swift.Array&lt;MultipleFunctional.Note&gt;, MultipleFunctional.MultipleFunctionalDomainError&gt;"
+                  moduleName = "MultipleFunctional"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctional/Data/Repositories/NotesRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "488">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2713,10 +2807,216 @@
             filePath = "MultipleFunctional/Data/Repositories/NotesRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "getAllNotes()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "891FF41F-5AC4-43FF-8E0F-B860833E5A43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctional/MultipleFunctionalApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "531AF68C-4B41-4591-B864-92237DD42B55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "test_getAllNotes_returns_all_notes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72ED6A23-4633-4C19-ACAC-00FD882F28D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "test_deleteNote_successfully_delete_note()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72ED6A23-4633-4C19-ACAC-00FD882F28D4 - 1e4d07b4b21a2ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "72ED6A23-4633-4C19-ACAC-00FD882F28D4 - 1e4d07b4b21a2ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "928">
+               </Location>
+               <Location
+                  uuid = "72ED6A23-4633-4C19-ACAC-00FD882F28D4 - 3934fa7af82b72df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "371EA46A-C86E-4873-A408-A5E0376AFE8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "test_deleteNote_successfully_delete_note()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "371EA46A-C86E-4873-A408-A5E0376AFE8C - 1e4d07b4b21a2e6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  uuid = "371EA46A-C86E-4873-A408-A5E0376AFE8C - 7e756ca59e38c08f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "371EA46A-C86E-4873-A408-A5E0376AFE8C - 3934fa7af82b7263"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D328C00-65B0-4C22-ABE7-F7505AF963C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "test_deleteNote_successfully_delete_note()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D328C00-65B0-4C22-ABE7-F7505AF963C5 - 3934fa7af82b71e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "1D328C00-65B0-4C22-ABE7-F7505AF963C5 - 3934fa7af82b71e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MultipleFunctionalTests.NotesRepositoryTests.test_deleteNote_successfully_delete_note() async throws -&gt; ()"
+                  moduleName = "MultipleFunctionalTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgar/Documents/MultipleFunctional/MultipleFunctionalTests/Data/Repositories/NotesRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

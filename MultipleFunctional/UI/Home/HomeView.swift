@@ -13,6 +13,7 @@ struct HomeView: View {
     @ObservedObject private var viewModelSubscriptions: ProductSubscriptionViewModel
 
     private let createShopView: CreateShopView
+    private let createNoteView: CreateNoteView
     @State private var showScriptionView: Bool = false
     @State private var presentingSubscriptionSheet = false
     @State private var status: EntitlementTaskState<PassStatus> = .loading
@@ -22,72 +23,84 @@ struct HomeView: View {
 
     init(viewModelLogin: LoginViewModel,
          viewModelSubscriptions: ProductSubscriptionViewModel,
-         createShopView: CreateShopView) {
+         createShopView: CreateShopView,
+         createNoteView: CreateNoteView) {
         self.viewModelLogin = viewModelLogin
         self.viewModelSubscriptions = viewModelSubscriptions
         self.createShopView = createShopView
+        self.createNoteView = createNoteView
     }
 
     var body: some View {
         NavigationView {
-            VStack {
-                Text("welcome \(viewModelLogin.user?.email ?? "No user")")
-                    .padding(.top, 32)
-                    .accessibilityIdentifier("titleHomeView")
-                Spacer()
+            TabView {
+                VStack {
+                    Text("welcome \(viewModelLogin.user?.email ?? "No user")")
+                        .padding(.top, 32)
+                        .accessibilityIdentifier("titleHomeView")
+                    Spacer()
 
-                List {
-                    Section {
-                        planView
+                    List {
+                        Section {
+                            planView
 
-                        if passStatusModel.passStatus == .notSubscribed {
-                            Button {
-                                showScriptionView.toggle()
-                            } label: {
-                                Text("viewSubsOptions")
-                                    .foregroundStyle(Color.blue)
+                            if passStatusModel.passStatus == .notSubscribed {
+                                Button {
+                                    showScriptionView.toggle()
+                                } label: {
+                                    Text("viewSubsOptions")
+                                        .foregroundStyle(Color.blue)
+                                }
+                                .accessibilityIdentifier("btnShopSubHomeView")
                             }
-                            .accessibilityIdentifier("btnShopSubHomeView")
-                        }
-                    } header: {
-                        Text("SUBSCRIPTION")
-                    } footer: {
-                        if passStatusModel.passStatus != .notSubscribed {
-                            Text("Unique Subscription Plan: " +
-                                 "\(String(describing: passStatusModel.passStatus.description))")
+                        } header: {
+                            Text("SUBSCRIPTION")
+                        } footer: {
+                            if passStatusModel.passStatus != .notSubscribed {
+                                Text("Unique Subscription Plan: " +
+                                     "\(String(describing: passStatusModel.passStatus.description))")
 
-                        }
-                    }
-
-                    Section {
-                        ProductView(id: Constants.idProduct) {
-                            Image(systemName: store.hasPurchasedProduct ? "crown.fill" : "crown")
-                                .accessibilityIdentifier("imageBtnProd")
-                        }
-                        .onInAppPurchaseStart { product in
-                            print("User has started buying \(product.id)")
-                        }
-                        .onInAppPurchaseCompletion { (product, result) in
-                            if case .success(.success(_)) = result {
-                                _ = await store.purchase(product)
                             }
                         }
-                        .storeButton(.visible, for: .restorePurchases)
-                        .productViewStyle(.compact)
-                        .padding()
-                        .accessibilityIdentifier("btnShopProdHomeView")
-                    } header: {
-                        Text("PRODUCT")
+
+                        Section {
+                            ProductView(id: Constants.idProduct) {
+                                Image(systemName: store.hasPurchasedProduct ? "crown.fill" : "crown")
+                                    .accessibilityIdentifier("imageBtnProd")
+                            }
+                            .onInAppPurchaseStart { product in
+                                print("User has started buying \(product.id)")
+                            }
+                            .onInAppPurchaseCompletion { (product, result) in
+                                if case .success(.success(_)) = result {
+                                    _ = await store.purchase(product)
+                                }
+                            }
+                            .storeButton(.visible, for: .restorePurchases)
+                            .productViewStyle(.compact)
+                            .padding()
+                            .accessibilityIdentifier("btnShopProdHomeView")
+                        } header: {
+                            Text("PRODUCT")
+                        }
                     }
+                    .sheet(isPresented: $showScriptionView, content: {
+                        createShopView.create()
+                    })
+
+                    Spacer()
+
                 }
-                .sheet(isPresented: $showScriptionView, content: {
-                    createShopView.create()
-                })
+                .tabItem {
+                    Label("homeTitle", systemImage: "house.fill")
+                }
 
-                Spacer()
+                createNoteView.create()
+                .tabItem {
+                    Label("notes", systemImage: "link")
+                }
 
             }
-
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("homeTitle")
             .toolbar {
@@ -96,6 +109,7 @@ struct HomeView: View {
                 }
                 .accessibilityIdentifier("btnLogout")
             }
+
         }
         .manageSubscriptionsSheet(
             isPresented: $presentingSubscriptionSheet,

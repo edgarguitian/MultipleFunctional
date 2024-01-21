@@ -12,7 +12,8 @@ class HomeFactory: CreateHomeView {
     func create() -> HomeView {
         return HomeView(viewModelLogin: AuthenticationFactory.sharedLoginViewModel,
                         viewModelSubscriptions: createViewModelSubscriptions(),
-                        createShopView: ShopFactory())
+                        createShopView: ShopFactory(),
+                        createNoteView: NoteFactory())
     }
 
     private func createViewModelSubscriptions() -> ProductSubscriptionViewModel {

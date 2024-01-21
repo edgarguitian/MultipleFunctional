@@ -17,6 +17,22 @@
         }
       }
     },
+    "borrar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar"
+          }
+        }
+      }
+    },
     "Cerrar" : {
       "localizations" : {
         "en" : {
@@ -29,6 +45,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cerrar"
+          }
+        }
+      }
+    },
+    "descriptionNewNote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter new note description:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe la descripción de la nueva nota:"
           }
         }
       }
@@ -193,6 +226,23 @@
         }
       }
     },
+    "newnote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create New Note"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear Nueva Nota"
+          }
+        }
+      }
+    },
     "notaccount" : {
       "localizations" : {
         "en" : {
@@ -205,6 +255,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¿No tienes cuenta?"
+          }
+        }
+      }
+    },
+    "notes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas"
           }
         }
       }
@@ -349,6 +416,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción Única"
+          }
+        }
+      }
+    },
+    "titleNewNote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter new note title:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe el título de la nueva nota:"
           }
         }
       }

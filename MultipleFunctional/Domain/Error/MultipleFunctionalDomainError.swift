@@ -14,4 +14,6 @@ enum MultipleFunctionalDomainError: Error {
     case noUser
     case wrongPassword
     case userNotFound
+    case errorDeleteNote
+    case errorGetNotes
 }

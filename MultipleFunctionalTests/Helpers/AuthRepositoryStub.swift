@@ -17,8 +17,8 @@ class AuthRepositoryStub: AuthRepositoryType {
     }
 
     func logInEmail(credentials: LoginCredentials) async -> Result<MultipleFunctional.User,
-                                                                   MultipleFunctionalDomainError> {
-        return result
+                                                                   Error> {
+        return result.mapError { $0 as Error }
     }
 
     func logInApple(credentials: AuthCredential) async -> Result<MultipleFunctional.User,
@@ -27,8 +27,9 @@ class AuthRepositoryStub: AuthRepositoryType {
     }
 
     func register(credentials: LoginCredentials) async -> Result<MultipleFunctional.User,
-                                                                 MultipleFunctionalDomainError> {
-        return result
+                                                                 Error> {
+       return result.mapError { $0 as Error }
+
     }
 
     func getCurrentUser() async -> MultipleFunctional.User? {

@@ -86,7 +86,7 @@ final class AuthRepositoryTests: XCTestCase {
             return
         }
 
-        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
+        XCTAssertEqual(error.localizedDescription, "The supplied auth credential is malformed or has expired.")
     }
 
     func test_logInApple_returns_failure_when_authDataSource_fails() async throws {
@@ -131,7 +131,7 @@ final class AuthRepositoryTests: XCTestCase {
             return
         }
 
-        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
+        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.HTTPClientError error 2.)")
     }
 
     func test_logInApple_returns_failure_when_authDataSource_fails_stub() async throws {
@@ -196,7 +196,7 @@ final class AuthRepositoryTests: XCTestCase {
             return
         }
 
-        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
+        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.HTTPClientError error 2.)")
     }
 
     func test_getCurrentUser_returns_success_user() async throws {

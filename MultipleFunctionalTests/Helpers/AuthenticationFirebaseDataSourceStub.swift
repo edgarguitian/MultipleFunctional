@@ -17,16 +17,16 @@ final class AuthenticationFirebaseDataSourceStub: AuthenticationFirebaseDataSour
         self.result = result
     }
 
-    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
-        return result
+    func logInEmail(credentials: LoginCredentials) async -> Result<UserDTO, Error> {
+        return result.mapError { $0 as Error }
     }
 
     func logInApple(credentials: AuthCredential) async -> Result<UserDTO, HTTPClientError> {
         return result
     }
 
-    func register(credentials: LoginCredentials) async -> Result<UserDTO, HTTPClientError> {
-        return result
+    func register(credentials: LoginCredentials) async -> Result<UserDTO, Error> {
+        return result.mapError { $0 as Error }
     }
 
     func getCurrentUser() async -> UserDTO? {

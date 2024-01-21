@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import MultipleFunctional
 
 final class DeleteNoteUseCaseTests: XCTestCase {
 

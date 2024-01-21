@@ -46,7 +46,7 @@ final class RegisterUseCaseTests: XCTestCase {
             return
         }
 
-        XCTAssertEqual(error, MultipleFunctionalDomainError.generic)
+        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.MultipleFunctionalDomainError error 0.)")
     }
 
 }

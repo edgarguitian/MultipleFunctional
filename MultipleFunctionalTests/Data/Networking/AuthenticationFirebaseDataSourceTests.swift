@@ -50,7 +50,7 @@ class AuthenticationFirebaseDataSourceTests: XCTestCase {
         case .success(let userDTO):
             XCTAssertNotNil(userDTO)
         case .failure(let error):
-            XCTAssertEqual(error, HTTPClientError.generic)
+            XCTAssertEqual(error.localizedDescription, "The email address is already in use by another account.")
         }
         expectation.fulfill()
         await fulfillment(of: [expectation], timeout: 5.0)

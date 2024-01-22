@@ -42,9 +42,13 @@ final class NotesViewModel: ObservableObject {
     }
 
     func createNewNote(title: String, description: String) {
-        Task {
-            let result = await createNoteUseCase.execute(title: title, description: description)
-            handleResultCreateNote(result)
+        if !title.isEmpty && !description.isEmpty {
+            Task {
+                let result = await createNoteUseCase.execute(title: title, description: description)
+                handleResultCreateNote(result)
+            }
+        } else {
+            showErrorMessageNote = NSLocalizedString("errorCreatingNote", comment: "")
         }
     }
 

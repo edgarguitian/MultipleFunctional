@@ -85,8 +85,9 @@ final class LoginEmailUseCaseTests: XCTestCase {
             XCTFail("Expected failure, got success")
             return
         }
-
-        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.MultipleFunctionalDomainError error 0.)")
+        let errorDescription = "The operation couldn’t be completed. " +
+        "(MultipleFunctional.MultipleFunctionalDomainError error 0.)"
+        XCTAssertEqual(error.localizedDescription, errorDescription)
     }
 
 }

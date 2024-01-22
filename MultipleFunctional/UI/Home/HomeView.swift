@@ -72,7 +72,7 @@ struct HomeView: View {
                                 print("User has started buying \(product.id)")
                             }
                             .onInAppPurchaseCompletion { (product, result) in
-                                if case .success(.success(_)) = result {
+                                if case .success(.success) = result {
                                     _ = await store.purchase(product)
                                 }
                             }

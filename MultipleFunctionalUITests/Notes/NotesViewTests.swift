@@ -65,10 +65,11 @@ final class NotesViewTests: XCTestCase {
         btnLogin.tap()
         let titleHomeView = app.staticTexts[identifierTitleHomeView]
         XCTAssertTrue(titleHomeView.waitForExistence(timeout: 5))
+        XCTAssert(app.staticTexts[identifierTitleHomeView].exists)
+
     }
 
     func test_notes_view_screen_show() throws {
-        XCTAssert(app.staticTexts[identifierTitleHomeView].exists)
         let tabNotes = app.buttons[identifierTabNotes]
         XCTAssert(tabNotes.exists, app.debugDescription)
         tabNotes.tap()
@@ -79,5 +80,103 @@ final class NotesViewTests: XCTestCase {
         XCTAssert(app.buttons[identifierBtnNewNote].exists, app.debugDescription)
         XCTAssert(app.collectionViews[identifierListNotes].exists, app.debugDescription)
 
+    }
+
+    func test_create_note_success() throws {
+        let tabNotes = app.buttons[identifierTabNotes]
+        XCTAssert(tabNotes.exists, app.debugDescription)
+        tabNotes.tap()
+        let fieldTitle = app.textViews[identifierNewNoteTitleField]
+        XCTAssert(fieldTitle.waitForExistence(timeout: 5), app.debugDescription)
+        print(app.debugDescription)
+        fieldTitle.tap()
+        let titleNote = "Test Tittle Note UI"
+        fieldTitle.typeText(titleNote)
+        let fieldDesc = app.textViews[identifierNewNoteDescField]
+        XCTAssert(fieldDesc.exists, app.debugDescription)
+        fieldDesc.tap()
+        fieldDesc.typeText("Test Desc Note UI")
+        let btnCreate = app.buttons[identifierBtnNewNote]
+        XCTAssert(btnCreate.exists, app.debugDescription)
+        btnCreate.tap()
+        let stackNoteElements = app.staticTexts.matching(identifier: identifierContainerNote)
+
+        for stackNoteElement in 0..<stackNoteElements.count {
+            let stackNote = stackNoteElements.element(boundBy: stackNoteElement)
+
+            XCTAssertTrue(stackNote.exists)
+
+            if stackNote.label == titleNote {
+                XCTAssert(true, "Se encontró un elemento con el label 'Test Tittle Note UI'")
+                return
+            }
+        }
+
+        XCTAssert(false, "No se encontró ningún elemento con el label 'Test Tittle Note UI'")
+    }
+
+    func test_create_note_empty() throws {
+        let tabNotes = app.buttons[identifierTabNotes]
+        XCTAssert(tabNotes.exists, app.debugDescription)
+        tabNotes.tap()
+        let fieldTitle = app.textViews[identifierNewNoteTitleField]
+        XCTAssert(fieldTitle.waitForExistence(timeout: 5), app.debugDescription)
+        print(app.debugDescription)
+        fieldTitle.tap()
+        let titleNote = ""
+        fieldTitle.typeText(titleNote)
+        let fieldDesc = app.textViews[identifierNewNoteDescField]
+        XCTAssert(fieldDesc.exists, app.debugDescription)
+        fieldDesc.tap()
+        fieldDesc.typeText("Test Desc Note UI")
+        let btnCreate = app.buttons[identifierBtnNewNote]
+        XCTAssert(btnCreate.exists, app.debugDescription)
+        btnCreate.tap()
+        let errorMessage = app.staticTexts[identifierMessageErrorNote]
+        XCTAssert(errorMessage.waitForExistence(timeout: 5), app.debugDescription)
+    }
+
+    func test_delete_note() throws {
+        let tabNotes = app.buttons[identifierTabNotes]
+        XCTAssert(tabNotes.exists, app.debugDescription)
+        tabNotes.tap()
+        let titleNote = "Test Tittle Note UI"
+        let btnDeleteNote = app.buttons[identifierBtnDeleteNote]
+        XCTAssertFalse(btnDeleteNote.waitForExistence(timeout: 5), app.debugDescription)
+
+        let stackNoteElements = app.staticTexts.matching(identifier: identifierContainerNote)
+
+        for stackNoteElement in 0..<stackNoteElements.count {
+            let stackNote = stackNoteElements.element(boundBy: stackNoteElement)
+
+            XCTAssertTrue(stackNote.exists)
+
+            if stackNote.label == titleNote {
+                stackNote.swipeLeft()
+                XCTAssert(btnDeleteNote.waitForExistence(timeout: 5), app.debugDescription)
+                btnDeleteNote.tap()
+                checkElementWasDeleted(title: titleNote)
+                return
+            }
+        }
+
+        XCTAssert(false, "No se encontró ningún elemento con el label 'Test Tittle Note UI'")
+    }
+
+    func checkElementWasDeleted(title: String) {
+        let stackNoteElements = app.staticTexts.matching(identifier: identifierContainerNote)
+
+        for stackNoteElement in 0..<stackNoteElements.count {
+            let stackNote = stackNoteElements.element(boundBy: stackNoteElement)
+
+            XCTAssertTrue(stackNote.exists)
+
+            if stackNote.label == title {
+                XCTAssert(false, "Se encontró un elemento con el label \(title)")
+                return
+            }
+        }
+
+        XCTAssert(true, "No se encontró ningún elemento con el label \(title)")
     }
 }

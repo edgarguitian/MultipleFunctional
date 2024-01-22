@@ -33,7 +33,6 @@ final class LoginAppleUseCaseTests: XCTestCase {
 
     func test_execute_returns_error_when_repository_stub_returns_error() async throws {
         // GIVEN
-        let mockEmail = "test@gmail.com"
         let appleCredential = OAuthProvider.credential(withProviderID: "apple.com",
                                                        idToken: String(data: Data(), encoding: .utf8)!,
                                                        rawNonce: nil)

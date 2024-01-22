@@ -130,8 +130,9 @@ final class AuthRepositoryTests: XCTestCase {
             XCTFail("Expected failure, got success")
             return
         }
-
-        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.HTTPClientError error 2.)")
+        let errorDescription = "The operation couldn’t be completed. " +
+        "(MultipleFunctional.HTTPClientError error 2.)"
+        XCTAssertEqual(error.localizedDescription, errorDescription)
     }
 
     func test_logInApple_returns_failure_when_authDataSource_fails_stub() async throws {
@@ -195,8 +196,9 @@ final class AuthRepositoryTests: XCTestCase {
             XCTFail("Expected failure, got success")
             return
         }
-
-        XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (MultipleFunctional.HTTPClientError error 2.)")
+        let errorDescription = "The operation couldn’t be completed. " +
+        "(MultipleFunctional.HTTPClientError error 2.)"
+        XCTAssertEqual(error.localizedDescription, errorDescription)
     }
 
     func test_getCurrentUser_returns_success_user() async throws {

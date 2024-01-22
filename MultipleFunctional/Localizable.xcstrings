@@ -114,6 +114,23 @@
         }
       }
     },
+    "errorCreatingNote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The fields of the note cannot be empty."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los campos de la nota no pueden estar vacíos"
+          }
+        }
+      }
+    },
     "faceIdLogin" : {
       "localizations" : {
         "en" : {

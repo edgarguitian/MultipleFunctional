@@ -13,7 +13,7 @@ struct SubscriptionShopContent: View {
             image
             VStack(spacing: 3) {
                 title
-                desctiption
+                description
             }
         }
         .padding(.vertical)
@@ -41,7 +41,7 @@ extension SubscriptionShopContent {
     }
 
     @ViewBuilder
-    var desctiption: some View {
+    var description: some View {
         Text("subsDescription")
             .fixedSize(horizontal: false, vertical: true)
             .font(.title3.weight(.medium))

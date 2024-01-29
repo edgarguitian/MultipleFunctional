@@ -3031,7 +3031,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "test_create_note()"
+            landmarkName = "test_create_note_success()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -3079,7 +3079,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
-            landmarkName = "test_create_note()"
+            landmarkName = "test_create_note_success()"
             landmarkType = "7">
             <Locations>
                <Location

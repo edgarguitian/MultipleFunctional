@@ -180,6 +180,7 @@
 		6DB552FB2B529741004F0B6B /* MultipleFunctionalDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalDomainError.swift; sourceTree = "<group>"; };
 		6DB552FD2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalDomainErrorMapper.swift; sourceTree = "<group>"; };
 		6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultipleFunctional.entitlements; sourceTree = "<group>"; };
+		6DE867882B67B72D000F0D17 /* MultipleFunctionalUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultipleFunctionalUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DE880202B5531AF004E5334 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DE880232B5532DC004E5334 /* LoginEmailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailUseCase.swift; sourceTree = "<group>"; };
 		6DE880252B553362004E5334 /* AuthRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryType.swift; sourceTree = "<group>"; };
@@ -709,6 +710,7 @@
 		6DE880AF2B56E667004E5334 /* AuthenticationView */ = {
 			isa = PBXGroup;
 			children = (
+				6DE867882B67B72D000F0D17 /* MultipleFunctionalUITests-Bridging-Header.h */,
 				6D960CD52B5C3A6800B70318 /* Biometrics.h */,
 				6D960CD62B5C3A6800B70318 /* Biometrics.m */,
 				6DE8809F2B56AA40004E5334 /* AuthenticationViewTests.swift */,

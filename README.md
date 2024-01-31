@@ -14,6 +14,7 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Eliminar una nota de Firebase Firestore.
 
 ## Funcionalidades extra
+- Error handling en el login/registro.
 - Test Unitarios con XCTest.
 - Autenticación con Face ID.
 - Compra de un producto no consumable.

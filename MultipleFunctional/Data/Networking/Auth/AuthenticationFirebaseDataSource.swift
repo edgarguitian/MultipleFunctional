@@ -22,7 +22,8 @@ final class AuthenticationFirebaseDataSource: AuthenticationFirebaseDataSourceTy
 
             return .success(userDTO)
         } catch {
-            return .failure(error)
+            let err = error as NSError
+            return .failure(err)
         }
     }
 
@@ -55,7 +56,8 @@ final class AuthenticationFirebaseDataSource: AuthenticationFirebaseDataSourceTy
 
             return .success(userDTO)
         } catch {
-            return .failure(error)
+            let err = error as NSError
+            return .failure(err)
         }
     }
 

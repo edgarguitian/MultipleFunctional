@@ -143,9 +143,9 @@ final class LoginViewModel: ObservableObject {
             Task { @MainActor in
                 // showLoadingSpinner = false
                 if fromLogin {
-                    showErrorMessageLogin = result.failureValue!.localizedDescription
+                    showErrorMessageLogin = errorMapper.map(error: result.failureValue as? NSError)
                 } else {
-                    showErrorMessageRegister = result.failureValue!.localizedDescription
+                    showErrorMessageRegister = errorMapper.map(error: result.failureValue as? NSError)
                 }
             }
             return

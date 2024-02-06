@@ -23,3 +23,4 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Analytics
 - Crashlytics
 - Remote Config
+- Push Notifications

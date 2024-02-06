@@ -19,4 +19,7 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Autenticación con Face ID.
 - Compra de un producto no consumable.
 - Ocultado/mostrado de contraseña en el login de email.
-- Traducciones 
+- Traducciones
+- Analytics
+- Crashlytics
+- Remote Config

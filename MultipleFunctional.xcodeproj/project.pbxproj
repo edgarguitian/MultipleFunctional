@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2A3D0D2B72404A00D938E1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D2A3D0C2B72404A00D938E1 /* FirebaseAnalytics */; };
+		6D2A3D112B72422200D938E1 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A3D102B72422200D938E1 /* Tracker.swift */; };
+		6D2A3D132B72453D00D938E1 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D2A3D122B72453D00D938E1 /* FirebaseCrashlytics */; };
+		6D2A3D162B724BD600D938E1 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 6D2A3D152B724BD600D938E1 /* FirebaseRemoteConfig */; };
+		6D2A3D182B724CE700D938E1 /* RemoteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A3D172B724CE700D938E1 /* RemoteConfiguration.swift */; };
 		6D3D9CD52B5165E30050D779 /* MultipleFunctionalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */; };
 		6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD82B5165E40050D779 /* Assets.xcassets */; };
 		6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */; };
@@ -136,6 +141,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D2A3D102B72422200D938E1 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		6D2A3D172B724CE700D938E1 /* RemoteConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfiguration.swift; sourceTree = "<group>"; };
 		6D3D9CD12B5165E30050D779 /* MultipleFunctional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleFunctional.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3D9CD42B5165E30050D779 /* MultipleFunctionalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleFunctionalApp.swift; sourceTree = "<group>"; };
 		6D3D9CD82B5165E40050D779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,6 +267,9 @@
 			files = (
 				6DE8801F2B552FEB004E5334 /* FirebaseAuth in Frameworks */,
 				6D960CDD2B5D3C8A00B70318 /* FirebaseFirestore in Frameworks */,
+				6D2A3D0D2B72404A00D938E1 /* FirebaseAnalytics in Frameworks */,
+				6D2A3D162B724BD600D938E1 /* FirebaseRemoteConfig in Frameworks */,
+				6D2A3D132B72453D00D938E1 /* FirebaseCrashlytics in Frameworks */,
 				6D960CDF2B5D3C8A00B70318 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +474,8 @@
 				6DE880322B5537CE004E5334 /* Foundation+Extensions.swift */,
 				6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */,
 				6D960CD12B5BFE9900B70318 /* Constants.swift */,
+				6D2A3D102B72422200D938E1 /* Tracker.swift */,
+				6D2A3D172B724CE700D938E1 /* RemoteConfiguration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -828,7 +840,8 @@
 				6D3D9CCD2B5165E30050D779 /* Sources */,
 				6D3D9CCE2B5165E30050D779 /* Frameworks */,
 				6D3D9CCF2B5165E30050D779 /* Resources */,
-				6DE880692B5594B6004E5334 /* ShellScript */,
+				6DE880692B5594B6004E5334 /* SwiftLint */,
+				6D2A3D142B72457E00D938E1 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -840,6 +853,9 @@
 				6DE8801E2B552FEB004E5334 /* FirebaseAuth */,
 				6D960CDC2B5D3C8A00B70318 /* FirebaseFirestore */,
 				6D960CDE2B5D3C8A00B70318 /* FirebaseFirestoreSwift */,
+				6D2A3D0C2B72404A00D938E1 /* FirebaseAnalytics */,
+				6D2A3D122B72453D00D938E1 /* FirebaseCrashlytics */,
+				6D2A3D152B724BD600D938E1 /* FirebaseRemoteConfig */,
 			);
 			productName = MultipleFunctional;
 			productReference = 6D3D9CD12B5165E30050D779 /* MultipleFunctional.app */;
@@ -964,7 +980,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6DE880692B5594B6004E5334 /* ShellScript */ = {
+		6D2A3D142B72457E00D938E1 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}\n",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\n",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist\n",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		6DE880692B5594B6004E5334 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -973,6 +1011,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -1038,6 +1077,7 @@
 				6DB552FE2B529770004F0B6B /* MultipleFunctionalDomainErrorMapper.swift in Sources */,
 				6DB552EE2B52969F004F0B6B /* URLSessionHTTPCLient.swift in Sources */,
 				6DE8803D2B55498C004E5334 /* LoginView.swift in Sources */,
+				6D2A3D112B72422200D938E1 /* Tracker.swift in Sources */,
 				6DE8804F2B556199004E5334 /* RegisterUseCaseType.swift in Sources */,
 				6DE8802C2B553566004E5334 /* LoginEmailUseCaseType.swift in Sources */,
 				6DE880432B555D70004E5334 /* RegisterView.swift in Sources */,
@@ -1070,6 +1110,7 @@
 				6DE880282B5534C6004E5334 /* LoginCredentials.swift in Sources */,
 				6DE880C12B56F6C5004E5334 /* ShopFactory.swift in Sources */,
 				6DE880B72B56F49A004E5334 /* ShopView.swift in Sources */,
+				6D2A3D182B724CE700D938E1 /* RemoteConfiguration.swift in Sources */,
 				6D960CEA2B5D3F5500B70318 /* CreateNoteUseCaseType.swift in Sources */,
 				6DE880D02B5711AC004E5334 /* SubscriptionShopContent.swift in Sources */,
 				6D960CF42B5D464A00B70318 /* NoteView.swift in Sources */,
@@ -1295,9 +1336,11 @@
 				CODE_SIGN_ENTITLEMENTS = MultipleFunctional/MultipleFunctional.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MultipleFunctional/Preview Content\"";
 				DEVELOPMENT_TEAM = QD533DTNJL;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1329,6 +1372,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MultipleFunctional/Preview Content\"";
 				DEVELOPMENT_TEAM = QD533DTNJL;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1493,6 +1537,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6D2A3D0C2B72404A00D938E1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6D2A3D122B72453D00D938E1 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6D2A3D152B724BD600D938E1 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		6D960CDC2B5D3C8A00B70318 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

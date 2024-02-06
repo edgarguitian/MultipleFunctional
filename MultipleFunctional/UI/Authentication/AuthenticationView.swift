@@ -20,7 +20,7 @@ enum AuthenticationSheetView: String, Identifiable {
 struct AuthenticationView: View {
     @ObservedObject private var viewModel: LoginViewModel
     @Environment(\.colorScheme) var colorScheme
-
+    @EnvironmentObject var remoteConfiguration: RemoteConfiguration
     @State private var authenticationSheetView: AuthenticationSheetView?
     private let createLoginView: CreateLoginView
     private let createRegisterView: CreateRegisterView
@@ -78,16 +78,18 @@ struct AuthenticationView: View {
                                 .padding(.top, 20)
                                 .accessibilityIdentifier("btnLoginAppleAuthenticationView")
 
-                                Button {
-                                    viewModel.authenticateBiometric()
-                                } label: {
-                                    Label("faceIdLogin", systemImage: "faceid")
+                                if remoteConfiguration.showButtonFaceId {
+                                    Button {
+                                        viewModel.authenticateBiometric()
+                                    } label: {
+                                        Label("faceIdLogin", systemImage: "faceid")
+                                    }
+                                    .frame(width: 250, height: 60)
+                                    .cornerRadius(45)
+                                    .accessibilityIdentifier("btnFaceIdAuthenticationView")
+                                    .tint(.auth)
+                                    .padding(.top, 20)
                                 }
-                                .frame(width: 250, height: 60)
-                                .cornerRadius(45)
-                                .accessibilityIdentifier("btnFaceIdAuthenticationView")
-                                .tint(.auth)
-                                .padding(.top, 20)
 
                                 if viewModel.showErrorMessage != nil {
                                     Text(viewModel.showErrorMessage!)
@@ -140,6 +142,9 @@ struct AuthenticationView: View {
             } else {
                 viewModel.getCurrentUser()
             }
+        }
+        .task {
+            remoteConfiguration.fetch()
         }
     }
 

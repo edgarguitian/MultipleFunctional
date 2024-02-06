@@ -8,6 +8,7 @@ import Foundation
 import AuthenticationServices
 import LocalAuthentication
 import FirebaseAuth
+import FirebaseCrashlytics
 
 final class LoginViewModel: ObservableObject {
     private let getUserUseCase: GetUserUseCaseType
@@ -68,6 +69,9 @@ final class LoginViewModel: ObservableObject {
      Logs in a user with the provided apple
      */
     func logInApple(credential: ASAuthorizationAppleIDCredential) {
+        Tracker.trackEvent(nameEvent: Constants.eventLoginApple,
+                           parameters: [Constants.parameterCredential: credential.user])
+
         showLoadingSpinner = true
         Task {
             let token = credential.identityToken ?? Data()
@@ -119,6 +123,7 @@ final class LoginViewModel: ObservableObject {
      Logs out the current user.
      */
     func logOut() {
+        Tracker.trackEvent(nameEvent: Constants.eventLogOut, parameters: [Constants.parameterEmail: user!.email])
         showLoadingSpinner = true
         Task {
             let result = await logoutUseCase.execute()
@@ -142,6 +147,7 @@ final class LoginViewModel: ObservableObject {
         guard case .success(let loginResult) = result else {
             Task { @MainActor in
                 // showLoadingSpinner = false
+                Tracker.recordCrash(nameCrash: "Error_HandleResult_Login", message: result.failureValue!.localizedDescription)
                 if fromLogin {
                     showErrorMessageLogin = errorMapper.map(error: result.failureValue as? NSError)
                 } else {
@@ -200,6 +206,7 @@ final class LoginViewModel: ObservableObject {
     private func handleError(error: MultipleFunctionalDomainError?, fromLogin: Bool) {
         Task { @MainActor in
             // showLoadingSpinner = false
+            Tracker.recordCrash(nameCrash: "Error_handleError_Login", message: error!.localizedDescription)
             if fromLogin {
                 showErrorMessageLogin = errorMapper.map(error: error)
             } else {

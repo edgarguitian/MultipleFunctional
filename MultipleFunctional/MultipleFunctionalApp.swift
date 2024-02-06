@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 import FirebaseFirestore
+import FirebaseCrashlytics
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions:
@@ -22,6 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
           settings.isSSLEnabled = false
           Firestore.firestore().settings = settings
         }
+        Crashlytics.crashlytics().setUserID("UserID")
         return true
     }
 }
@@ -29,12 +31,14 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
 @main
 struct MultipleFunctionalApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @StateObject var remoteConfiguration = RemoteConfiguration()
+    
     var body: some Scene {
         WindowGroup {
             AuthenticationFactory.create()
                 .environment(PassStatusModel())
                 .environment(StoreManager())
+                .environmentObject(remoteConfiguration)
         }
     }
 }

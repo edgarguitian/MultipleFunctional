@@ -16,6 +16,7 @@
 		6D3D9CD92B5165E40050D779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CD82B5165E40050D779 /* Assets.xcassets */; };
 		6D3D9CDC2B5165E40050D779 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */; };
 		6D65A6A12B57FF4A008116E8 /* LoggerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */; };
+		6D94CDF02B725D5900EA6D90 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6D94CDEF2B725D5900EA6D90 /* FirebaseMessaging */; };
 		6D960CD22B5BFE9900B70318 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CD12B5BFE9900B70318 /* Constants.swift */; };
 		6D960CD72B5C3A6800B70318 /* Biometrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CD62B5C3A6800B70318 /* Biometrics.m */; };
 		6D960CDA2B5D3B3A00B70318 /* GetNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D960CD92B5D3B3A00B70318 /* GetNotesUseCase.swift */; };
@@ -148,6 +149,7 @@
 		6D3D9CD82B5165E40050D779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D3D9CDB2B5165E40050D779 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D65A6A02B57FF4A008116E8 /* LoggerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerAdapter.swift; sourceTree = "<group>"; };
+		6D94CDF12B725E5800EA6D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6D960CD12B5BFE9900B70318 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6D960CD42B5C3A6700B70318 /* MultipleFunctionalUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultipleFunctionalUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6D960CD52B5C3A6800B70318 /* Biometrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biometrics.h; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			files = (
 				6DE8801F2B552FEB004E5334 /* FirebaseAuth in Frameworks */,
 				6D960CDD2B5D3C8A00B70318 /* FirebaseFirestore in Frameworks */,
+				6D94CDF02B725D5900EA6D90 /* FirebaseMessaging in Frameworks */,
 				6D2A3D0D2B72404A00D938E1 /* FirebaseAnalytics in Frameworks */,
 				6D2A3D162B724BD600D938E1 /* FirebaseRemoteConfig in Frameworks */,
 				6D2A3D132B72453D00D938E1 /* FirebaseCrashlytics in Frameworks */,
@@ -318,6 +321,7 @@
 		6D3D9CD32B5165E30050D779 /* MultipleFunctional */ = {
 			isa = PBXGroup;
 			children = (
+				6D94CDF12B725E5800EA6D90 /* Info.plist */,
 				6DE5A58E2B5983D800039978 /* MultipleFunctional.entitlements */,
 				6DE880202B5531AF004E5334 /* GoogleService-Info.plist */,
 				6DE962BE2B5A8BE0001425FC /* Localizable.xcstrings */,
@@ -856,6 +860,7 @@
 				6D2A3D0C2B72404A00D938E1 /* FirebaseAnalytics */,
 				6D2A3D122B72453D00D938E1 /* FirebaseCrashlytics */,
 				6D2A3D152B724BD600D938E1 /* FirebaseRemoteConfig */,
+				6D94CDEF2B725D5900EA6D90 /* FirebaseMessaging */,
 			);
 			productName = MultipleFunctional;
 			productReference = 6D3D9CD12B5165E30050D779 /* MultipleFunctional.app */;
@@ -1342,6 +1347,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultipleFunctional/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1374,6 +1380,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MultipleFunctional/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "App need Face ID to Login in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1551,6 +1558,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		6D94CDEF2B725D5900EA6D90 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 		6D960CDC2B5D3C8A00B70318 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

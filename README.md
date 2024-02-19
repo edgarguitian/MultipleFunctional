@@ -13,6 +13,7 @@ App en Clean Arquitecture con Clean Code utilizando los principios SOLID.
 - Crear una nueva nota y almacenarla en Firebase Firestore.
 - Eliminar una nota de Firebase Firestore.
 
+
 ## Funcionalidades extra
 - Error handling en el login/registro.
 - Test Unitarios con XCTest.

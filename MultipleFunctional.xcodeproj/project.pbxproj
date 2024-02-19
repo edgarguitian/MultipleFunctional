@@ -844,13 +844,11 @@
 				6D3D9CCD2B5165E30050D779 /* Sources */,
 				6D3D9CCE2B5165E30050D779 /* Frameworks */,
 				6D3D9CCF2B5165E30050D779 /* Resources */,
-				6DE880692B5594B6004E5334 /* SwiftLint */,
 				6D2A3D142B72457E00D938E1 /* Crashlytics */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DE8806B2B5594CB004E5334 /* PBXTargetDependency */,
 			);
 			name = MultipleFunctional;
 			packageProductDependencies = (
@@ -873,12 +871,10 @@
 				6DE880712B568EAB004E5334 /* Sources */,
 				6DE880722B568EAB004E5334 /* Frameworks */,
 				6DE880732B568EAB004E5334 /* Resources */,
-				6DE8807E2B569047004E5334 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DE880802B56904F004E5334 /* PBXTargetDependency */,
 				6DE8807A2B568EAB004E5334 /* PBXTargetDependency */,
 			);
 			name = MultipleFunctionalTests;
@@ -893,12 +889,10 @@
 				6DE880992B56AA40004E5334 /* Sources */,
 				6DE8809A2B56AA40004E5334 /* Frameworks */,
 				6DE8809B2B56AA40004E5334 /* Resources */,
-				6DE880A82B56AA5A004E5334 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DE880AA2B56AA60004E5334 /* PBXTargetDependency */,
 				6DE880A42B56AA40004E5334 /* PBXTargetDependency */,
 			);
 			name = MultipleFunctionalUITests;
@@ -942,7 +936,6 @@
 			mainGroup = 6D3D9CC82B5165E30050D779;
 			packageReferences = (
 				6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 6D3D9CD22B5165E30050D779 /* Products */;
 			projectDirPath = "";
@@ -1006,58 +999,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
-		};
-		6DE880692B5594B6004E5334 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed\"\nfi\n";
-		};
-		6DE8807E2B569047004E5334 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed\"\nfi\n";
-		};
-		6DE880A82B56AA5A004E5334 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1189,27 +1130,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6DE8806B2B5594CB004E5334 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 6DE8806A2B5594CB004E5334 /* SwiftLintPlugin */;
-		};
 		6DE8807A2B568EAB004E5334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6D3D9CD02B5165E30050D779 /* MultipleFunctional */;
 			targetProxy = 6DE880792B568EAB004E5334 /* PBXContainerItemProxy */;
 		};
-		6DE880802B56904F004E5334 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 6DE8807F2B56904F004E5334 /* SwiftLintPlugin */;
-		};
 		6DE880A42B56AA40004E5334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6D3D9CD02B5165E30050D779 /* MultipleFunctional */;
 			targetProxy = 6DE880A32B56AA40004E5334 /* PBXContainerItemProxy */;
-		};
-		6DE880AA2B56AA60004E5334 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 6DE880A92B56AA60004E5334 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1525,22 +1454,6 @@
 				minimumVersion = 10.19.1;
 			};
 		};
-		6DE880642B5594AC004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.54.0;
-			};
-		};
-		6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.54.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1578,21 +1491,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6DE8801D2B552FEB004E5334 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
-		};
-		6DE8806A2B5594CB004E5334 /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DE880642B5594AC004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
-		};
-		6DE8807F2B56904F004E5334 /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
-		};
-		6DE880A92B56AA60004E5334 /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DE8806C2B559687004E5334 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
